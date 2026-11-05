@@ -1,10 +1,9 @@
-name: 🔄 Rotate Deals Engine
+name: Rotate Deals Engine
 
 on:
   schedule:
-    # Runs automatically every 4 hours (00:00, 04:00, 08:00, 12:00, 16:00, 20:00 UTC)
     - cron: '0 */4 * * *'
-  workflow_dispatch: # Allows 1-click manual trigger from GitHub UI anytime
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -26,15 +25,15 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests curl_cffi urllib3
+          pip install requests curl_cffi urllib3 beautifulsoup4
 
-      - name: Run Rotation Engine
+      - name: Run Rotation Engine (4h rotation + 48h master pool refresh)
         run: |
           python backend/rotation_engine.py
 
-      - name: Commit and push updated rotation state
+      - name: Commit and push updated rotation state and pools
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add backend/rotation_state.json assets/data/live_deals.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-rotate catalog: batch $(date -u +'%Y-%m-%d %H:%M UTC')" && git push)
+          git add backend/rotation_state.json backend/pool/*.json assets/data/live_deals.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-rotate catalog" && git push)

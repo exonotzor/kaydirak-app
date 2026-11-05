@@ -3,6 +3,7 @@ import os
 import sys
 import re
 import random
+import time
 import urllib.request
 from collections import Counter, defaultdict
 from datetime import datetime, timezone
@@ -14,10 +15,43 @@ except Exception:
 
 PROJECT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 os.chdir(PROJECT_DIR)
+if PROJECT_DIR not in sys.path:
+    sys.path.insert(0, PROJECT_DIR)
 
 STORES = ['Amazon TR', 'Hepsiburada', 'Idefix']
 CATEGORIES = ['Teknoloji', 'Moda', 'Kozmetik', 'Ev & Yaşam']
 COOLDOWN_RUNS = 8  # Guaranteed no repeats across 8 consecutive runs (~960 items cooldown)
+POOL_REFRESH_INTERVAL_SEC = 48 * 3600  # 2 days (48 hours) automatic 1,330-item master pool refresh
+
+# Load / Initialize Rotation State
+state_path = os.path.join('backend', 'rotation_state.json')
+if os.path.exists(state_path):
+    with open(state_path, 'r', encoding='utf-8') as f:
+        state = json.load(f)
+else:
+    state = {
+        'rotation_count': 0,
+        'last_rotation_timestamp': None,
+        'last_pool_refresh_epoch': time.time(),
+        'last_pool_refresh_timestamp': datetime.now(timezone.utc).isoformat(),
+        'history': []
+    }
+
+now_epoch = time.time()
+last_pool_epoch = float(state.get('last_pool_refresh_epoch') or 0)
+if last_pool_epoch == 0:
+    state['last_pool_refresh_epoch'] = now_epoch
+    state['last_pool_refresh_timestamp'] = datetime.now(timezone.utc).isoformat()
+elif (now_epoch - last_pool_epoch) >= POOL_REFRESH_INTERVAL_SEC:
+    hours_elapsed = (now_epoch - last_pool_epoch) / 3600.0
+    print(f"\n[2-DAY SCHEDULE] {hours_elapsed:.1f} hours since last master pool refresh (>= 48h). Refreshing 1,330-item master pools...")
+    try:
+        from backend.refresh_master_pools import refresh_all_master_pools
+        refresh_all_master_pools()
+        state['last_pool_refresh_epoch'] = time.time()
+        state['last_pool_refresh_timestamp'] = datetime.now(timezone.utc).isoformat()
+    except Exception as e:
+        print(f"[2-DAY SCHEDULE WARNING] Master pool refresh encountered an error, continuing with existing verified pools: {e}")
 
 # Load Pools
 def load_pool(store_name, filename):
@@ -37,18 +71,6 @@ pools = {
     'Hepsiburada': pool_hb,
     'Idefix': pool_idefix
 }
-
-# Load / Initialize Rotation State
-state_path = os.path.join('backend', 'rotation_state.json')
-if os.path.exists(state_path):
-    with open(state_path, 'r', encoding='utf-8') as f:
-        state = json.load(f)
-else:
-    state = {
-        'rotation_count': 0,
-        'last_rotation_timestamp': None,
-        'history': []
-    }
 
 rotation_idx = state.get('rotation_count', 0) + 1
 history = state.get('history', [])
