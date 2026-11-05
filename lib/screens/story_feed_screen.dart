@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../models/deal_item.dart';
+import '../services/analytics_service.dart';
 import '../services/deal_service.dart';
 import '../widgets/story_progress_bar.dart';
 import '../widgets/story_card.dart';
@@ -56,6 +57,14 @@ class _StoryFeedScreenState extends State<StoryFeedScreen>
     _loadData();
   }
 
+  void _trackCurrentDealView() {
+    if (_filteredDeals.isNotEmpty &&
+        _currentIndex >= 0 &&
+        _currentIndex < _filteredDeals.length) {
+      AnalyticsService().recordProductView(_filteredDeals[_currentIndex]);
+    }
+  }
+
   Future<void> _loadData() async {
     final deals = await DealService().loadDeals();
     if (!mounted) return;
@@ -86,6 +95,7 @@ class _StoryFeedScreenState extends State<StoryFeedScreen>
     if (_pageController.hasClients) {
       _pageController.jumpToPage(0);
     }
+    _trackCurrentDealView();
     _animController.reset();
     _animController.forward();
   }
@@ -172,7 +182,8 @@ class _StoryFeedScreenState extends State<StoryFeedScreen>
             Expanded(
               child: Text(
                 '🔄 Sunucudan güncel indirimler taranıyor...',
-                style: TextStyle(fontWeight: FontWeight.w600, color: Colors.white),
+                style:
+                    TextStyle(fontWeight: FontWeight.w600, color: Colors.white),
               ),
             ),
           ],
@@ -199,8 +210,9 @@ class _StoryFeedScreenState extends State<StoryFeedScreen>
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
         content: Text(
-          '✨ v2.0: ${_allDeals.length} güncel ürün hazır!',
-          style: const TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
+          '✨ v2.1: ${_allDeals.length} güncel ürün hazır!',
+          style:
+              const TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
         ),
         duration: const Duration(milliseconds: 2000),
         behavior: SnackBarBehavior.floating,
@@ -209,14 +221,17 @@ class _StoryFeedScreenState extends State<StoryFeedScreen>
     );
   }
 
-  /// Kesintisiz ve garantili Link Açıcı (Android 11+ uyumlu, Chrome Custom Tabs öncelikli)
-  Future<void> _launchProductUrl(String url) async {
+  /// Kesintisiz ve garantili Link Açıcı + İstatistik Tıklama Kaydı
+  Future<void> _launchProductUrl(DealItem deal) async {
     _pauseTimer();
-    final cleanUrl = url.trim();
+    final cleanUrl = deal.productUrl.trim();
     if (cleanUrl.isEmpty) {
       _resumeTimer();
       return;
     }
+
+    // Kullanıcı tıklama istatistiğini kaydet ve sunucuya gönder
+    AnalyticsService().recordProductClick(deal);
 
     final uri = Uri.parse(cleanUrl);
 
@@ -235,19 +250,16 @@ class _StoryFeedScreenState extends State<StoryFeedScreen>
 
     try {
       bool launched = false;
-      // 1. Önce platformDefault (Chrome Custom Tabs) dene - Android'de en hızlı ve kesintisiz
       try {
         launched = await launchUrl(uri, mode: LaunchMode.platformDefault);
       } catch (_) {}
 
-      // 2. Olmazsa inAppBrowserView dene
       if (!launched) {
         try {
           launched = await launchUrl(uri, mode: LaunchMode.inAppBrowserView);
         } catch (_) {}
       }
 
-      // 3. Olmazsa harici uygulama (externalApplication) dene
       if (!launched) {
         try {
           launched = await launchUrl(uri, mode: LaunchMode.externalApplication);
@@ -262,29 +274,8 @@ class _StoryFeedScreenState extends State<StoryFeedScreen>
     } catch (e) {
       debugPrint('Link açılamadı: $e');
     } finally {
-      // Kullanıcı geri döndüğünde zamanlayıcıyı devam ettir
       _resumeTimer();
     }
-  }
-
-  void _toggleFavorite(DealItem deal) {
-    setState(() {
-      deal.isFavorite = !deal.isFavorite;
-    });
-
-    ScaffoldMessenger.of(context).clearSnackBars();
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
-        content: Text(
-          deal.isFavorite
-              ? '❤️ "${deal.title}" favorilere eklendi!'
-              : 'Favorilerden çıkarıldı.',
-        ),
-        duration: const Duration(milliseconds: 1500),
-        behavior: SnackBarBehavior.floating,
-        backgroundColor: const Color(0xFF1E272E),
-      ),
-    );
   }
 
   @override
@@ -326,7 +317,7 @@ class _StoryFeedScreenState extends State<StoryFeedScreen>
               ),
               const SizedBox(height: 24),
               const Text(
-                'Kaydırak v2.0',
+                'Kaydırak v2.1',
                 style: TextStyle(
                   fontSize: 22,
                   fontWeight: FontWeight.bold,
@@ -390,9 +381,9 @@ class _StoryFeedScreenState extends State<StoryFeedScreen>
                 if (details.primaryVelocity != null) {
                   // Ekranın herhangi bir yerinden yukarı kaydırınca -> Doğrudan ürüne git
                   if (details.primaryVelocity! < -200) {
-                    _launchProductUrl(currentDeal.productUrl);
+                    _launchProductUrl(currentDeal);
                   }
-                  // Aşağı çekince -> Sunucudan güncel indirimleri yenile (Pull-to-refresh)
+                  // Aşağı çekince -> Sunucudan güncel indirimleri yenile
                   else if (details.primaryVelocity! > 200) {
                     _refreshDealsFromRemote();
                   }
@@ -406,28 +397,27 @@ class _StoryFeedScreenState extends State<StoryFeedScreen>
                   setState(() {
                     _currentIndex = index;
                   });
+                  _trackCurrentDealView();
                   _animController.reset();
                   _animController.forward();
                 },
                 itemBuilder: (context, index) {
                   return StoryCard(
                     deal: _filteredDeals[index],
-                    onToggleFavorite: () => _toggleFavorite(_filteredDeals[index]),
-                    onOpenLink: () => _launchProductUrl(_filteredDeals[index].productUrl),
+                    onOpenLink: () => _launchProductUrl(_filteredDeals[index]),
                   );
                 },
               ),
             ),
 
-            // 2. Sol / Sağ Hızlı Dokunma Alanları (SADECE GÖRSEL BÖLGESİNDE - Alt Butonları ASLA Engellemez)
+            // 2. Sol / Sağ Hızlı Dokunma Alanları
             Positioned(
               top: 110,
-              bottom: 250,
+              bottom: 210,
               left: 0,
               right: 0,
               child: Row(
                 children: [
-                  // Sol %28: Önceki Hikaye
                   Expanded(
                     flex: 28,
                     child: GestureDetector(
@@ -436,14 +426,12 @@ class _StoryFeedScreenState extends State<StoryFeedScreen>
                       child: const SizedBox.expand(),
                     ),
                   ),
-                  // Orta %44: Tıklama boşluğu (IgnorePointer ile altındaki görsel tıklamalarını ASLA engellemez)
                   const Expanded(
                     flex: 44,
                     child: IgnorePointer(
                       child: SizedBox.expand(),
                     ),
                   ),
-                  // Sağ %28: Sonraki Hikaye
                   Expanded(
                     flex: 28,
                     child: GestureDetector(
@@ -464,21 +452,19 @@ class _StoryFeedScreenState extends State<StoryFeedScreen>
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  // İlerleme Çubukları
                   StoryProgressBar(
                     totalCount: _filteredDeals.length.clamp(1, 35),
                     currentIndex: _currentIndex.clamp(0, 34),
                     currentProgress: _animController.value,
                   ),
                   const SizedBox(height: 10),
-
-                  // Kategori Hapları (Yatay Kaydırılabilir)
                   SizedBox(
                     height: 32,
                     child: ListView.separated(
                       scrollDirection: Axis.horizontal,
                       itemCount: _categories.length,
-                      separatorBuilder: (context, index) => const SizedBox(width: 8),
+                      separatorBuilder: (context, index) =>
+                          const SizedBox(width: 8),
                       itemBuilder: (context, idx) {
                         final cat = _categories[idx];
                         final isSelected = cat == _selectedCategory;
@@ -486,7 +472,8 @@ class _StoryFeedScreenState extends State<StoryFeedScreen>
                           onTap: () => _applyFilter(cat),
                           child: AnimatedContainer(
                             duration: const Duration(milliseconds: 200),
-                            padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 6),
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 14, vertical: 6),
                             decoration: BoxDecoration(
                               color: isSelected
                                   ? const Color(0xFFFF4757)
@@ -503,8 +490,12 @@ class _StoryFeedScreenState extends State<StoryFeedScreen>
                             child: Text(
                               cat,
                               style: TextStyle(
-                                color: isSelected ? Colors.white : const Color(0xFF2D3436),
-                                fontWeight: isSelected ? FontWeight.bold : FontWeight.w600,
+                                color: isSelected
+                                    ? Colors.white
+                                    : const Color(0xFF2D3436),
+                                fontWeight: isSelected
+                                    ? FontWeight.bold
+                                    : FontWeight.w600,
                                 fontSize: 12,
                               ),
                             ),

@@ -6,13 +6,13 @@ import 'store_logo.dart';
 
 class StoryCard extends StatelessWidget {
   final DealItem deal;
-  final VoidCallback onToggleFavorite;
+  final VoidCallback? onToggleFavorite;
   final VoidCallback onOpenLink;
 
   const StoryCard({
     super.key,
     required this.deal,
-    required this.onToggleFavorite,
+    this.onToggleFavorite,
     required this.onOpenLink,
   });
 
@@ -28,15 +28,14 @@ class StoryCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     return Container(
-      color: const Color(0xFFF1F2F6), // Açık, modern ve temiz arkaplan
+      color: const Color(0xFFF1F2F6),
       child: Column(
         children: [
           // 1. Üst Boşluk (İlerleme çubuğu ve kategori hapları için güvenli alan)
           const SizedBox(height: 52),
 
-          // 2. Ürün Görseli (Ekran Sınırları İçinde - ASLA KESİLMEZ / TAŞMAZ)
+          // 2. Ürün Görseli (Ekran Sınırları İçinde - Daha Geniş Alan)
           Expanded(
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 6),
@@ -49,7 +48,8 @@ class StoryCard extends StatelessWidget {
                   onTap: onOpenLink,
                   borderRadius: BorderRadius.circular(20),
                   splashColor: const Color(0xFFFF4757).withValues(alpha: 0.1),
-                  highlightColor: const Color(0xFFFF4757).withValues(alpha: 0.05),
+                  highlightColor:
+                      const Color(0xFFFF4757).withValues(alpha: 0.05),
                   child: Stack(
                     children: [
                       // Ürün Görseli
@@ -60,7 +60,7 @@ class StoryCard extends StatelessWidget {
                             borderRadius: BorderRadius.circular(16),
                             child: CachedNetworkImage(
                               imageUrl: deal.imageUrl,
-                              fit: BoxFit.contain, // Ürün asla kırpılmaz, tam sığar
+                              fit: BoxFit.contain,
                               alignment: Alignment.center,
                               placeholder: (context, url) => const Center(
                                 child: CircularProgressIndicator(
@@ -87,7 +87,8 @@ class StoryCard extends StatelessWidget {
                         top: 10,
                         right: 10,
                         child: Container(
-                          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 8, vertical: 4),
                           decoration: BoxDecoration(
                             color: Colors.black.withValues(alpha: 0.06),
                             borderRadius: BorderRadius.circular(10),
@@ -120,7 +121,7 @@ class StoryCard extends StatelessWidget {
             ),
           ),
 
-          // 3. Alt Detaylar Kartı (İndirim Rozeti, Başlık, Fiyat & Butonlar)
+          // 3. Alt Detaylar Kartı (İndirim Rozeti, Başlık, Fiyat + Paylaş & Mağaza Butonu)
           Container(
             width: double.infinity,
             margin: const EdgeInsets.only(left: 14, right: 14, bottom: 12),
@@ -146,7 +147,8 @@ class StoryCard extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 10, vertical: 5),
                       decoration: BoxDecoration(
                         gradient: const LinearGradient(
                           colors: [Color(0xFFFF3838), Color(0xFFFF4757)],
@@ -154,7 +156,8 @@ class StoryCard extends StatelessWidget {
                         borderRadius: BorderRadius.circular(8),
                         boxShadow: [
                           BoxShadow(
-                            color: const Color(0xFFFF3838).withValues(alpha: 0.35),
+                            color:
+                                const Color(0xFFFF3838).withValues(alpha: 0.35),
                             blurRadius: 6,
                             offset: const Offset(0, 2),
                           ),
@@ -195,113 +198,80 @@ class StoryCard extends StatelessWidget {
                 ),
                 const SizedBox(height: 10),
 
-                // Fiyat Alanı: Daha kalın, daha okunaklı ve yüksek kontrastlı
+                // Fiyat Alanı + Sağda Kompakt Paylaş Butonu (Seçenek B)
                 Row(
-                  crossAxisAlignment: CrossAxisAlignment.baseline,
-                  textBaseline: TextBaseline.alphabetic,
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    // İndirimli Tutar (Çok Kalın ve Net E-Ticaret Yeşili)
-                    Text(
-                      deal.formattedDiscountedPrice,
-                      style: const TextStyle(
-                        color: Color(0xFF00823B), // Okunaklı, doygun koyu yeşil
-                        fontSize: 28,
-                        fontWeight: FontWeight.w900,
-                        letterSpacing: -0.5,
-                      ),
-                    ),
-                    const SizedBox(width: 12),
-                    // Eski Fiyat (Üstü Belirgin Çizili)
-                    Text(
-                      deal.formattedOriginalPrice,
-                      style: const TextStyle(
-                        color: Color(0xFF747D8C),
-                        fontSize: 16,
-                        decoration: TextDecoration.lineThrough,
-                        decorationColor: Color(0xFFFF4757),
-                        decorationThickness: 2.2,
-                        fontWeight: FontWeight.w600,
-                      ),
-                    ),
-                  ],
-                ),
-                const SizedBox(height: 12),
-
-                // Butonlar Satırı: [❤️ Favorile] [↗️ Paylaş]
-                Row(
-                  children: [
-                    // Favori Butonu
                     Expanded(
-                      child: InkWell(
-                        onTap: onToggleFavorite,
-                        borderRadius: BorderRadius.circular(12),
-                        child: Container(
-                          padding: const EdgeInsets.symmetric(vertical: 9),
-                          decoration: BoxDecoration(
-                            color: deal.isFavorite
-                                ? const Color(0xFFFFECEF)
-                                : const Color(0xFFF1F2F6),
-                            borderRadius: BorderRadius.circular(12),
-                            border: Border.all(
-                              color: deal.isFavorite
-                                  ? const Color(0xFFFF4757)
-                                  : Colors.transparent,
+                      child: FittedBox(
+                        fit: BoxFit.scaleDown,
+                        alignment: Alignment.centerLeft,
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.baseline,
+                          textBaseline: TextBaseline.alphabetic,
+                          children: [
+                            // İndirimli Tutar
+                            Text(
+                              deal.formattedDiscountedPrice,
+                              style: const TextStyle(
+                                color: Color(0xFF00823B),
+                                fontSize: 28,
+                                fontWeight: FontWeight.w900,
+                                letterSpacing: -0.5,
+                              ),
                             ),
-                          ),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Icon(
-                                deal.isFavorite ? Icons.favorite : Icons.favorite_border,
-                                color: deal.isFavorite
-                                    ? const Color(0xFFFF4757)
-                                    : const Color(0xFF2D3436),
-                                size: 18,
+                            const SizedBox(width: 10),
+                            // Eski Fiyat (Üstü Çizili)
+                            Text(
+                              deal.formattedOriginalPrice,
+                              style: const TextStyle(
+                                color: Color(0xFF747D8C),
+                                fontSize: 15,
+                                decoration: TextDecoration.lineThrough,
+                                decorationColor: Color(0xFFFF4757),
+                                decorationThickness: 2.2,
+                                fontWeight: FontWeight.w600,
                               ),
-                              const SizedBox(width: 6),
-                              Text(
-                                deal.isFavorite ? 'Favorilerimde' : 'Favorile',
-                                style: TextStyle(
-                                  color: deal.isFavorite
-                                      ? const Color(0xFFFF4757)
-                                      : const Color(0xFF2D3436),
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 12,
-                                ),
-                              ),
-                            ],
-                          ),
+                            ),
+                          ],
                         ),
                       ),
                     ),
                     const SizedBox(width: 10),
 
-                    // Paylaş Butonu
-                    Expanded(
-                      child: InkWell(
-                        onTap: () => _shareDeal(context),
-                        borderRadius: BorderRadius.circular(12),
-                        child: Container(
-                          padding: const EdgeInsets.symmetric(vertical: 9),
-                          decoration: BoxDecoration(
-                            color: const Color(0xFFF1F2F6),
-                            borderRadius: BorderRadius.circular(12),
+                    // Paylaş Butonu (Fiyat Satırının Sağında - Seçenek B)
+                    InkWell(
+                      onTap: () => _shareDeal(context),
+                      borderRadius: BorderRadius.circular(12),
+                      child: Container(
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 12, vertical: 8),
+                        decoration: BoxDecoration(
+                          color: const Color(0xFFF1F2F6),
+                          borderRadius: BorderRadius.circular(12),
+                          border: Border.all(
+                            color:
+                                const Color(0xFF2D3436).withValues(alpha: 0.1),
                           ),
-                          child: const Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Icon(Icons.share_outlined, color: Color(0xFF2D3436), size: 18),
-                              SizedBox(width: 6),
-                              Text(
-                                'Paylaş',
-                                style: TextStyle(
-                                  color: Color(0xFF2D3436),
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 12,
-                                ),
+                        ),
+                        child: const Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Icon(
+                              Icons.share_outlined,
+                              color: Color(0xFF2D3436),
+                              size: 17,
+                            ),
+                            SizedBox(width: 5),
+                            Text(
+                              'Paylaş',
+                              style: TextStyle(
+                                color: Color(0xFF2D3436),
+                                fontWeight: FontWeight.w800,
+                                fontSize: 12,
                               ),
-                            ],
-                          ),
+                            ),
+                          ],
                         ),
                       ),
                     ),
@@ -309,7 +279,7 @@ class StoryCard extends StatelessWidget {
                 ),
                 const SizedBox(height: 12),
 
-                // 4. FIRSATI YAKALA • MAĞAZADA AÇ (Büyük, Doğrudan Tıklanabilir Buton - Asla Taşmaz)
+                // 4. FIRSATI YAKALA • MAĞAZADA AÇ
                 SizedBox(
                   width: double.infinity,
                   height: 48,

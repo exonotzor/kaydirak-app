@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kaydırak • Canlı Kullanıcı İstatistikleri Paneli</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --border: #334155;
+      --accent: #ff4757;
+      --gold: #ffd32a;
+      --green: #10b981;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; }
+    body { background: var(--bg); color: var(--text); padding: 24px; min-height: 100vh; }
+    .container { max-width: 1200px; margin: 0 auto; }
+    header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; flex-wrap: wrap; gap: 12px; }
+    h1 { font-size: 24px; font-weight: 800; display: flex; align-items: center; gap: 10px; }
+    .badge { background: var(--accent); color: #fff; font-size: 12px; padding: 4px 10px; border-radius: 20px; font-weight: 700; }
+    .btn { background: var(--accent); color: #fff; border: none; padding: 10px 18px; border-radius: 10px; font-weight: 700; cursor: pointer; font-size: 14px; }
+    .btn:hover { opacity: 0.9; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 16px; margin-bottom: 28px; }
+    .stat-card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 20px; }
+    .stat-label { color: var(--muted); font-size: 13px; font-weight: 600; margin-bottom: 8px; }
+    .stat-val { font-size: 30px; font-weight: 900; color: #fff; }
+    .section { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 20px; margin-bottom: 24px; overflow-x: auto; }
+    .section h2 { font-size: 18px; margin-bottom: 16px; color: var(--gold); }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    th, td { text-align: left; padding: 12px 10px; border-bottom: 1px solid var(--border); }
+    th { color: var(--muted); font-weight: 700; font-size: 12px; text-transform: uppercase; }
+    a { color: #38bdf8; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .pill { background: #334155; padding: 3px 8px; border-radius: 6px; font-size: 12px; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <h1>🛝 Kaydırak Canlı Kullanıcı İstatistikleri <span class="badge">CANLI SUNUCU</span></h1>
+        <p id="lastUpdated" style="color: var(--muted); font-size: 13px; margin-top: 4px;">Sunucudan veriler yükleniyor...</p>
+      </div>
+      <button class="btn" onclick="loadStats()">🔄 Verileri Yenile</button>
+    </header>
+
+    <div class="grid">
+      <div class="stat-card">
+        <div class="stat-label">👥 Toplam Tekil Kullanıcı</div>
+        <div class="stat-val" id="totalUsers">0</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">🚪 Toplam Uygulama Girişi</div>
+        <div class="stat-val" id="totalSessions">0</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">👀 Toplam Gezilen Ürün</div>
+        <div class="stat-val" id="totalViews">0</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">🛍️ Toplam Mağaza Tıklaması</div>
+        <div class="stat-val" id="totalClicks">0</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">⏱️ Toplam Geçirilen Süre</div>
+        <div class="stat-val" id="totalTime">0 dk</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>👤 Kullanıcı Bazlı Detaylar</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Kullanıcı ID</th>
+            <th>Cihaz</th>
+            <th>Giriş Sayısı</th>
+            <th>Geçirilen Süre</th>
+            <th>Gezilen Ürün</th>
+            <th>Kategori Dağılımı</th>
+            <th>Tıklama Sayısı</th>
+            <th>Son Aktif Zaman</th>
+          </tr>
+        </thead>
+        <tbody id="usersTableBody">
+          <tr><td colspan="8" style="color: var(--muted);">Yükleniyor...</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section">
+      <h2>🔥 Tıklanan Ürünler Geçmişi (Mağazaya Gidenler)</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Kullanıcı</th>
+            <th>Mağaza</th>
+            <th>Kategori</th>
+            <th>Ürün Başlığı</th>
+            <th>Fiyat</th>
+            <th>Tıklama Zamanı</th>
+          </tr>
+        </thead>
+        <tbody id="clicksTableBody">
+          <tr><td colspan="6" style="color: var(--muted);">Yükleniyor...</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script>
+    const BIN_URL = 'https://extendsclass.com/api/json-storage/bin/afacbcb';
+
+    function formatDuration(sec) {
+      if (!sec || sec < 60) return (sec || 0) + ' sn';
+      const mins = Math.floor(sec / 60);
+      if (mins < 60) return mins + ' dk ' + (sec % 60) + ' sn';
+      const hrs = (sec / 3600).toFixed(1);
+      return hrs + ' saat (' + mins + ' dk)';
+    }
+
+    async function loadStats() {
+      try {
+        const res = await fetch(BIN_URL + '?t=' + Date.now(), { cache: 'no-store' });
+        const data = await res.json();
+        const usersObj = data.users || {};
+        const users = Object.values(usersObj);
+
+        document.getElementById('lastUpdated').textContent =
+          'Son Sunucu Güncellemesi: ' + (data.updatedAt ? new Date(data.updatedAt).toLocaleString('tr-TR') : 'Şimdi') +
+          ' • Ham Veri API: ' + BIN_URL;
+
+        let sessions = 0, views = 0, clicks = 0, totalSec = 0;
+        const allClicks = [];
+
+        users.sort((a, b) => (b.lastSeenAt || '').localeCompare(a.lastSeenAt || ''));
+
+        const uRows = users.map(u => {
+          sessions += (u.sessionCount || 0);
+          views += (u.viewedProductsCount || 0);
+          clicks += (u.totalClicks || 0);
+          totalSec += (u.totalTimeSeconds || 0);
+
+          const cv = u.categoryViews || {};
+          const catStr = Object.entries(cv).map(([k, v]) => `${k}: ${v}`).join(' | ');
+
+          (u.clickedProducts || []).forEach(cp => {
+            allClicks.push({ userId: u.userId, ...cp });
+          });
+
+          return `<tr>
+            <td><strong>${u.userId || '-'}</strong></td>
+            <td><span class="pill">${u.deviceInfo || 'Android'}</span></td>
+            <td>${u.sessionCount || 0} kez</td>
+            <td>${formatDuration(u.totalTimeSeconds || 0)}</td>
+            <td><strong>${u.viewedProductsCount || 0}</strong> ürün</td>
+            <td style="font-size:12px;color:var(--muted);">${catStr || '-'}</td>
+            <td><strong style="color:var(--green);">${u.totalClicks || 0}</strong> tık</td>
+            <td style="font-size:12px;color:var(--muted);">${u.lastSeenAt ? new Date(u.lastSeenAt).toLocaleString('tr-TR') : '-'}</td>
+          </tr>`;
+        });
+
+        document.getElementById('totalUsers').textContent = users.length;
+        document.getElementById('totalSessions').textContent = sessions;
+        document.getElementById('totalViews').textContent = views;
+        document.getElementById('totalClicks').textContent = clicks;
+        document.getElementById('totalTime').textContent = formatDuration(totalSec);
+
+        document.getElementById('usersTableBody').innerHTML =
+          uRows.length ? uRows.join('') : '<tr><td colspan="8" style="color:var(--muted);">Henüz kullanıcı verisi yok. Uygulamayı açtığınızda buraya düşecektir.</td></tr>';
+
+        allClicks.sort((a, b) => (b.clickedAt || '').localeCompare(a.clickedAt || ''));
+        const cRows = allClicks.slice(0, 50).map(c => `<tr>
+          <td><span class="pill">${c.userId}</span></td>
+          <td><strong>${c.store || '-'}</strong></td>
+          <td>${c.category || '-'}</td>
+          <td><a href="${c.productUrl || '#'}" target="_blank">${c.title || '-'}</a></td>
+          <td><strong>${c.price || 0} TL</strong></td>
+          <td style="font-size:12px;color:var(--muted);">${c.clickedAt ? new Date(c.clickedAt).toLocaleString('tr-TR') : '-'}</td>
+        </tr>`);
+
+        document.getElementById('clicksTableBody').innerHTML =
+          cRows.length ? cRows.join('') : '<tr><td colspan="6" style="color:var(--muted);">Henüz ürün tıklaması yok.</td></tr>';
+      } catch (e) {
+        document.getElementById('lastUpdated').textContent = 'Veri okuma hatası: ' + e.message;
+      }
+    }
+
+    loadStats();
+    setInterval(loadStats, 15000);
+  </script>
+</body>
+</html>

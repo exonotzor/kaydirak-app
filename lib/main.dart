@@ -2,20 +2,22 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'screens/onboarding_screen.dart';
 import 'screens/story_feed_screen.dart';
+import 'services/analytics_service.dart';
 
 class MyHttpOverrides extends HttpOverrides {
   @override
   HttpClient createHttpClient(SecurityContext? context) {
     return super.createHttpClient(context)
-      ..badCertificateCallback = (X509Certificate cert, String host, int port) => true;
+      ..badCertificateCallback =
+          (X509Certificate cert, String host, int port) => true;
   }
 }
 
 void main() {
   HttpOverrides.global = MyHttpOverrides();
   WidgetsFlutterBinding.ensureInitialized();
-  // Tam ekran ve açık tema için sistem barları ayarı
   SystemChrome.setSystemUIOverlayStyle(
     const SystemUiOverlayStyle(
       statusBarColor: Colors.transparent,
@@ -47,7 +49,52 @@ class DiscountApp extends StatelessWidget {
           Theme.of(context).textTheme,
         ),
       ),
-      home: const StoryFeedScreen(),
+      home: const AppLaunchGate(),
     );
+  }
+}
+
+class AppLaunchGate extends StatefulWidget {
+  const AppLaunchGate({super.key});
+
+  @override
+  State<AppLaunchGate> createState() => _AppLaunchGateState();
+}
+
+class _AppLaunchGateState extends State<AppLaunchGate> {
+  bool _ready = false;
+  bool _showOnboarding = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _bootstrap();
+  }
+
+  Future<void> _bootstrap() async {
+    await AnalyticsService().init();
+    if (!mounted) return;
+    setState(() {
+      _showOnboarding = !AnalyticsService().isOnboardingCompleted;
+      _ready = true;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    if (!_ready) {
+      return const Scaffold(
+        backgroundColor: Colors.white,
+        body: Center(
+          child: CircularProgressIndicator(
+            color: Color(0xFFFF4757),
+          ),
+        ),
+      );
+    }
+    if (_showOnboarding) {
+      return const OnboardingScreen();
+    }
+    return const StoryFeedScreen();
   }
 }
