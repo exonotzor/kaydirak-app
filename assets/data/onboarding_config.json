@@ -1,23 +1,23 @@
 [
   {
     "id": 1,
-    "badge": "HOŞ GELDİN! 🎉",
-    "title": "Paranızı Çarçur Etmenin En Eğlenceli Yolu! 💸",
-    "subtitle": "Hiç ihtiyacınız olmayan ama 'Bu fiyata kesin alınır!' diyeceğiniz yüzlerce popüler ürün Kaydırak'ta sizi bekliyor.",
-    "imageUrl": "https://raw.githubusercontent.com/exonotzor/kaydirak-app/main/assets/onboarding/slide1.png"
+    "badge": "HOŞ GELDİN!",
+    "title": "Paranızı Çarçur Etmenin En Eğlenceli Yolu!",
+    "subtitle": "Hiç ihtiyacınız olmayan ama bu fiyata kesin alınır diyeceğiniz yüzlerce popüler ürün Kaydırak'ta sizi bekliyor.",
+    "imageUrl": "https://raw.githubusercontent.com/exonotzor/kaydirak-app/main/assets/onboarding/slide1_v23.png"
   },
   {
     "id": 2,
-    "badge": "NASIL ÇALIŞIR? 👆",
-    "title": "Instagram Gibi Kaydır, Fırsatı Yakala! 👉",
-    "subtitle": "Sağa dokun sıradaki ürüne geç. Beğendiysen yukarı kaydır (veya ürüne dokun) anında mağazaya uç! Aşağı çekersen vitrin yenilenir.",
-    "imageUrl": "https://raw.githubusercontent.com/exonotzor/kaydirak-app/main/assets/onboarding/slide2.png"
+    "badge": "NASIL ÇALIŞIR?",
+    "title": "Instagram Gibi Kaydır, Fırsatı Yakala!",
+    "subtitle": "Sağa dokun sıradaki ürüne geç. Beğendiysen yukarı kaydır anında mağazaya uç! Aşağı çekersen vitrin yenilenir.",
+    "imageUrl": "https://raw.githubusercontent.com/exonotzor/kaydirak-app/main/assets/onboarding/slide2_v23.png"
   },
   {
     "id": 3,
-    "badge": "SÜREKLİ TAZE VİTRİN 🚀",
-    "title": "Her 4 Saatte Bir Yepyeni 120 Ürün! 🔥",
+    "badge": "SÜREKLİ TAZE VİTRİN",
+    "title": "Her 4 Saatte Bir Yepyeni 120 Ürün!",
     "subtitle": "Amazon, Hepsiburada ve İdefix'in en çok satanları her 4 saatte bir tamamen değişir. Cüzdanınız hazırsa başlayalım!",
-    "imageUrl": "https://raw.githubusercontent.com/exonotzor/kaydirak-app/main/assets/onboarding/slide3.png"
+    "imageUrl": "https://raw.githubusercontent.com/exonotzor/kaydirak-app/main/assets/onboarding/slide3_v23.png"
   }
 ]
