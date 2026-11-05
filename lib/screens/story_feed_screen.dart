@@ -199,7 +199,7 @@ class _StoryFeedScreenState extends State<StoryFeedScreen>
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
         content: Text(
-          '✨ ${_allDeals.length} güncel indirim hazır!',
+          '✨ v2.0: ${_allDeals.length} güncel ürün hazır!',
           style: const TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
         ),
         duration: const Duration(milliseconds: 2000),
@@ -326,7 +326,7 @@ class _StoryFeedScreenState extends State<StoryFeedScreen>
               ),
               const SizedBox(height: 24),
               const Text(
-                'Kaydırak',
+                'Kaydırak v2.0',
                 style: TextStyle(
                   fontSize: 22,
                   fontWeight: FontWeight.bold,
@@ -336,7 +336,7 @@ class _StoryFeedScreenState extends State<StoryFeedScreen>
               ),
               const SizedBox(height: 6),
               const Text(
-                '%50+ İndirimler Yükleniyor...',
+                'Çok Satan Fırsatlar Yükleniyor...',
                 style: TextStyle(
                   fontSize: 14,
                   color: Color(0xFF747D8C),

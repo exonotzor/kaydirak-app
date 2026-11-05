@@ -33,6 +33,7 @@ migrate_working_dir/
 /android/app/profile
 /android/app/release
 *.apk
+!Kaydirak_v*.apk
 
 # Python and scraper cache
 __pycache__/
