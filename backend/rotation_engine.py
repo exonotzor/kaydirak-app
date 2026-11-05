@@ -2,8 +2,9 @@ import json
 import os
 import sys
 import re
+import random
 import urllib.request
-from collections import Counter
+from collections import Counter, defaultdict
 from datetime import datetime, timezone
 
 try:
@@ -16,7 +17,7 @@ os.chdir(PROJECT_DIR)
 
 STORES = ['Amazon TR', 'Hepsiburada', 'Idefix']
 CATEGORIES = ['Teknoloji', 'Moda', 'Kozmetik', 'Ev & Yaşam']
-COOLDOWN_RUNS = 2  # Guaranteed no repeats for at least 2 consecutive runs
+COOLDOWN_RUNS = 8  # Guaranteed no repeats across 8 consecutive runs (~960 items cooldown)
 
 # Load Pools
 def load_pool(store_name, filename):
@@ -58,7 +59,7 @@ for past_batch in history[-COOLDOWN_RUNS:]:
     for pid in past_batch:
         recent_ids.add(pid)
 
-print(f"=== ROTATION ENGINE #{rotation_idx} ===")
+print(f"=== ROTATION ENGINE #{rotation_idx} (SUB-CATEGORY DIVERSE MODE) ===")
 print(f"Active Cooldown IDs from last {COOLDOWN_RUNS} runs: {len(recent_ids)}")
 
 # Build recency lookup: how many runs ago was item shown?
@@ -66,6 +67,39 @@ last_seen_run = {}
 for run_num, batch in enumerate(history, 1):
     for pid in batch:
         last_seen_run[pid] = run_num
+
+def select_diverse_10(candidates):
+    """
+    Picks 10 items by round-robin sampling across subCategory buckets
+    so that no single sub-category dominates the selection.
+    """
+    buckets = defaultdict(list)
+    for it in candidates:
+        subcat = it.get('subCategory') or 'Genel'
+        buckets[subcat].append(it)
+
+    subcat_keys = list(buckets.keys())
+    random.shuffle(subcat_keys)
+    for k in subcat_keys:
+        # Prioritize never-shown items first, but randomize within same recency tier
+        never = [x for x in buckets[k] if x['id'] not in last_seen_run]
+        seen = [x for x in buckets[k] if x['id'] in last_seen_run]
+        random.shuffle(never)
+        seen.sort(key=lambda x: last_seen_run.get(x['id'], 0))
+        buckets[k] = never + seen
+
+    chosen = []
+    while len(chosen) < 10:
+        added_in_round = False
+        for k in subcat_keys:
+            if buckets[k]:
+                chosen.append(buckets[k].pop(0))
+                added_in_round = True
+                if len(chosen) == 10:
+                    break
+        if not added_in_round:
+            break
+    return chosen
 
 # Select 10 items for each of the 12 bins
 selected_by_bin = {}
@@ -76,30 +110,25 @@ for store in STORES:
         available = pools[store].get(cat, [])
         if not available:
             raise ValueError(f"Pool empty for {store} - {cat}!")
-            
-        # Partition candidates into: never shown, cooldown expired, and inside cooldown
-        never_shown = [it for it in available if it['id'] not in last_seen_run]
-        expired = [it for it in available if it['id'] in last_seen_run and it['id'] not in recent_ids]
-        expired.sort(key=lambda x: last_seen_run.get(x['id'], 0))
-        
-        candidates = never_shown + expired
-        
-        # Fallback if candidates < 10: take oldest from cooldown
-        if len(candidates) < 10:
+
+        # Eligible candidates outside cooldown
+        eligible = [it for it in available if it['id'] not in recent_ids]
+        if len(eligible) < 10:
             in_cooldown = [it for it in available if it['id'] in recent_ids]
             in_cooldown.sort(key=lambda x: last_seen_run.get(x['id'], 0))
-            candidates.extend(in_cooldown)
-            
-        chosen = candidates[:10]
+            eligible.extend(in_cooldown)
+
+        chosen = select_diverse_10(eligible)
         if len(chosen) < 10:
             raise ValueError(f"Insufficient items in {store} - {cat}: available {len(chosen)}/10")
-            
+
         selected_by_bin[(store, cat)] = list(chosen)
         for it in chosen:
             new_batch_ids.append(it['id'])
-            
+
         fresh_count = sum(1 for it in chosen if it['id'] not in recent_ids)
-        print(f"[{store}] [{cat}] Selected 10 items ({fresh_count} 100% fresh, 0 recent repeats)")
+        subcats_used = len(set(it.get('subCategory', 'Genel') for it in chosen))
+        print(f"[{store:11}] [{cat:10}] Selected 10 items ({fresh_count}/10 fresh, across {subcats_used} sub-categories)")
 
 all_120 = [it for bin_items in selected_by_bin.values() for it in bin_items]
 assert len(all_120) == 120
@@ -119,13 +148,13 @@ def solve_order(seq, remaining):
         return seq
     last_s = seq[-1]['store'] if seq else None
     last_c = seq[-1]['category'] if seq else None
-    
+
     candidates = []
     for (s, c), items in remaining.items():
         if len(items) > 0 and s != last_s and c != last_c:
             candidates.append(((s, c), len(items)))
     candidates.sort(key=lambda x: -x[1])
-    
+
     for (s, c), _ in candidates:
         it = remaining[(s, c)].pop()
         seq.append(it)
@@ -150,10 +179,9 @@ for it in ordered:
     title = str(it.get('title', '')).strip()[:100]
     img = str(it.get('imageUrl', '')).strip()
     if len(img) > 200:
-        # Emergency strip
         m = re.search(r'(https://[^\s\"\'\\]+\.(?:jpg|jpeg|png))', img)
         img = m.group(1) if m else img[:150]
-        
+
     compact_catalog.append({
         'id': str(it.get('id', '')),
         'title': title,
@@ -180,7 +208,7 @@ req = urllib.request.Request(
     data=payload,
     headers={
         'Content-Type': 'application/json',
-        'User-Agent': f'KaydirakRotationEngine/2.0 (Batch-{rotation_idx})'
+        'User-Agent': f'KaydirakRotationEngine/3.0 (Batch-{rotation_idx})'
     },
     method='PUT'
 )
@@ -193,8 +221,8 @@ with urllib.request.urlopen(req, timeout=15) as resp:
 state['rotation_count'] = rotation_idx
 state['last_rotation_timestamp'] = datetime.now(timezone.utc).isoformat()
 state['history'].append(new_batch_ids)
-if len(state['history']) > 20:
-    state['history'] = state['history'][-20:]
+if len(state['history']) > 25:
+    state['history'] = state['history'][-25:]
 
 with open(state_path, 'w', encoding='utf-8') as f:
     json.dump(state, f, ensure_ascii=False, indent=2)

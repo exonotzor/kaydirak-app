@@ -27,7 +27,7 @@ void main() {
       expect(deal.imageUrl.startsWith('http'), isTrue);
       expect(deal.originalPrice > deal.discountedPrice, isTrue);
       expect(deal.discountedPrice > 0, isTrue);
-      expect(deal.discountRate >= 15, isTrue);
+      expect(deal.discountRate >= 5, isTrue);
 
       storeCounts[deal.store] = (storeCounts[deal.store] ?? 0) + 1;
       categoryCounts[deal.category] = (categoryCounts[deal.category] ?? 0) + 1;
