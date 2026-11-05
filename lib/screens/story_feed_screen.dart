@@ -278,6 +278,54 @@ class _StoryFeedScreenState extends State<StoryFeedScreen>
     }
   }
 
+  void _showPrivacyDialog() {
+    _pauseTimer();
+    showDialog<void>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
+        title: const Row(
+          children: [
+            Icon(Icons.verified_user_outlined, color: Color(0xFFFF4757)),
+            SizedBox(width: 8),
+            Expanded(
+              child: Text(
+                'Kaydırak Hakkında & Gizlilik',
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+              ),
+            ),
+          ],
+        ),
+        content: const SingleChildScrollView(
+          child: Text(
+            '• Kaydırak; Amazon TR, Hepsiburada ve İdefix\'teki popüler fırsatları 4 saatte bir yenileyerek sunar.\n\n'
+            '• Fiyatlar mağazalardan periyodik olarak çekilir; satın alma esnasında ilgili mağazanın sepetindeki güncel fiyat ve stok durumu geçerlidir.\n\n'
+            '• Gizlilik: Uygulamamız ad, e-posta, telefon veya konum gibi kişisel verilerinizi toplamaz. Yalnızca uygulama deneyimini geliştirmek adına anonim kullanım istatistikleri işlenir.',
+            style: TextStyle(fontSize: 13.5, height: 1.45, color: Color(0xFF2D3436)),
+          ),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () async {
+              final uri = Uri.parse(
+                  'https://github.com/exonotzor/kaydirak-app/blob/main/PRIVACY_POLICY.md');
+              await launchUrl(uri, mode: LaunchMode.externalApplication);
+            },
+            child: const Text('Tam Gizlilik Politikası'),
+          ),
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              backgroundColor: const Color(0xFFFF4757),
+              foregroundColor: Colors.white,
+            ),
+            onPressed: () => Navigator.of(ctx).pop(),
+            child: const Text('Tamam'),
+          ),
+        ],
+      ),
+    ).then((_) => _resumeTimer());
+  }
+
   @override
   void dispose() {
     _animController.dispose();
@@ -317,7 +365,7 @@ class _StoryFeedScreenState extends State<StoryFeedScreen>
               ),
               const SizedBox(height: 24),
               const Text(
-                'Kaydırak v2.1',
+                'Kaydırak v2.2',
                 style: TextStyle(
                   fontSize: 22,
                   fontWeight: FontWeight.bold,
@@ -458,51 +506,82 @@ class _StoryFeedScreenState extends State<StoryFeedScreen>
                     currentProgress: _animController.value,
                   ),
                   const SizedBox(height: 10),
-                  SizedBox(
-                    height: 32,
-                    child: ListView.separated(
-                      scrollDirection: Axis.horizontal,
-                      itemCount: _categories.length,
-                      separatorBuilder: (context, index) =>
-                          const SizedBox(width: 8),
-                      itemBuilder: (context, idx) {
-                        final cat = _categories[idx];
-                        final isSelected = cat == _selectedCategory;
-                        return GestureDetector(
-                          onTap: () => _applyFilter(cat),
-                          child: AnimatedContainer(
-                            duration: const Duration(milliseconds: 200),
-                            padding: const EdgeInsets.symmetric(
-                                horizontal: 14, vertical: 6),
-                            decoration: BoxDecoration(
-                              color: isSelected
-                                  ? const Color(0xFFFF4757)
-                                  : Colors.white.withValues(alpha: 0.95),
-                              borderRadius: BorderRadius.circular(20),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: Colors.black.withValues(alpha: 0.08),
-                                  blurRadius: 4,
-                                  offset: const Offset(0, 2),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: SizedBox(
+                          height: 32,
+                          child: ListView.separated(
+                            scrollDirection: Axis.horizontal,
+                            itemCount: _categories.length,
+                            separatorBuilder: (context, index) =>
+                                const SizedBox(width: 8),
+                            itemBuilder: (context, idx) {
+                              final cat = _categories[idx];
+                              final isSelected = cat == _selectedCategory;
+                              return GestureDetector(
+                                onTap: () => _applyFilter(cat),
+                                child: AnimatedContainer(
+                                  duration: const Duration(milliseconds: 200),
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 14, vertical: 6),
+                                  decoration: BoxDecoration(
+                                    color: isSelected
+                                        ? const Color(0xFFFF4757)
+                                        : Colors.white.withValues(alpha: 0.95),
+                                    borderRadius: BorderRadius.circular(20),
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color:
+                                            Colors.black.withValues(alpha: 0.08),
+                                        blurRadius: 4,
+                                        offset: const Offset(0, 2),
+                                      ),
+                                    ],
+                                  ),
+                                  child: Text(
+                                    cat,
+                                    style: TextStyle(
+                                      color: isSelected
+                                          ? Colors.white
+                                          : const Color(0xFF2D3436),
+                                      fontWeight: isSelected
+                                          ? FontWeight.bold
+                                          : FontWeight.w600,
+                                      fontSize: 12,
+                                    ),
+                                  ),
                                 ),
-                              ],
-                            ),
-                            child: Text(
-                              cat,
-                              style: TextStyle(
-                                color: isSelected
-                                    ? Colors.white
-                                    : const Color(0xFF2D3436),
-                                fontWeight: isSelected
-                                    ? FontWeight.bold
-                                    : FontWeight.w600,
-                                fontSize: 12,
-                              ),
-                            ),
+                              );
+                            },
                           ),
-                        );
-                      },
-                    ),
+                        ),
+                      ),
+                      const SizedBox(width: 6),
+                      GestureDetector(
+                        onTap: _showPrivacyDialog,
+                        child: Container(
+                          width: 32,
+                          height: 32,
+                          decoration: BoxDecoration(
+                            color: Colors.white.withValues(alpha: 0.95),
+                            shape: BoxShape.circle,
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.black.withValues(alpha: 0.08),
+                                blurRadius: 4,
+                                offset: const Offset(0, 2),
+                              ),
+                            ],
+                          ),
+                          child: const Icon(
+                            Icons.info_outline_rounded,
+                            size: 17,
+                            color: Color(0xFF2D3436),
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 ],
               ),

@@ -320,6 +320,18 @@ class StoryCard extends StatelessWidget {
                     ),
                   ),
                 ),
+                const SizedBox(height: 6),
+                const Center(
+                  child: Text(
+                    'Fiyatlar periyodik çekilir, mağaza sepet fiyatı geçerlidir.',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      color: Color(0xFFA4B0BE),
+                      fontSize: 10.5,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                ),
               ],
             ),
           ),

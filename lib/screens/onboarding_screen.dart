@@ -92,11 +92,10 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   /// Sunucudan (GitHub) güncel slayt metinlerini ve görsel URL'lerini çeker
   Future<void> _fetchRemoteSlides() async {
     final ts = DateTime.now().millisecondsSinceEpoch;
-    for (final baseUrl in [_remoteConfigApiUrl, _remoteConfigRawUrl]) {
+    for (final baseUrl in [_remoteConfigRawUrl, _remoteConfigApiUrl]) {
       try {
         final client = HttpClient()
-          ..connectionTimeout = const Duration(seconds: 6)
-          ..badCertificateCallback = (cert, host, port) => true;
+          ..connectionTimeout = const Duration(seconds: 6);
 
         final req = await client.getUrl(Uri.parse('$baseUrl?t=$ts'));
         if (baseUrl == _remoteConfigApiUrl) {

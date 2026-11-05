@@ -141,8 +141,7 @@ class _NetworkDiagnosticScreenState extends State<NetworkDiagnosticScreen> {
     final stopwatch = Stopwatch()..start();
     try {
       final client = HttpClient()
-        ..connectionTimeout = const Duration(seconds: 10)
-        ..badCertificateCallback = (cert, host, port) => true;
+        ..connectionTimeout = const Duration(seconds: 10);
 
       final request = await client.getUrl(Uri.parse(test.url));
       request.headers.set('User-Agent', 'YariFiyatina-Diagnostic/1.0 (Android)');

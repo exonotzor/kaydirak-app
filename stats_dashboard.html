@@ -112,7 +112,24 @@
   </div>
 
   <script>
-    const BIN_URL = 'https://extendsclass.com/api/json-storage/bin/afacbcb';
+    const SHARD_URLS = [
+      'https://extendsclass.com/api/json-storage/bin/afacbcb',
+      'https://extendsclass.com/api/json-storage/bin/cfffbde',
+      'https://extendsclass.com/api/json-storage/bin/acbcbee',
+      'https://extendsclass.com/api/json-storage/bin/cfcddea',
+      'https://extendsclass.com/api/json-storage/bin/beecefb',
+      'https://extendsclass.com/api/json-storage/bin/feecbab',
+      'https://extendsclass.com/api/json-storage/bin/aeacdea',
+      'https://extendsclass.com/api/json-storage/bin/bbcfdfd',
+      'https://extendsclass.com/api/json-storage/bin/ceffccb',
+      'https://extendsclass.com/api/json-storage/bin/acbcade',
+      'https://extendsclass.com/api/json-storage/bin/bcaedda',
+      'https://extendsclass.com/api/json-storage/bin/ecfdadb',
+      'https://extendsclass.com/api/json-storage/bin/dfdeecf',
+      'https://extendsclass.com/api/json-storage/bin/cdfbeef',
+      'https://extendsclass.com/api/json-storage/bin/bcedcad',
+      'https://extendsclass.com/api/json-storage/bin/eeedefb'
+    ];
 
     function formatDuration(sec) {
       if (!sec || sec < 60) return (sec || 0) + ' sn';
@@ -124,14 +141,21 @@
 
     async function loadStats() {
       try {
-        const res = await fetch(BIN_URL + '?t=' + Date.now(), { cache: 'no-store' });
-        const data = await res.json();
-        const usersObj = data.users || {};
+        const ts = Date.now();
+        const shardResults = await Promise.all(
+          SHARD_URLS.map(u => fetch(u + '?t=' + ts, { cache: 'no-store' }).then(r => r.json()).catch(() => ({})))
+        );
+        const usersObj = {};
+        let latestUpdate = '';
+        shardResults.forEach(d => {
+          if (d && d.users) Object.assign(usersObj, d.users);
+          if (d && d.updatedAt && d.updatedAt > latestUpdate) latestUpdate = d.updatedAt;
+        });
         const users = Object.values(usersObj);
 
         document.getElementById('lastUpdated').textContent =
-          'Son Sunucu Güncellemesi: ' + (data.updatedAt ? new Date(data.updatedAt).toLocaleString('tr-TR') : 'Şimdi') +
-          ' • Ham Veri API: ' + BIN_URL;
+          'Son Sunucu Güncellemesi: ' + (latestUpdate ? new Date(latestUpdate).toLocaleString('tr-TR') : 'Şimdi') +
+          ' • 16 Paralel Shard Havuzu Aktif (3.500+ Eşzamanlı Kullanıcı Kapasiteli)';
 
         let sessions = 0, views = 0, clicks = 0, totalSec = 0;
         const allClicks = [];

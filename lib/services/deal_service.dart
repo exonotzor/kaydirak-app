@@ -77,12 +77,11 @@ class DealService {
   Future<List<DealItem>> _fetchFromRemote() async {
     final timestamp = DateTime.now().millisecondsSinceEpoch;
 
-    for (final baseUrl in [githubApiRawUrl, githubRawUrl, primaryRemoteUrl]) {
+    for (final baseUrl in [githubRawUrl, githubApiRawUrl, primaryRemoteUrl]) {
       try {
         final cacheBustedUrl = '$baseUrl?t=$timestamp';
         final client = HttpClient()
-          ..connectionTimeout = const Duration(seconds: 8)
-          ..badCertificateCallback = (cert, host, port) => true;
+          ..connectionTimeout = const Duration(seconds: 8);
 
         final request = await client.getUrl(Uri.parse(cacheBustedUrl));
         if (baseUrl == githubApiRawUrl) {
