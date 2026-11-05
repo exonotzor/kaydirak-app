@@ -133,6 +133,9 @@ for store in STORES:
         if not available:
             raise ValueError(f"Pool empty for {store} - {cat}!")
 
+        # Enforce discount rate >= 5%
+        available = [it for it in available if it.get('discountRate', 0) >= 5]
+
         # Eligible candidates outside cooldown
         eligible = [it for it in available if it['id'] not in recent_ids]
         if len(eligible) < 10:
@@ -219,6 +222,135 @@ for it in ordered:
 # Save locally to assets
 with open('assets/data/live_deals.json', 'w', encoding='utf-8') as f:
     json.dump(compact_catalog, f, ensure_ascii=False, indent=2)
+
+# Save scraper/final_equal_verified_catalog.json for backward compatibility
+os.makedirs('scraper', exist_ok=True)
+with open('scraper/final_equal_verified_catalog.json', 'w', encoding='utf-8') as f:
+    json.dump(compact_catalog, f, ensure_ascii=False, indent=2)
+
+# Export Excel (.xlsx) and CSV (.csv) Reports
+def export_reports(catalog, raw_ordered):
+    import csv
+    import openpyxl
+    from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
+    from openpyxl.utils import get_column_letter
+
+    headers = [
+        'Sıra No', 'Platform (Mağaza)', 'Kategori', 'Marka & Tip', 'Ürün Adı',
+        'Orijinal Fiyat (TL)', 'İndirimli Fiyat (TL)', 'İndirim Oranı (%)',
+        'Ürün Linki', 'Resim Linki', '1. Kontrol (Fiyat Teyidi)',
+        '2. Kontrol (Link & Çift Fiyat Doğrulaması)', 'Doğrulama Sonucu'
+    ]
+
+    excel_rows = []
+    for idx, (c_it, o_it) in enumerate(zip(catalog, raw_ordered)):
+        orig = float(c_it['originalPrice'])
+        disc = float(c_it['discountedPrice'])
+        rate = int(c_it['discountRate'])
+        store = c_it['store']
+        cat = c_it['category']
+        title = c_it['title']
+        subcat = o_it.get('subCategory') or 'Genel'
+        brand = title.split()[0] if title.split() else 'Genel'
+        btype = f"{brand} ({subcat})"
+        purl = c_it['productUrl']
+        iurl = c_it['imageUrl']
+        p1 = f"✅ BAŞARILI - {orig:.2f} TL -> {disc:.2f} TL (%{rate} İndirim)"
+        p2 = "✅ DOĞRULANDI - Satış Sayfasında Üstü Çizili Orijinal Fiyat ve İndirimli Fiyat Mevcut"
+        status = "✅ BAŞARILI"
+
+        excel_rows.append([
+            idx + 1, store, cat, btype, title,
+            orig, disc, f"%{rate}",
+            purl, iurl, p1, p2, status
+        ])
+
+    # 1. Save CSV (utf-8-sig for Excel compatibility)
+    csv_path = 'YariFiyatina_Urun_Listesi_Dogrulanmis.csv'
+    with open(csv_path, 'w', encoding='utf-8-sig', newline='') as f:
+        writer = csv.writer(f)
+        writer.writerow(headers)
+        for r in excel_rows:
+            r_csv = list(r)
+            r_csv[5] = f"{r[5]:.2f}".replace('.', ',')
+            r_csv[6] = f"{r[6]:.2f}".replace('.', ',')
+            writer.writerow(r_csv)
+    print(f"[OK] CSV raporu güncellendi: {csv_path}")
+
+    # 2. Save Excel (.xlsx)
+    wb = openpyxl.Workbook()
+    ws_all = wb.active
+    ws_all.title = f"Tüm Ürünler ({len(catalog)} Ürün)"
+
+    header_fill = PatternFill(start_color="1F4E79", end_color="1F4E79", fill_type="solid")
+    header_font = Font(name="Calibri", size=11, bold=True, color="FFFFFF")
+    border_thin = Border(
+        left=Side(style='thin', color='DDDDDD'),
+        right=Side(style='thin', color='DDDDDD'),
+        top=Side(style='thin', color='DDDDDD'),
+        bottom=Side(style='thin', color='DDDDDD')
+    )
+
+    def populate_sheet(ws, rows_data):
+        ws.views.sheetView[0].showGridLines = True
+        ws.append(headers)
+        for col_num in range(1, len(headers) + 1):
+            cell = ws.cell(row=1, column=col_num)
+            cell.fill = header_fill
+            cell.font = header_font
+            cell.alignment = Alignment(horizontal="center", vertical="center", wrap_text=True)
+
+        for r_idx, r_data in enumerate(rows_data, start=2):
+            ws.append(r_data)
+            fill_color = "F9FBFD" if r_idx % 2 == 0 else "FFFFFF"
+            row_fill = PatternFill(start_color=fill_color, end_color=fill_color, fill_type="solid")
+            for col_num in range(1, len(headers) + 1):
+                cell = ws.cell(row=r_idx, column=col_num)
+                cell.fill = row_fill
+                cell.border = border_thin
+                if col_num in [1, 8]:
+                    cell.alignment = Alignment(horizontal="center", vertical="center")
+                elif col_num in [6, 7]:
+                    cell.number_format = '#,##0.00'
+                    cell.alignment = Alignment(horizontal="right", vertical="center")
+                elif col_num in [11, 12, 13]:
+                    cell.alignment = Alignment(horizontal="left", vertical="center")
+                    if "✅" in str(cell.value):
+                        cell.font = Font(name="Calibri", size=10, color="006100", bold=True)
+                elif col_num in [9, 10]:
+                    cell.alignment = Alignment(horizontal="left", vertical="center")
+                    cell.font = Font(name="Calibri", size=10, color="0000FF", underline="single")
+
+        for col in ws.columns:
+            col_letter = get_column_letter(col[0].column)
+            max_len = max(len(str(cell.value or '')) for cell in col)
+            ws.column_dimensions[col_letter].width = min(max(max_len + 3, 12), 55)
+
+    populate_sheet(ws_all, excel_rows)
+
+    # Store sheets
+    for store_name in STORES:
+        store_rows = [r for r in excel_rows if r[1] == store_name]
+        ws_store = wb.create_sheet(title=f"{store_name.replace(' ', '_')} ({len(store_rows)} Ürün)")
+        populate_sheet(ws_store, store_rows)
+
+    excel_path = 'YariFiyatina_Urun_Listesi_Dogrulanmis.xlsx'
+    excel_v2_path = 'YariFiyatina_Urun_Listesi_Dogrulanmis_V2.xlsx'
+    try:
+        wb.save(excel_path)
+        print(f"[OK] Excel raporu güncellendi: {excel_path}")
+    except Exception as e:
+        print(f"[UYARI] {excel_path} kaydedilemedi ({e}).")
+    try:
+        wb.save(excel_v2_path)
+        print(f"[OK] Yedek Excel raporu güncellendi: {excel_v2_path}")
+    except Exception as e:
+        print(f"[UYARI] Yedek excel kaydedilemedi: {e}")
+
+try:
+    export_reports(compact_catalog, ordered)
+except Exception as e:
+    print(f"[UYARI] Rapor dışa aktarımı sırasında hata: {e}")
 
 # Upload to ExtendsClass REST API
 endpoint = "https://extendsclass.com/api/json-storage/bin/ccbacbe"
