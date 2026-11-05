@@ -453,6 +453,7 @@ class _StoryFeedScreenState extends State<StoryFeedScreen>
                   return StoryCard(
                     deal: _filteredDeals[index],
                     onOpenLink: () => _launchProductUrl(_filteredDeals[index]),
+                    onShowInfo: _showPrivacyDialog,
                   );
                 },
               ),
@@ -506,82 +507,51 @@ class _StoryFeedScreenState extends State<StoryFeedScreen>
                     currentProgress: _animController.value,
                   ),
                   const SizedBox(height: 10),
-                  Row(
-                    children: [
-                      Expanded(
-                        child: SizedBox(
-                          height: 32,
-                          child: ListView.separated(
-                            scrollDirection: Axis.horizontal,
-                            itemCount: _categories.length,
-                            separatorBuilder: (context, index) =>
-                                const SizedBox(width: 8),
-                            itemBuilder: (context, idx) {
-                              final cat = _categories[idx];
-                              final isSelected = cat == _selectedCategory;
-                              return GestureDetector(
-                                onTap: () => _applyFilter(cat),
-                                child: AnimatedContainer(
-                                  duration: const Duration(milliseconds: 200),
-                                  padding: const EdgeInsets.symmetric(
-                                      horizontal: 14, vertical: 6),
-                                  decoration: BoxDecoration(
-                                    color: isSelected
-                                        ? const Color(0xFFFF4757)
-                                        : Colors.white.withValues(alpha: 0.95),
-                                    borderRadius: BorderRadius.circular(20),
-                                    boxShadow: [
-                                      BoxShadow(
-                                        color:
-                                            Colors.black.withValues(alpha: 0.08),
-                                        blurRadius: 4,
-                                        offset: const Offset(0, 2),
-                                      ),
-                                    ],
-                                  ),
-                                  child: Text(
-                                    cat,
-                                    style: TextStyle(
-                                      color: isSelected
-                                          ? Colors.white
-                                          : const Color(0xFF2D3436),
-                                      fontWeight: isSelected
-                                          ? FontWeight.bold
-                                          : FontWeight.w600,
-                                      fontSize: 12,
-                                    ),
-                                  ),
+                  SizedBox(
+                    height: 32,
+                    child: ListView.separated(
+                      scrollDirection: Axis.horizontal,
+                      itemCount: _categories.length,
+                      separatorBuilder: (context, index) =>
+                          const SizedBox(width: 8),
+                      itemBuilder: (context, idx) {
+                        final cat = _categories[idx];
+                        final isSelected = cat == _selectedCategory;
+                        return GestureDetector(
+                          onTap: () => _applyFilter(cat),
+                          child: AnimatedContainer(
+                            duration: const Duration(milliseconds: 200),
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 14, vertical: 6),
+                            decoration: BoxDecoration(
+                              color: isSelected
+                                  ? const Color(0xFFFF4757)
+                                  : Colors.white.withValues(alpha: 0.95),
+                              borderRadius: BorderRadius.circular(20),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.black.withValues(alpha: 0.08),
+                                  blurRadius: 4,
+                                  offset: const Offset(0, 2),
                                 ),
-                              );
-                            },
-                          ),
-                        ),
-                      ),
-                      const SizedBox(width: 6),
-                      GestureDetector(
-                        onTap: _showPrivacyDialog,
-                        child: Container(
-                          width: 32,
-                          height: 32,
-                          decoration: BoxDecoration(
-                            color: Colors.white.withValues(alpha: 0.95),
-                            shape: BoxShape.circle,
-                            boxShadow: [
-                              BoxShadow(
-                                color: Colors.black.withValues(alpha: 0.08),
-                                blurRadius: 4,
-                                offset: const Offset(0, 2),
+                              ],
+                            ),
+                            child: Text(
+                              cat,
+                              style: TextStyle(
+                                color: isSelected
+                                    ? Colors.white
+                                    : const Color(0xFF2D3436),
+                                fontWeight: isSelected
+                                    ? FontWeight.bold
+                                    : FontWeight.w600,
+                                fontSize: 12,
                               ),
-                            ],
+                            ),
                           ),
-                          child: const Icon(
-                            Icons.info_outline_rounded,
-                            size: 17,
-                            color: Color(0xFF2D3436),
-                          ),
-                        ),
-                      ),
-                    ],
+                        );
+                      },
+                    ),
                   ),
                 ],
               ),

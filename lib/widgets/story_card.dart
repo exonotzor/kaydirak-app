@@ -8,12 +8,14 @@ class StoryCard extends StatelessWidget {
   final DealItem deal;
   final VoidCallback? onToggleFavorite;
   final VoidCallback onOpenLink;
+  final VoidCallback? onShowInfo;
 
   const StoryCard({
     super.key,
     required this.deal,
     this.onToggleFavorite,
     required this.onOpenLink,
+    this.onShowInfo,
   });
 
   void _shareDeal(BuildContext context) {
@@ -78,6 +80,42 @@ class StoryCard extends StatelessWidget {
                                   ),
                                 ),
                               ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      // Sol Üst: (i) Bilgi Düğmesi (Mağazada Gör ile aynı hizada ve stilde)
+                      Positioned(
+                        top: 10,
+                        left: 10,
+                        child: GestureDetector(
+                          behavior: HitTestBehavior.opaque,
+                          onTap: onShowInfo,
+                          child: Container(
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 8, vertical: 4),
+                            decoration: BoxDecoration(
+                              color: Colors.black.withValues(alpha: 0.06),
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                            child: const Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Icon(
+                                  Icons.info_outline_rounded,
+                                  size: 12,
+                                  color: Color(0xFF747D8C),
+                                ),
+                                SizedBox(width: 4),
+                                Text(
+                                  'Bilgi',
+                                  style: TextStyle(
+                                    fontSize: 10,
+                                    fontWeight: FontWeight.w700,
+                                    color: Color(0xFF747D8C),
+                                  ),
+                                ),
+                              ],
                             ),
                           ),
                         ),
@@ -317,18 +355,6 @@ class StoryCard extends StatelessWidget {
                           ),
                         ],
                       ),
-                    ),
-                  ),
-                ),
-                const SizedBox(height: 6),
-                const Center(
-                  child: Text(
-                    'Fiyatlar periyodik çekilir, mağaza sepet fiyatı geçerlidir.',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      color: Color(0xFFA4B0BE),
-                      fontSize: 10.5,
-                      fontWeight: FontWeight.w500,
                     ),
                   ),
                 ),

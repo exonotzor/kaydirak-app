@@ -102,7 +102,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
           req.headers.set('Accept', 'application/vnd.github.v3.raw');
         }
         req.headers.set('Cache-Control', 'no-cache');
-        req.headers.set('User-Agent', 'KaydirakApp/2.1 (Android)');
+        req.headers.set('User-Agent', 'KaydirakApp/2.2 (Android)');
 
         final resp = await req.close().timeout(const Duration(seconds: 6));
         if (resp.statusCode == 200) {
@@ -154,269 +154,295 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     final isLastPage = _currentPage == _slides.length - 1;
 
     return Scaffold(
-      backgroundColor: const Color(0xFF1E272E),
-      body: SafeArea(
-        child: Column(
-          children: [
-            // Üst Bar: Logo & Atla Butonu
-            Padding(
+      backgroundColor: Colors.black,
+      body: Stack(
+        children: [
+          // 1. Tam Sayfa Kaydırılabilir Arka Plan Görselleri ve Görsel İçi Yazılar
+          Positioned.fill(
+            child: PageView.builder(
+              controller: _pageController,
+              itemCount: _slides.length,
+              onPageChanged: (idx) {
+                setState(() {
+                  _currentPage = idx;
+                });
+              },
+              itemBuilder: (context, index) {
+                final slide = _slides[index];
+                final serverImgUrl = slide.imageUrl.contains('?')
+                    ? '${slide.imageUrl}&t=$_cacheBuster'
+                    : '${slide.imageUrl}?t=$_cacheBuster';
+
+                return Stack(
+                  fit: StackFit.expand,
+                  children: [
+                    // Tam Sayfa Resim (Sunucudan Canlı Çekilir)
+                    Image.network(
+                      serverImgUrl,
+                      fit: BoxFit.cover,
+                      width: double.infinity,
+                      height: double.infinity,
+                      headers: const {
+                        'Cache-Control': 'no-cache',
+                      },
+                      loadingBuilder: (context, child, progress) {
+                        if (progress == null) return child;
+                        return Container(
+                          color: const Color(0xFF1E272E),
+                          child: const Center(
+                            child: CircularProgressIndicator(
+                              color: Color(0xFFFF4757),
+                              strokeWidth: 3,
+                            ),
+                          ),
+                        );
+                      },
+                      errorBuilder: (context, error, stackTrace) {
+                        return Container(
+                          decoration: const BoxDecoration(
+                            gradient: LinearGradient(
+                              begin: Alignment.topLeft,
+                              end: Alignment.bottomRight,
+                              colors: [
+                                Color(0xFF1E272E),
+                                Color(0xFFFF4757),
+                              ],
+                            ),
+                          ),
+                          child: Center(
+                            child: Icon(
+                              index == 0
+                                  ? Icons.shopping_bag_rounded
+                                  : index == 1
+                                      ? Icons.swipe_rounded
+                                      : Icons.rocket_launch_rounded,
+                              size: 110,
+                              color: Colors.white54,
+                            ),
+                          ),
+                        );
+                      },
+                    ),
+
+                    // Üst ve Alt Karartma Gradyanı (Yazıların Resmin İçinde Net Okunması İçin)
+                    DecoratedBox(
+                      decoration: BoxDecoration(
+                        gradient: LinearGradient(
+                          begin: Alignment.topCenter,
+                          end: Alignment.bottomCenter,
+                          stops: const [0.0, 0.22, 0.48, 0.72, 1.0],
+                          colors: [
+                            Colors.black.withValues(alpha: 0.55),
+                            Colors.transparent,
+                            Colors.black.withValues(alpha: 0.15),
+                            Colors.black.withValues(alpha: 0.78),
+                            Colors.black.withValues(alpha: 0.94),
+                          ],
+                        ),
+                      ),
+                    ),
+
+                    // Resmin İçerisinde Yer Alan Başlık ve Açıklama Metinleri
+                    SafeArea(
+                      child: Padding(
+                        padding: const EdgeInsets.fromLTRB(24, 70, 24, 130),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Container(
+                              padding: const EdgeInsets.symmetric(
+                                  horizontal: 14, vertical: 6),
+                              decoration: BoxDecoration(
+                                color: Colors.black.withValues(alpha: 0.45),
+                                borderRadius: BorderRadius.circular(20),
+                                border: Border.all(
+                                  color: const Color(0xFFFFD32A)
+                                      .withValues(alpha: 0.75),
+                                ),
+                              ),
+                              child: Text(
+                                slide.badge,
+                                style: const TextStyle(
+                                  color: Color(0xFFFFD32A),
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w900,
+                                  letterSpacing: 0.6,
+                                ),
+                              ),
+                            ),
+                            const SizedBox(height: 14),
+                            Text(
+                              slide.title,
+                              textAlign: TextAlign.center,
+                              style: const TextStyle(
+                                color: Colors.white,
+                                fontSize: 25,
+                                fontWeight: FontWeight.w900,
+                                height: 1.2,
+                                shadows: [
+                                  Shadow(
+                                    color: Colors.black87,
+                                    blurRadius: 12,
+                                    offset: Offset(0, 2),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            const SizedBox(height: 12),
+                            Text(
+                              slide.subtitle,
+                              textAlign: TextAlign.center,
+                              style: const TextStyle(
+                                color: Color(0xFFF1F2F6),
+                                fontSize: 15,
+                                fontWeight: FontWeight.w600,
+                                height: 1.45,
+                                shadows: [
+                                  Shadow(
+                                    color: Colors.black87,
+                                    blurRadius: 8,
+                                    offset: Offset(0, 1),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                );
+              },
+            ),
+          ),
+
+          // 2. Üst Bar (Resmin Üzerinde): Logo & Atla Butonu
+          SafeArea(
+            child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Row(
-                    children: [
-                      ClipRRect(
-                        borderRadius: BorderRadius.circular(10),
-                        child: Image.asset(
-                          'assets/icons/app_logo.png',
-                          width: 34,
-                          height: 34,
-                          fit: BoxFit.cover,
+                  Container(
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+                    decoration: BoxDecoration(
+                      color: Colors.black.withValues(alpha: 0.4),
+                      borderRadius: BorderRadius.circular(14),
+                    ),
+                    child: Row(
+                      children: [
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(8),
+                          child: Image.asset(
+                            'assets/icons/app_logo.png',
+                            width: 28,
+                            height: 28,
+                            fit: BoxFit.cover,
+                          ),
                         ),
-                      ),
-                      const SizedBox(width: 10),
-                      const Text(
-                        'Kaydırak',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 18,
-                          fontWeight: FontWeight.w900,
-                          letterSpacing: -0.3,
+                        const SizedBox(width: 8),
+                        const Text(
+                          'Kaydırak',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 16,
+                            fontWeight: FontWeight.w900,
+                            letterSpacing: -0.3,
+                          ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                   if (!isLastPage)
                     TextButton(
                       onPressed: _completeOnboarding,
                       style: TextButton.styleFrom(
-                        foregroundColor: Colors.white70,
+                        foregroundColor: Colors.white,
+                        backgroundColor: Colors.black.withValues(alpha: 0.4),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(14),
+                        ),
                         padding: const EdgeInsets.symmetric(
                             horizontal: 14, vertical: 6),
                       ),
                       child: const Text(
                         'Atla',
                         style: TextStyle(
-                          fontSize: 14,
-                          fontWeight: FontWeight.w700,
+                          fontSize: 13,
+                          fontWeight: FontWeight.w800,
                         ),
                       ),
                     ),
                 ],
               ),
             ),
+          ),
 
-            // Orta Alan: Sunucudan Gelen Tam Ekran Görselli Slaytlar
-            Expanded(
-              child: PageView.builder(
-                controller: _pageController,
-                itemCount: _slides.length,
-                onPageChanged: (idx) {
-                  setState(() {
-                    _currentPage = idx;
-                  });
-                },
-                itemBuilder: (context, index) {
-                  final slide = _slides[index];
-                  final serverImgUrl = slide.imageUrl.contains('?')
-                      ? '${slide.imageUrl}&t=$_cacheBuster'
-                      : '${slide.imageUrl}?t=$_cacheBuster';
-
-                  return Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 20),
-                    child: Column(
-                      children: [
-                        // 1. Görsel Kartı (Sunucudan Canlı Çekilir)
-                        Expanded(
-                          flex: 58,
-                          child: Container(
-                            width: double.infinity,
-                            margin: const EdgeInsets.only(top: 6, bottom: 18),
-                            decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(28),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: const Color(0xFFFF4757)
-                                      .withValues(alpha: 0.25),
-                                  blurRadius: 24,
-                                  offset: const Offset(0, 10),
-                                ),
-                              ],
-                            ),
-                            child: ClipRRect(
-                              borderRadius: BorderRadius.circular(28),
-                              child: Image.network(
-                                serverImgUrl,
-                                fit: BoxFit.cover,
-                                width: double.infinity,
-                                height: double.infinity,
-                                headers: const {
-                                  'Cache-Control': 'no-cache',
-                                },
-                                loadingBuilder: (context, child, progress) {
-                                  if (progress == null) return child;
-                                  return const Center(
-                                    child: CircularProgressIndicator(
-                                      color: Color(0xFFFF4757),
-                                      strokeWidth: 3,
-                                    ),
-                                  );
-                                },
-                                errorBuilder: (context, error, stackTrace) {
-                                  return Container(
-                                    decoration: const BoxDecoration(
-                                      gradient: LinearGradient(
-                                        begin: Alignment.topLeft,
-                                        end: Alignment.bottomRight,
-                                        colors: [
-                                          Color(0xFFFF4757),
-                                          Color(0xFFFF6B81),
-                                        ],
-                                      ),
-                                    ),
-                                    child: Center(
-                                      child: Icon(
-                                        index == 0
-                                            ? Icons.shopping_bag_rounded
-                                            : index == 1
-                                                ? Icons.swipe_rounded
-                                                : Icons.rocket_launch_rounded,
-                                        size: 96,
-                                        color: Colors.white,
-                                      ),
-                                    ),
-                                  );
-                                },
-                              ),
-                            ),
+          // 3. Alt Bar (Resmin İçinde En Altta): Sayfa Noktaları ve İleri / Başla Butonu
+          Positioned(
+            left: 20,
+            right: 20,
+            bottom: 0,
+            child: SafeArea(
+              top: false,
+              child: Padding(
+                padding: const EdgeInsets.only(bottom: 18),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: List.generate(_slides.length, (idx) {
+                        final active = idx == _currentPage;
+                        return AnimatedContainer(
+                          duration: const Duration(milliseconds: 250),
+                          margin: const EdgeInsets.symmetric(horizontal: 4),
+                          width: active ? 28 : 9,
+                          height: 9,
+                          decoration: BoxDecoration(
+                            color: active
+                                ? const Color(0xFFFF4757)
+                                : Colors.white.withValues(alpha: 0.4),
+                            borderRadius: BorderRadius.circular(10),
                           ),
-                        ),
-
-                        // 2. Esprili Başlık ve Açıklama Alanı
-                        Expanded(
-                          flex: 42,
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            children: [
-                              Container(
-                                padding: const EdgeInsets.symmetric(
-                                    horizontal: 14, vertical: 6),
-                                decoration: BoxDecoration(
-                                  color: const Color(0xFFFFD32A)
-                                      .withValues(alpha: 0.18),
-                                  borderRadius: BorderRadius.circular(20),
-                                  border: Border.all(
-                                    color: const Color(0xFFFFD32A)
-                                        .withValues(alpha: 0.5),
-                                  ),
-                                ),
-                                child: Text(
-                                  slide.badge,
-                                  style: const TextStyle(
-                                    color: Color(0xFFFFD32A),
-                                    fontSize: 12,
-                                    fontWeight: FontWeight.w900,
-                                    letterSpacing: 0.6,
-                                  ),
-                                ),
-                              ),
-                              const SizedBox(height: 14),
-                              Text(
-                                slide.title,
-                                textAlign: TextAlign.center,
-                                style: const TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 23,
-                                  fontWeight: FontWeight.w900,
-                                  height: 1.22,
-                                ),
-                              ),
-                              const SizedBox(height: 12),
-                              Text(
-                                slide.subtitle,
-                                textAlign: TextAlign.center,
-                                style: const TextStyle(
-                                  color: Color(0xFFD2DAE2),
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.w500,
-                                  height: 1.45,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
+                        );
+                      }),
                     ),
-                  );
-                },
-              ),
-            ),
-
-            // Alt Bar: Sayfa Noktaları ve İleri / Başla Butonu
-            Padding(
-              padding: const EdgeInsets.fromLTRB(20, 8, 20, 20),
-              child: Column(
-                children: [
-                  // Sayfa İndikatörleri
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: List.generate(_slides.length, (idx) {
-                      final active = idx == _currentPage;
-                      return AnimatedContainer(
-                        duration: const Duration(milliseconds: 250),
-                        margin: const EdgeInsets.symmetric(horizontal: 4),
-                        width: active ? 28 : 9,
-                        height: 9,
-                        decoration: BoxDecoration(
-                          color: active
-                              ? const Color(0xFFFF4757)
-                              : Colors.white.withValues(alpha: 0.25),
-                          borderRadius: BorderRadius.circular(10),
+                    const SizedBox(height: 16),
+                    SizedBox(
+                      width: double.infinity,
+                      height: 54,
+                      child: ElevatedButton(
+                        onPressed: _nextSlide,
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: isLastPage
+                              ? const Color(0xFF00C853)
+                              : const Color(0xFFFF4757),
+                          foregroundColor: Colors.white,
+                          elevation: 8,
+                          shadowColor: Colors.black.withValues(alpha: 0.5),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(16),
+                          ),
                         ),
-                      );
-                    }),
-                  ),
-                  const SizedBox(height: 18),
-
-                  // Ana İlerleme Butonu
-                  SizedBox(
-                    width: double.infinity,
-                    height: 54,
-                    child: ElevatedButton(
-                      onPressed: _nextSlide,
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: isLastPage
-                            ? const Color(0xFF00C853)
-                            : const Color(0xFFFF4757),
-                        foregroundColor: Colors.white,
-                        elevation: 6,
-                        shadowColor: (isLastPage
-                                ? const Color(0xFF00C853)
-                                : const Color(0xFFFF4757))
-                            .withValues(alpha: 0.45),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(16),
-                        ),
-                      ),
-                      child: Text(
-                        isLastPage
-                            ? 'KAYDIRMAYA BAŞLA  🛝'
-                            : 'DEVAM ET  ➔',
-                        style: const TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.w900,
-                          letterSpacing: 0.5,
+                        child: Text(
+                          isLastPage ? 'KAYDIRMAYA BAŞLA  🛝' : 'DEVAM ET  ➔',
+                          style: const TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w900,
+                            letterSpacing: 0.5,
+                          ),
                         ),
                       ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
