@@ -128,8 +128,11 @@ def compute_prices(orig_price, sale_price, unique_key):
         rate = round(((orig_price - sale_price) / orig_price) * 100)
         if 5 <= rate <= 75:
             return round(orig_price, 2), round(sale_price, 2), int(rate)
-    orig = round(sale_price / (1.0 - fallback_rate / 100.0), 2)
-    return orig, round(sale_price, 2), int(fallback_rate)
+    orig = float(round(sale_price / (1.0 - fallback_rate / 100.0)))
+    if orig <= sale_price:
+        orig = float(int(sale_price) + 10)
+    actual_rate = max(5, int(round(((orig - sale_price) / orig) * 100)))
+    return orig, round(sale_price, 2), actual_rate
 
 def parse_tr_price(text):
     if not text:

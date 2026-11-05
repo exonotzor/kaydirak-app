@@ -192,8 +192,8 @@ for cat, subcats in IDEFIX_SUBCATEGORIES.items():
                     img_url = (imgs[0].get('src') or '').replace('{size}', '600/600/').strip()
                     if not img_url.startswith('https://'):
                         continue
-                    orig_val = float(v.get('price') or 0)
-                    sale_val = float(v.get('discountedSalesPrice') or orig_val or 0)
+                    orig_val = max(float(v.get('price') or 0), float(v.get('thirtyDaysLowPrice') or 0))
+                    sale_val = float(v.get('discountedSalesPrice') or v.get('price') or 0)
                     orig, disc, rate = compute_prices(orig_val, sale_val, vid)
                     if not orig:
                         continue
