@@ -20,8 +20,8 @@ if PROJECT_DIR not in sys.path:
 
 STORES = ['Amazon TR', 'Hepsiburada', 'Idefix']
 CATEGORIES = ['Teknoloji', 'Moda', 'Kozmetik', 'Ev & Yaşam']
-COOLDOWN_RUNS = 8  # Guaranteed no repeats across 8 consecutive runs (~960 items cooldown)
-POOL_REFRESH_INTERVAL_SEC = 48 * 3600  # 2 days (48 hours) automatic 1,330-item master pool refresh
+COOLDOWN_RUNS = 18  # Guaranteed no repeats across 18 consecutive runs (72 hours / 3 days cooldown)
+POOL_REFRESH_INTERVAL_SEC = 36 * 3600  # 36 hours (1.5 days) automatic ~2,880-item master pool refresh
 
 # Load / Initialize Rotation State
 state_path = os.path.join('backend', 'rotation_state.json')
@@ -375,8 +375,8 @@ with urllib.request.urlopen(req, timeout=15) as resp:
 state['rotation_count'] = rotation_idx
 state['last_rotation_timestamp'] = datetime.now(timezone.utc).isoformat()
 state['history'].append(new_batch_ids)
-if len(state['history']) > 25:
-    state['history'] = state['history'][-25:]
+if len(state['history']) > 35:
+    state['history'] = state['history'][-35:]
 
 with open(state_path, 'w', encoding='utf-8') as f:
     json.dump(state, f, ensure_ascii=False, indent=2)

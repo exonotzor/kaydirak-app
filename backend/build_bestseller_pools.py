@@ -239,8 +239,8 @@ def harvest_amazon():
     return pool
 
 # 2. HEPSIBURADA HARVESTER (Best Sellers Sort + Structured JSON Parsing)
-def harvest_hepsiburada():
-    print("\n=== 2. HARVESTING HEPSIBURADA (Best Sellers & 32 Sub-Categories) ===")
+def harvest_hepsiburada(per_subcat=32):
+    print(f"\n=== 2. HARVESTING HEPSIBURADA (Best Sellers & 32 Sub-Categories, target {per_subcat}/subcat) ===")
     pool = {cat: [] for cat in SUBCATEGORIES}
     seen_ids = set()
     seen_titles = set()
@@ -250,7 +250,7 @@ def harvest_hepsiburada():
         for subcat_name, queries in subcats:
             subcat_count = 0
             for q in queries:
-                if subcat_count >= 14:
+                if subcat_count >= per_subcat:
                     break
                 url = f"https://www.hepsiburada.com/ara?q={std_requests.utils.quote(q)}&siralama=coksatan"
                 try:
@@ -264,7 +264,7 @@ def harvest_hepsiburada():
                             data = json.loads(sc)
                             prods = data.get('searchState', {}).get('searchProductArray', [])
                             for p in prods:
-                                if subcat_count >= 14:
+                                if subcat_count >= per_subcat:
                                     break
                                 pid = str(p.get('productId') or '').strip()
                                 title = clean_title(p.get('name') or '')
