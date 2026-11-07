@@ -210,7 +210,7 @@ class _StoryFeedScreenState extends State<StoryFeedScreen>
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
         content: Text(
-          '✨ v2.1: ${_allDeals.length} güncel ürün hazır!',
+          '✨ ${_allDeals.length} güncel ürün hazır!',
           style:
               const TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
         ),

@@ -20,8 +20,8 @@ class OnboardingSlide {
     return OnboardingSlide(
       id: id,
       imageUrl: json['imageUrl'] as String? ??
-          'https://raw.githubusercontent.com/exonotzor/kaydirak-app/main/assets/onboarding/slide$id.png',
-      assetFallback: 'assets/onboarding/slide${id.clamp(1, 3)}.png',
+          'https://raw.githubusercontent.com/exonotzor/kaydirak-app/main/assets/onboarding/slide${id}_v24.png',
+      assetFallback: 'assets/onboarding/slide${id.clamp(1, 5)}.png',
     );
   }
 }
@@ -58,20 +58,32 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
       OnboardingSlide(
         id: 1,
         imageUrl:
-            'https://raw.githubusercontent.com/exonotzor/kaydirak-app/main/assets/onboarding/slide1.png',
+            'https://raw.githubusercontent.com/exonotzor/kaydirak-app/main/assets/onboarding/slide1_v24.png',
         assetFallback: 'assets/onboarding/slide1.png',
       ),
       OnboardingSlide(
         id: 2,
         imageUrl:
-            'https://raw.githubusercontent.com/exonotzor/kaydirak-app/main/assets/onboarding/slide2.png',
+            'https://raw.githubusercontent.com/exonotzor/kaydirak-app/main/assets/onboarding/slide2_v24.png',
         assetFallback: 'assets/onboarding/slide2.png',
       ),
       OnboardingSlide(
         id: 3,
         imageUrl:
-            'https://raw.githubusercontent.com/exonotzor/kaydirak-app/main/assets/onboarding/slide3.png',
+            'https://raw.githubusercontent.com/exonotzor/kaydirak-app/main/assets/onboarding/slide3_v24.png',
         assetFallback: 'assets/onboarding/slide3.png',
+      ),
+      OnboardingSlide(
+        id: 4,
+        imageUrl:
+            'https://raw.githubusercontent.com/exonotzor/kaydirak-app/main/assets/onboarding/slide4_v24.png',
+        assetFallback: 'assets/onboarding/slide4.png',
+      ),
+      OnboardingSlide(
+        id: 5,
+        imageUrl:
+            'https://raw.githubusercontent.com/exonotzor/kaydirak-app/main/assets/onboarding/slide5_v24.png',
+        assetFallback: 'assets/onboarding/slide5.png',
       ),
     ];
   }
@@ -198,7 +210,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               ),
             ),
 
-            // 2. Üst Bar: Logo & Atla Butonu
+            // 2. Üst Bar: Yalnızca Logo (Geç/Atla butonu kaldırıldı)
             Positioned(
               top: 0,
               left: 0,
@@ -209,7 +221,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   padding:
                       const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
                   child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    mainAxisAlignment: MainAxisAlignment.start,
                     children: [
                       Container(
                         padding: const EdgeInsets.symmetric(
@@ -243,27 +255,6 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                           ],
                         ),
                       ),
-                      if (!isLastPage)
-                        TextButton(
-                          onPressed: _completeOnboarding,
-                          style: TextButton.styleFrom(
-                            foregroundColor: Colors.white,
-                            backgroundColor:
-                                Colors.black.withValues(alpha: 0.45),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(14),
-                            ),
-                            padding: const EdgeInsets.symmetric(
-                                horizontal: 14, vertical: 6),
-                          ),
-                          child: const Text(
-                            'Atla',
-                            style: TextStyle(
-                              fontSize: 13,
-                              fontWeight: FontWeight.w800,
-                            ),
-                          ),
-                        ),
                     ],
                   ),
                 ),
