@@ -510,8 +510,20 @@
       "originalPrice": 237.0,
       "discountedPrice": 199.0,
       "discountRate": 16,
-      "imageUrl": "https://productimages.hepsiburada.net/s/777/550/110001050774759.jpg",
-      "productUrl": "https://www.hepsiburada.com/havit-ms93rf-kablosuz-mouse-2-4ghz-1600-dpi-ergonomik-tasarim-p-HBCV00008Y03C7",
+      "imageUrl": "https://productimages.hepsiburada.net/s/777/550/110000773209680.jpg",
+      "productUrl": "https://www.hepsiburada.com/apple-airpods-4-nesil-aktif-gurultu-onleme-ozellikli-mxp93tu-a-pm-HBC0000700VEQ",
+      "store": "Hepsiburada",
+      "category": "Teknoloji",
+      "subCategory": "Kulaklık"
+    },
+    {
+      "id": "hb-HBC0000DMCYO3",
+      "title": "Throne Hydra Core 24.000 Dpi Paw 3311 Değiştirilebilir Batarya Şarj Istasyonu & Makro Yazılım Ptfe Kaplama Kablosuz Gaming Mouse (2.4ghz + Bt + Type-C)",
+      "originalPrice": 1169.0,
+      "discountedPrice": 993.65,
+      "discountRate": 15,
+      "imageUrl": "https://productimages.hepsiburada.net/s/777/550/110001609594555.jpg",
+      "productUrl": "https://www.hepsiburada.com/throne-hydra-core-24-000-dpi-paw-3311-degistirilebilir-batarya-sarj-istasyonu-makro-yazilim-ptfe-kaplama-kablosuz-gaming-mouse-2-4ghz-bt-type-c-p-HBCV0000DMCYO4",
       "store": "Hepsiburada",
       "category": "Teknoloji",
       "subCategory": "Mouse & Klavye"
@@ -558,8 +570,80 @@
       "originalPrice": 2499.0,
       "discountedPrice": 2049.0,
       "discountRate": 18,
-      "imageUrl": "https://productimages.hepsiburada.net/s/777/550/110001643491803.jpg",
-      "productUrl": "https://www.hepsiburada.com/logitech-m720-triathlon-kablosuz-mouse-910-004791-pm-HB00000226OP",
+      "imageUrl": "https://productimages.hepsiburada.net/s/777/550/110000972526112.jpg",
+      "productUrl": "https://www.hepsiburada.com/kioxia-exceria-plus-g2-1tb-1050-mb-s-1000mb-s-ssd-lxd20k001tg8-pm-HBC00007PYDWX",
+      "store": "Hepsiburada",
+      "category": "Teknoloji",
+      "subCategory": "Veri Depolama"
+    },
+    {
+      "id": "hb-HB000011TFTA",
+      "title": "SanDisk 1TB Extreme Portable SDSSDE61-1T00-G25 USB 3.1 Taşınabilir SSD",
+      "originalPrice": 11493.0,
+      "discountedPrice": 9999.0,
+      "discountRate": 13,
+      "imageUrl": "https://productimages.hepsiburada.net/s/777/550/110000772704392.jpg",
+      "productUrl": "https://www.hepsiburada.com/sandisk-extreme-portable-1tb-tasinabilir-ssd-sdssde61-1t00-g25-pm-HB000011TFTA",
+      "store": "Hepsiburada",
+      "category": "Teknoloji",
+      "subCategory": "Veri Depolama"
+    },
+    {
+      "id": "hb-bd130855",
+      "title": "Logitech M185 Kablosuz Gri Mouse",
+      "originalPrice": 375.99,
+      "discountedPrice": 275.99,
+      "discountRate": 27,
+      "imageUrl": "https://productimages.hepsiburada.net/s/777/550/110001042439996.jpg",
+      "productUrl": "https://www.hepsiburada.com/logitech-m185-kablosuz-gri-mouse-p-BD130855",
+      "store": "Hepsiburada",
+      "category": "Teknoloji",
+      "subCategory": "Mouse & Klavye"
+    },
+    {
+      "id": "hb-HBC00006CVVI3",
+      "title": "Claw's Nexus Air V1 Kablosuz 10000 Dpi Pixart PMW3325 Sensör Makro Yazılımlı & Değiştirilebilir Kapaklı RGB Kablosuz Gaming Mouse - Siyah (2.4 GHz Kablosuz + BT5.1 + Type-C ile Kullanım Desteği)",
+      "originalPrice": 899.0,
+      "discountedPrice": 679.15,
+      "discountRate": 24,
+      "imageUrl": "https://productimages.hepsiburada.net/s/777/550/110000751240142.jpg",
+      "productUrl": "https://www.hepsiburada.com/claw-s-nexus-air-v1-kablosuz-10000-dpi-pixart-pmw3325-sensor-makro-yazilimli-degistirilebilir-kapakli-rgb-kablosuz-gaming-mouse-siyah-2-4-ghz-kablosuz-bt5-1-type-c-ile-kullanim-destegi-p-HBCV00006CVVI6",
+      "store": "Hepsiburada",
+      "category": "Teknoloji",
+      "subCategory": "Mouse & Klavye"
+    },
+    {
+      "id": "hb-HBC0000FDTODV",
+      "title": "Lexar SL300 512GB 1050MB/SN Taşınabilir SSD LSL300512G-RNBNG",
+      "originalPrice": 4544.0,
+      "discountedPrice": 3999.0,
+      "discountRate": 12,
+      "imageUrl": "https://productimages.hepsiburada.net/s/777/550/110001801102336.jpg",
+      "productUrl": "https://www.hepsiburada.com/lexar-sl300-512gb-1050mb-sn-tasinabilir-ssd-lsl300512g-rnbng-pm-HBC0000FDTODV",
+      "store": "Hepsiburada",
+      "category": "Teknoloji",
+      "subCategory": "Veri Depolama"
+    },
+    {
+      "id": "hb-HBC0000HFHTUW",
+      "title": "Huawei Watch Kids X1 Akıllı Çocuk Saati - Pembe, 3 yıl Garanti, 360° Dönen Çift Kamera, Hd Görüşme, Hassas Konum Takibi",
+      "originalPrice": 14698.0,
+      "discountedPrice": 13228.0,
+      "discountRate": 10,
+      "imageUrl": "https://productimages.hepsiburada.net/s/777/550/110002182239851.jpg",
+      "productUrl": "https://www.hepsiburada.com/huawei-watch-kids-x1-akilli-cocuk-saati-pembe-3-yil-garanti-360-donen-cift-kamera-hd-gorusme-hassas-konum-takibi-p-HBCV0000HFHUT3",
+      "store": "Hepsiburada",
+      "category": "Teknoloji",
+      "subCategory": "Akıllı Saat"
+    },
+    {
+      "id": "hb-HBC0000KR0ESV",
+      "title": "Gamepower Flow Pro 8k PAW3395 26.000DPI Optik Switch Kablosuz Beyaz Gaming Mouse (Grip Tape ve Skatez Hediyeli)",
+      "originalPrice": 2666.0,
+      "discountedPrice": 2399.0,
+      "discountRate": 10,
+      "imageUrl": "https://productimages.hepsiburada.net/s/777/550/110002390546924.jpg",
+      "productUrl": "https://www.hepsiburada.com/gamepower-flow-pro-8k-paw3395-26-000dpi-optik-switch-kablosuz-beyaz-gaming-mouse-grip-tape-ve-skatez-hediyeli-pm-HBC0000KR0ESV",
       "store": "Hepsiburada",
       "category": "Teknoloji",
       "subCategory": "Mouse & Klavye"
@@ -887,6 +971,18 @@
       "store": "Hepsiburada",
       "category": "Teknoloji",
       "subCategory": "Veri Depolama"
+    },
+    {
+      "id": "hb-HBC0000DFGBQW",
+      "title": "Huawei Band 11 Akıllı Saat, Uyku Ve Fitness Takibi, Hafif ve Şık Tasarım, Uzun Pil Ömrü iOS Android Uyumlu- Siyah",
+      "originalPrice": 2261.0,
+      "discountedPrice": 1899.0,
+      "discountRate": 16,
+      "imageUrl": "https://productimages.hepsiburada.net/s/777/550/110001594381471.jpg",
+      "productUrl": "https://www.hepsiburada.com/huawei-band-11-akilli-saat-uyku-ve-fitness-takibi-hafif-ve-sik-tasarim-uzun-pil-omru-ios-android-uyumlu-siyah-p-HBCV0000DFGBQX",
+      "store": "Hepsiburada",
+      "category": "Teknoloji",
+      "subCategory": "Akıllı Saat"
     },
     {
       "id": "hb-HBC00004XE2NQ",
@@ -1654,7 +1750,7 @@
       "productUrl": "https://www.hepsiburada.com/grundig-jam-2-bluetooth-hoparlor-mavi-p-HBCV000073UHJO",
       "store": "Hepsiburada",
       "category": "Teknoloji",
-      "subCategory": "Hoparlör & Ses"
+      "subCategory": "Oyuncu Ekipmanları"
     },
     {
       "id": "hb-HBC00008FU5R5",
@@ -2734,7 +2830,7 @@
       "productUrl": "https://www.hepsiburada.com/tp-link-re700x-wi-fi-6-menzil-genisletici-ax3000-mbps-160-mhz-access-point-modu-1-gigabit-port-dual-band-onemesh-destekli-kolay-kurulum-tum-modem-ve-router-modelleri-ile-uyumludur-pm-HBC00002R9CII",
       "store": "Hepsiburada",
       "category": "Teknoloji",
-      "subCategory": "Ağ & Güç"
+      "subCategory": "Kulaklık"
     },
     {
       "id": "hb-HB00000X3V3S",
@@ -2878,7 +2974,19 @@
       "productUrl": "https://www.hepsiburada.com/xiaomi-mesh-system-ax3000-ne-2-pack-pm-HBC00008FED8B",
       "store": "Hepsiburada",
       "category": "Teknoloji",
-      "subCategory": "Ağ & Güç"
+      "subCategory": "Mouse & Klavye"
+    },
+    {
+      "id": "hb-HBC000084M652",
+      "title": "Valor Viper 1500 Dpi Rainbow LED Özel Abs Doku 4d Gaming Mouse",
+      "originalPrice": 249.0,
+      "discountedPrice": 229.0,
+      "discountRate": 8,
+      "imageUrl": "https://productimages.hepsiburada.net/s/777/550/110000939403493.jpg",
+      "productUrl": "https://www.hepsiburada.com/valor-viper-1500-dpi-rainbow-led-ozel-abs-doku-4d-gaming-mouse-pm-HBC000084M652",
+      "store": "Hepsiburada",
+      "category": "Teknoloji",
+      "subCategory": "Oyuncu Ekipmanları"
     }
   ],
   "Moda": [
@@ -2943,6 +3051,30 @@
       "subCategory": "Erkek Üst Giyim"
     },
     {
+      "id": "hb-HB00000SM7C3",
+      "title": "Altınyıldız Classics Erkek Gül Kurusu %100 Pamuk Kıvrılmaz Pike Polo Yaka Slim Fit Dar Kesim Tişört",
+      "originalPrice": 399.52,
+      "discountedPrice": 322.61,
+      "discountRate": 19,
+      "imageUrl": "https://productimages.hepsiburada.net/s/777/550/110001741860325.jpg",
+      "productUrl": "https://www.hepsiburada.com/altinyildiz-classics-erkek-gul-kurusu-100-pamuk-kivrilmaz-pike-polo-yaka-slim-fit-dar-kesim-tisort-p-HBV00000SM7E2",
+      "store": "Hepsiburada",
+      "category": "Moda",
+      "subCategory": "Erkek Üst Giyim"
+    },
+    {
+      "id": "hb-HBC00006DHDGV",
+      "title": "Tudors Unisex Slim Fit Dar Kesim %100 Pamuk Yumuşak Dokulu Siyah Bisiklet Yaka Tişört",
+      "originalPrice": 699.97,
+      "discountedPrice": 356.98,
+      "discountRate": 49,
+      "imageUrl": "https://productimages.hepsiburada.net/s/777/550/110001890324296.jpg",
+      "productUrl": "https://www.hepsiburada.com/tudors-unisex-slim-fit-dar-kesim-100-pamuk-yumusak-dokulu-siyah-bisiklet-yaka-tisort-p-HBCV00006DHDGW",
+      "store": "Hepsiburada",
+      "category": "Moda",
+      "subCategory": "Erkek Üst Giyim"
+    },
+    {
       "id": "hb-HBC00006TPE76",
       "title": "Grimelange Solo Erkek %100 Organik Pamuklu Kalın Dokulu Comfort Fit Bisiklet Yakalı Siyah T-shirt",
       "originalPrice": 338.16,
@@ -2991,10 +3123,46 @@
       "subCategory": "Erkek Üst Giyim"
     },
     {
-      "id": "hb-HBC0000254WH0",
-      "title": "Mavi Mavi Logo İşlemeli Siyah Basic Tişört 067074-900",
-      "originalPrice": 424.0,
-      "discountedPrice": 359.99,
+      "id": "hb-HBC0000BHIT1V",
+      "title": "Grimelange GRAVS Erkek %100 Pamuklu Yumuşak Kumaşlı Yuvarlak Yakalı Uzun Kollu Siyah T-Shirt",
+      "originalPrice": 473.91,
+      "discountedPrice": 426.52,
+      "discountRate": 10,
+      "imageUrl": "https://productimages.hepsiburada.net/s/777/550/110001575275964.jpg",
+      "productUrl": "https://www.hepsiburada.com/grimelange-gravs-erkek-100-pamuklu-yumusak-kumasli-yuvarlak-yakali-uzun-kollu-siyah-t-shirt-p-HBCV0000C6SLPG",
+      "store": "Hepsiburada",
+      "category": "Moda",
+      "subCategory": "Erkek Üst Giyim"
+    },
+    {
+      "id": "hb-HBC000087HSH7",
+      "title": "DeFacto %100 Pamuk Oversize Bisiklet Yaka Basic Kısa Kollu Tişört E6885AXNS",
+      "originalPrice": 399.99,
+      "discountedPrice": 234.59,
+      "discountRate": 41,
+      "imageUrl": "https://productimages.hepsiburada.net/s/777/550/110002522810602.jpg",
+      "productUrl": "https://www.hepsiburada.com/defacto-100-pamuk-oversize-bisiklet-yaka-basic-kisa-kollu-tisort-e6885axns-p-HBCV000087HTG8",
+      "store": "Hepsiburada",
+      "category": "Moda",
+      "subCategory": "Erkek Üst Giyim"
+    },
+    {
+      "id": "hb-HBC0000E65YQT",
+      "title": "U.S. Polo Assn. Erkek Slim Fit Polo Yaka Siyah Basic Tişört 50322347-VR046",
+      "originalPrice": 1399.95,
+      "discountedPrice": 594.98,
+      "discountRate": 57,
+      "imageUrl": "https://productimages.hepsiburada.net/s/777/550/110001760332518.jpg",
+      "productUrl": "https://www.hepsiburada.com/u-s-polo-assn-erkek-slim-fit-polo-yaka-siyah-basic-tisort-50322347-vr046-p-HBCV0000EX30XN",
+      "store": "Hepsiburada",
+      "category": "Moda",
+      "subCategory": "Erkek Üst Giyim"
+    },
+    {
+      "id": "hb-HBC00004IVF0Z",
+      "title": "Lela Çizgili Yarım Fermuarlı Yırtmaçlı Triko Elbise Kadın Elbise 4615183",
+      "originalPrice": 659.99,
+      "discountedPrice": 560.99,
       "discountRate": 15,
       "imageUrl": "https://productimages.hepsiburada.net/s/777/550/110003036622395.jpg",
       "productUrl": "https://www.hepsiburada.com/mavi-mavi-logo-islemeli-siyah-basic-tisort-067074-900-p-HBCV0000254WH2",
@@ -3396,7 +3564,7 @@
       "productUrl": "https://www.hepsiburada.com/columbia-cs0378-466-csc-basic-polo-dress-lacivert-kadin-kisa-kollu-elbise-p-HBCV00006CMWPN",
       "store": "Hepsiburada",
       "category": "Moda",
-      "subCategory": "Kadın Giyim"
+      "subCategory": "Erkek Üst Giyim"
     },
     {
       "id": "hb-HBC0000AIZG4E",
@@ -4020,7 +4188,7 @@
       "productUrl": "https://www.hepsiburada.com/altinyildiz-classics-yunlu-slim-fit-dar-kesim-mono-yaka-kapak-cepli-armurlu-blazer-ceket-p-HBCV0000FSHLKM",
       "store": "Hepsiburada",
       "category": "Moda",
-      "subCategory": "Dış Giyim"
+      "subCategory": "Spor Ayakkabı"
     },
     {
       "id": "hb-HBC0000176VHH",
@@ -4188,7 +4356,7 @@
       "productUrl": "https://www.hepsiburada.com/adidas-hoops-classic-spor-ayakkabisi-ki1056-p-HBCV0000E648JC",
       "store": "Hepsiburada",
       "category": "Moda",
-      "subCategory": "Spor Ayakkabı"
+      "subCategory": "Günlük Ayakkabı"
     },
     {
       "id": "hb-HBC00009NG951",
@@ -5607,13 +5775,37 @@
       "subCategory": "Alt Giyim & Aksesuar"
     },
     {
-      "id": "hb-HBC00000BEFWT",
-      "title": "Mavi mavi KVNÇ Mavi Black Duman Gri Smoke Jean Pantolon 001070-34804",
-      "originalPrice": 1220.0,
-      "discountedPrice": 999.99,
-      "discountRate": 18,
-      "imageUrl": "https://productimages.hepsiburada.net/s/777/550/110003036617607.jpg",
-      "productUrl": "https://www.hepsiburada.com/mavi-mavi-kvnc-mavi-black-duman-gri-smoke-jean-pantolon-001070-34804-p-HBCV00000BEFX4",
+      "id": "hb-HBC00006ZL8CW",
+      "title": "Nike BA6030 Unisex Siyah Spor Sırt Çantası 20 lt Kapasiteli Ergonomik Özelliklerle Tasarlandı",
+      "originalPrice": 1299.0,
+      "discountedPrice": 1019.15,
+      "discountRate": 22,
+      "imageUrl": "https://productimages.hepsiburada.net/s/777/550/110000772185912.jpg",
+      "productUrl": "https://www.hepsiburada.com/nike-sportive-nike-ba6030-unisex-spor-siyah-sirt-cantasi-pm-HBC00006ZL8CW",
+      "store": "Hepsiburada",
+      "category": "Moda",
+      "subCategory": "Çanta & Sırt Çantası"
+    },
+    {
+      "id": "hb-HBC0000A59OF8",
+      "title": "Mavi Marcus Marcus Edition Siyah Seyahat Pantolonu 0035190582",
+      "originalPrice": 1322.0,
+      "discountedPrice": 1149.99,
+      "discountRate": 13,
+      "imageUrl": "https://productimages.hepsiburada.net/s/777/550/110003016653970.jpg",
+      "productUrl": "https://www.hepsiburada.com/mavi-marcus-marcus-edition-siyah-seyahat-pantolonu-0035190582-p-HBCV0000A59PJY",
+      "store": "Hepsiburada",
+      "category": "Moda",
+      "subCategory": "Alt Giyim & Aksesuar"
+    },
+    {
+      "id": "hb-HBC0000A3L2ZA",
+      "title": "Mavi Marcus Siyah Comfort Jean Pantolon 0035123313",
+      "originalPrice": 1699.99,
+      "discountedPrice": 1274.99,
+      "discountRate": 25,
+      "imageUrl": "https://productimages.hepsiburada.net/s/777/550/110003016841184.jpg",
+      "productUrl": "https://www.hepsiburada.com/mavi-marcus-siyah-comfort-jean-pantolon-0035123313-p-HBCV0000A3L2ZB",
       "store": "Hepsiburada",
       "category": "Moda",
       "subCategory": "Alt Giyim & Aksesuar"
@@ -5703,16 +5895,16 @@
       "subCategory": "Alt Giyim & Aksesuar"
     },
     {
-      "id": "hb-HBC0000D5F8UN",
-      "title": "Mavi Marcus Mavi Edition Mürekkep Mavi Jean Pantolon 00351A2971",
-      "originalPrice": 1278.0,
-      "discountedPrice": 1149.99,
-      "discountRate": 10,
-      "imageUrl": "https://productimages.hepsiburada.net/s/777/550/110003017414461.jpg",
-      "productUrl": "https://www.hepsiburada.com/mavi-marcus-mavi-edition-murekkep-mavi-jean-pantolon-00351a2971-p-HBCV0000D5F8UO",
+      "id": "hb-HBC0000APM7PJ",
+      "title": "Plus Scorpion Erkek Siyah Blazer Ceket – Italyan Kesim, Tek Düğmeli, Tek Yırtmaçlı Şık Klasik Model",
+      "originalPrice": 2500.0,
+      "discountedPrice": 2125.0,
+      "discountRate": 15,
+      "imageUrl": "https://productimages.hepsiburada.net/s/777/550/110001274877189.jpg",
+      "productUrl": "https://www.hepsiburada.com/plus-scorpion-erkek-siyah-blazer-ceket-italyan-kesim-tek-dugmeli-tek-yirtmacli-sik-klasik-model-p-HBCV0000APM7PK",
       "store": "Hepsiburada",
       "category": "Moda",
-      "subCategory": "Alt Giyim & Aksesuar"
+      "subCategory": "Dış Giyim"
     },
     {
       "id": "hb-HBC0000A3L2ZA",
@@ -5748,7 +5940,7 @@
       "productUrl": "https://www.hepsiburada.com/mavi-marcus-marcus-edition-siyah-seyahat-pantolonu-0035190582-p-HBCV0000A59PJY",
       "store": "Hepsiburada",
       "category": "Moda",
-      "subCategory": "Alt Giyim & Aksesuar"
+      "subCategory": "Spor Ayakkabı"
     },
     {
       "id": "hb-HBC00008OQTJ2",
@@ -5760,7 +5952,7 @@
       "productUrl": "https://www.hepsiburada.com/wkm-erkek-regular-fit-kesim-kahverengi-non-denim-kot-pantolon-orta-kalinlik-ve-saten-kumas-p-HBCV00008OQTJ4",
       "store": "Hepsiburada",
       "category": "Moda",
-      "subCategory": "Alt Giyim & Aksesuar"
+      "subCategory": "Çanta & Sırt Çantası"
     }
   ],
   "Ev & Yaşam": [
@@ -7085,16 +7277,16 @@
       "subCategory": "Termos & Matara"
     },
     {
-      "id": "hb-HBC00000UTDCP",
-      "title": "Baby Plus Vakumlu Çift Taraflı 450 ml Bebek Mama Saklama Termosu Paslanmaz Çelik Özellikli",
-      "originalPrice": 1019.0,
-      "discountedPrice": 855.99,
-      "discountRate": 16,
-      "imageUrl": "https://productimages.hepsiburada.net/s/777/550/110000998120464.jpg",
-      "productUrl": "https://www.hepsiburada.com/baby-plus-vakumlu-cift-tarafli-450-ml-bebek-mama-saklama-termosu-paslanmaz-celik-ozellikli-pm-HBC00000UTDCP",
+      "id": "hb-HBC000002KZT6",
+      "title": "Hascevher 14 cm Sütlük",
+      "originalPrice": 759.0,
+      "discountedPrice": 645.15,
+      "discountRate": 15,
+      "imageUrl": "https://productimages.hepsiburada.net/s/777/550/110001448204433.jpg",
+      "productUrl": "https://www.hepsiburada.com/hascevher-14-cm-gelincik-kulplu-sutluk-tencere-pm-HBC000002KZT6",
       "store": "Hepsiburada",
       "category": "Ev & Yaşam",
-      "subCategory": "Termos & Matara"
+      "subCategory": "Pişirme & Tencere"
     },
     {
       "id": "hb-HBC000039RIFI",
@@ -8405,28 +8597,40 @@
       "subCategory": "Aydınlatma & Kamp"
     },
     {
-      "id": "hb-HBC0000DLP8I0",
-      "title": "Trendhane Gözü Yormayan Şarjlı LED Işık Kitap Okuma Masa Lambası Dolap Içi Mıknatıslı",
-      "originalPrice": 299.0,
-      "discountedPrice": 281.29,
-      "discountRate": 6,
-      "imageUrl": "https://productimages.hepsiburada.net/s/777/550/110001607540856.jpg",
-      "productUrl": "https://www.hepsiburada.com/trendhane-gozu-yormayan-sarjli-led-isik-kitap-okuma-masa-lambasi-dolap-ici-miknatisli-pm-HBC0000DLP8I0",
+      "id": "hb-HB000018MBFY",
+      "title": "The Wlue Şarjlı Dokunmatik 20 Led Çalışma Okuma Işığı Masa Lambası",
+      "originalPrice": 652.0,
+      "discountedPrice": 579.9,
+      "discountRate": 11,
+      "imageUrl": "https://productimages.hepsiburada.net/s/273/550/110000259297610.jpg",
+      "productUrl": "https://www.hepsiburada.com/the-wlue-sarjli-dokunmatik-20-led-calisma-okuma-isigi-masa-lambasi-pm-HB000018MBFY",
       "store": "Hepsiburada",
       "category": "Ev & Yaşam",
       "subCategory": "Aydınlatma & Kamp"
     },
     {
-      "id": "hb-HBC00005OY2GC",
-      "title": "Cata Hubstein Şarjlı Dim Edilebilir Dekoratif Masa Lambası CT-8436",
-      "originalPrice": 511.0,
-      "discountedPrice": 450.0,
-      "discountRate": 12,
-      "imageUrl": "https://productimages.hepsiburada.net/s/540/550/110000600010487.jpg",
-      "productUrl": "https://www.hepsiburada.com/cata-denver-sarjli-dim-edilebilir-dekoratif-masa-lambasi-ct-8436-pm-HBC00005OY2GC",
+      "id": "hb-HBC00006CVJO5",
+      "title": "Karaca Powersteel 316+ 3ply Onyx Derin Tencere Seti Gümüş 8 Parça 24 cm Çelik Kaplama",
+      "originalPrice": 6850.0,
+      "discountedPrice": 5822.5,
+      "discountRate": 15,
+      "imageUrl": "https://productimages.hepsiburada.net/s/777/550/110002652409279.jpg",
+      "productUrl": "https://www.hepsiburada.com/karaca-powersteel-316-3ply-onyx-induksiyon-tabanli-8-parca-tencere-seti-pm-HBC00006CVJO5",
       "store": "Hepsiburada",
       "category": "Ev & Yaşam",
-      "subCategory": "Aydınlatma & Kamp"
+      "subCategory": "Pişirme & Tencere"
+    },
+    {
+      "id": "hb-mtbraukf570",
+      "title": "Braun KF570 Cafe House Filtre Kahve Makinası",
+      "originalPrice": 3187.0,
+      "discountedPrice": 2804.15,
+      "discountRate": 12,
+      "imageUrl": "https://productimages.hepsiburada.net/s/18/550/9800184234034.jpg",
+      "productUrl": "https://www.hepsiburada.com/braun-kf570-cafe-house-filtre-kahve-makinasi-pm-mtbraukf570",
+      "store": "Hepsiburada",
+      "category": "Ev & Yaşam",
+      "subCategory": "Kahve Keyfi"
     },
     {
       "id": "hb-HBC00002YOFH5",
@@ -8643,6 +8847,66 @@
       "store": "Hepsiburada",
       "category": "Ev & Yaşam",
       "subCategory": "Aydınlatma & Kamp"
+    },
+    {
+      "id": "hb-HBC0000EYRMB9",
+      "title": "Doğal Ahşap Iskandinav Beyaz Masa Lambası",
+      "originalPrice": 1284.29,
+      "discountedPrice": 1006.65,
+      "discountRate": 22,
+      "imageUrl": "https://productimages.hepsiburada.net/s/777/550/110001241784820.jpg",
+      "productUrl": "https://www.hepsiburada.com/dogal-ahsap-iskandinav-beyaz-masa-lambasi-p-HBCV0000AFBWKE",
+      "store": "Hepsiburada",
+      "category": "Ev & Yaşam",
+      "subCategory": "Aydınlatma & Kamp"
+    },
+    {
+      "id": "hb-HBC0000HHTVW0",
+      "title": "English Home Solvia New Bone China 4 Parça 2 Kişilik Kahve Fincan Takımı 80 ml Bordo",
+      "originalPrice": 476.0,
+      "discountedPrice": 399.99,
+      "discountRate": 16,
+      "imageUrl": "https://productimages.hepsiburada.net/s/777/550/110002011941054.jpg",
+      "productUrl": "https://www.hepsiburada.com/english-home-solvia-new-bone-china-4-parca-2-kisilik-kahve-fincan-takimi-80-ml-bordo-p-HBCV0000HHU15A",
+      "store": "Hepsiburada",
+      "category": "Ev & Yaşam",
+      "subCategory": "Sofra & Mutfak"
+    },
+    {
+      "id": "hb-HBC00005YM5BB",
+      "title": "Telvesse Şarjlı Masa Lambası Dokunmatik Sıcak Renk Ayarlı Telefon Standlı Dimmer Çalışma Okuma Işığı Q108",
+      "originalPrice": 749.0,
+      "discountedPrice": 649.0,
+      "discountRate": 13,
+      "imageUrl": "https://productimages.hepsiburada.net/s/777/550/110000823348607.jpg",
+      "productUrl": "https://www.hepsiburada.com/telvesse-sarjli-masa-lambasi-dokunmatik-sicak-renk-ayarli-telefon-standli-dimmer-calisma-okuma-isigi-q108-pm-HBC00005YM5BB",
+      "store": "Hepsiburada",
+      "category": "Ev & Yaşam",
+      "subCategory": "Aydınlatma & Kamp"
+    },
+    {
+      "id": "hb-HBC00000UTDCP",
+      "title": "Baby Plus Vakumlu Çift Taraflı 450 ml Bebek Mama Saklama Termosu Paslanmaz Çelik Özellikli",
+      "originalPrice": 1019.0,
+      "discountedPrice": 855.99,
+      "discountRate": 16,
+      "imageUrl": "https://productimages.hepsiburada.net/s/777/550/110000998120464.jpg",
+      "productUrl": "https://www.hepsiburada.com/baby-plus-vakumlu-cift-tarafli-450-ml-bebek-mama-saklama-termosu-paslanmaz-celik-ozellikli-pm-HBC00000UTDCP",
+      "store": "Hepsiburada",
+      "category": "Ev & Yaşam",
+      "subCategory": "Termos & Matara"
+    },
+    {
+      "id": "hb-HBC0000BNGUMO",
+      "title": "Dormy Home Hilaris Tek Kişilik Nevresim Takımı - Pembe",
+      "originalPrice": 1499.0,
+      "discountedPrice": 1274.15,
+      "discountRate": 15,
+      "imageUrl": "https://productimages.hepsiburada.net/s/777/550/110001431010326.jpg",
+      "productUrl": "https://www.hepsiburada.com/dormy-home-hilaris-tek-kisilik-nevresim-takimi-pembe-pm-HBC0000BNGUMO",
+      "store": "Hepsiburada",
+      "category": "Ev & Yaşam",
+      "subCategory": "Ev Tekstili"
     }
   ],
   "Kozmetik": [
@@ -8803,13 +9067,13 @@
       "subCategory": "Parfüm"
     },
     {
-      "id": "hb-HBC00003N5X2H",
-      "title": "Mad Parfüm A115 Selective 100 ml Erkek Parfüm",
-      "originalPrice": 899.99,
-      "discountedPrice": 549.99,
-      "discountRate": 39,
-      "imageUrl": "https://productimages.hepsiburada.net/s/777/550/110001974375691.jpg",
-      "productUrl": "https://www.hepsiburada.com/mad-parfum-mad-a115-selective-100-ml-erkek-parfum-pm-HBC00003N5X2H",
+      "id": "hb-HBC0000BL71SB",
+      "title": "Mad Parfüm Bruno Gold 100 ml Unisex Parfüm",
+      "originalPrice": 1999.99,
+      "discountedPrice": 1299.99,
+      "discountRate": 35,
+      "imageUrl": "https://productimages.hepsiburada.net/s/777/550/110001974378473.jpg",
+      "productUrl": "https://www.hepsiburada.com/mad-parfum-by-bruno-gold-100-ml-unisex-parfum-pm-HBC0000BL71SB",
       "store": "Hepsiburada",
       "category": "Kozmetik",
       "subCategory": "Parfüm"
@@ -9115,16 +9379,16 @@
       "subCategory": "Cilt Serumu"
     },
     {
-      "id": "hb-HBC00000M1U96",
-      "title": "The Ordinary 30 ml Vitamin C Suspension 23% + HA Spheres 2% Aydınlatıcı Serum Tüm Cilt Tipleri",
-      "originalPrice": 669.0,
-      "discountedPrice": 575.0,
-      "discountRate": 14,
-      "imageUrl": "https://productimages.hepsiburada.net/s/777/550/110001694753900.jpg",
-      "productUrl": "https://www.hepsiburada.com/the-ordinary-vitamin-c-suspension-23-ha-spheres-2-c-vitamini-solusyonu-pm-HBC00000M1U96",
+      "id": "hb-HBC00003N5WXB",
+      "title": "Mad Parfüm W180 Selective 100 ml Erkek Parfüm",
+      "originalPrice": 899.99,
+      "discountedPrice": 549.99,
+      "discountRate": 39,
+      "imageUrl": "https://productimages.hepsiburada.net/s/777/550/110001974373832.jpg",
+      "productUrl": "https://www.hepsiburada.com/mad-parfum-mad-w180-selective-100-ml-erkek-parfum-pm-HBC00003N5WXB",
       "store": "Hepsiburada",
       "category": "Kozmetik",
-      "subCategory": "Cilt Serumu"
+      "subCategory": "Parfüm"
     },
     {
       "id": "hb-HBC0000M67VB2",
@@ -9628,7 +9892,7 @@
       "productUrl": "https://www.hepsiburada.com/epii-hpt6-ultra-cream-10-yogun-sikilastirici-krem-50ml-pm-HBC0000FS4OJ7",
       "store": "Hepsiburada",
       "category": "Kozmetik",
-      "subCategory": "Yüz Bakımı"
+      "subCategory": "Cilt Serumu"
     },
     {
       "id": "hb-HBC00000TXPZK",
@@ -10447,16 +10711,16 @@
       "subCategory": "Saç Bakımı"
     },
     {
-      "id": "hb-HBC00006Y3LHQ",
-      "title": "Flormar Carefull Volume Besleyici Etkili Yoğun Hacim Veren Siyah Maskara (000 Black) 8682536084093",
-      "originalPrice": 256.0,
-      "discountedPrice": 229.99,
-      "discountRate": 10,
-      "imageUrl": "https://productimages.hepsiburada.net/s/777/550/110000808702782.jpg",
-      "productUrl": "https://www.hepsiburada.com/flormar-carefull-volume-besleyici-etkili-yogun-hacim-veren-siyah-maskara-000-black-8682536084093-pm-HBC00006Y3LHQ",
+      "id": "hb-HBC00003THK6N",
+      "title": "L'Oréal Paris Revitalift Clinical Spf 50+ Günlük Yüksek Uv Korumalı Yüz Güneş Kremi 50ml",
+      "originalPrice": 391.0,
+      "discountedPrice": 340.0,
+      "discountRate": 13,
+      "imageUrl": "https://productimages.hepsiburada.net/s/363/550/110000378372744.jpg",
+      "productUrl": "https://www.hepsiburada.com/l-or-al-paris-revitalift-clinical-spf-50-gunluk-yuksek-uv-korumali-yuz-gunes-kremi-50ml-pm-HBC00003THK6N",
       "store": "Hepsiburada",
       "category": "Kozmetik",
-      "subCategory": "Makyaj"
+      "subCategory": "Güneş Bakımı"
     },
     {
       "id": "hb-HBC0000C1ZH5V",
@@ -10687,6 +10951,18 @@
       "subCategory": "Saç Bakımı"
     },
     {
+      "id": "hb-HBC0000C1Y9A8",
+      "title": "L'oréal Paris Panorama Chromatic Maskara Hacim Verici Kahverengi Brun Leather Büyük Boy",
+      "originalPrice": 749.0,
+      "discountedPrice": 649.0,
+      "discountRate": 13,
+      "imageUrl": "https://productimages.hepsiburada.net/s/777/550/110001431594174.jpg",
+      "productUrl": "https://www.hepsiburada.com/l-or-al-paris-panorama-chromatic-maskara-brun-leather-pm-HBC0000C1Y9A8",
+      "store": "Hepsiburada",
+      "category": "Kozmetik",
+      "subCategory": "Makyaj"
+    },
+    {
       "id": "hb-HBC0000C1Y8XC",
       "title": "L'oréal Paris Panorama Chromatic Maskara Bordo Hacim Verici Büyük Boy Ayrık Kirpikler İçin",
       "originalPrice": 749.0,
@@ -10876,7 +11152,79 @@
       "productUrl": "https://www.hepsiburada.com/first-class-hacim-ve-uzatma-etkili-maskara-pm-HBC00004AJ5NB",
       "store": "Hepsiburada",
       "category": "Kozmetik",
-      "subCategory": "Makyaj"
+      "subCategory": "Kişisel Bakım Cihazı"
+    },
+    {
+      "id": "hb-HBC0000515IL5",
+      "title": "Gillette Fusion 8'li Yedek Tıraş Bıçağı Ergonomik Tasarım ile Hassas Cilt İçin Uygun",
+      "originalPrice": 1182.9,
+      "discountedPrice": 1064.0,
+      "discountRate": 10,
+      "imageUrl": "https://productimages.hepsiburada.net/s/777/550/110001963002911.jpg",
+      "productUrl": "https://www.hepsiburada.com/gillette-fusion-avantajli-yedek-tiras-bicagi-8-li-pm-HBC0000515IL5",
+      "store": "Hepsiburada",
+      "category": "Kozmetik",
+      "subCategory": "Kişisel Bakım Cihazı"
+    },
+    {
+      "id": "hb-HB00000W00VI",
+      "title": "Bioderma Atoderm AD Intensive Balm Çok Kuru Atopik Cilt Kaşıntı Karşıtı Onarıcı Nemlendirici Krem 400 ml",
+      "originalPrice": 1044.71,
+      "discountedPrice": 888.0,
+      "discountRate": 15,
+      "imageUrl": "https://productimages.hepsiburada.net/s/777/550/110002252872583.jpg",
+      "productUrl": "https://www.hepsiburada.com/atoderm-intensive-balm-cok-kuru-atopi-egilimli-cilt-nemlendirici-onarici-krem-yetiskin-cocuk-500-ml-pm-HB00000W00VI",
+      "store": "Hepsiburada",
+      "category": "Kozmetik",
+      "subCategory": "Vücut Bakımı"
+    },
+    {
+      "id": "hb-HBC00006DOIF6",
+      "title": "Gillette Proglide Tıraş Makinesi ve Yedek Bıçağı 4'lü + Tıraş Bıçağı Standı",
+      "originalPrice": 779.9,
+      "discountedPrice": 679.9,
+      "discountRate": 13,
+      "imageUrl": "https://productimages.hepsiburada.net/s/777/550/110001938836566.jpg",
+      "productUrl": "https://www.hepsiburada.com/gillette-proglide-tiras-makinesi-ve-yedek-bicagi-4-lu-tiras-bicagi-standi-pm-HBC00006DOIF6",
+      "store": "Hepsiburada",
+      "category": "Kozmetik",
+      "subCategory": "Kişisel Bakım Cihazı"
+    },
+    {
+      "id": "hb-HBC0000FRJ3KV",
+      "title": "Bibimcos Madeca Shower Filter 160g - Cilt Nemlendirici ve Besleyici Duş Filtresi 2'li (4 Aylık Paket)",
+      "originalPrice": 999.0,
+      "discountedPrice": 899.0,
+      "discountRate": 10,
+      "imageUrl": "https://productimages.hepsiburada.net/s/777/550/110002843876838.jpg",
+      "productUrl": "https://www.hepsiburada.com/bibimcos-madeca-shower-filter-160g-cilt-nemlendirici-ve-besleyici-dus-filtresi-2-li-4-aylik-paket-pm-HBC0000FRJ3KV",
+      "store": "Hepsiburada",
+      "category": "Kozmetik",
+      "subCategory": "Vücut Bakımı"
+    },
+    {
+      "id": "hb-HBC00005OMNLJ",
+      "title": "Philips 3000X Serisi Islak&Kuru Tıraş Makinesi, 3 Yönde Dönen Başlıklar, Hassas Düzeltici, X3021/00",
+      "originalPrice": 2152.0,
+      "discountedPrice": 1829.33,
+      "discountRate": 15,
+      "imageUrl": "https://productimages.hepsiburada.net/s/777/550/110000808698017.jpg",
+      "productUrl": "https://www.hepsiburada.com/philips-3000x-serisi-islak-kuru-tiras-makinesi-3-yonde-donen-basliklar-hassas-duzeltici-x3021-00-pm-HBC00005OMNLJ",
+      "store": "Hepsiburada",
+      "category": "Kozmetik",
+      "subCategory": "Kişisel Bakım Cihazı"
+    },
+    {
+      "id": "hb-HBC000022CTLQ",
+      "title": "Evvahe Karanfil Krem (40ml)",
+      "originalPrice": 376.99,
+      "discountedPrice": 301.59,
+      "discountRate": 20,
+      "imageUrl": "https://productimages.hepsiburada.net/s/777/550/110002990591007.jpg",
+      "productUrl": "https://www.hepsiburada.com/evvahe-dogal-karanfil-kremi-40-ml-unisex-bitkisel-yag-icerikli-yumusatici-ve-ferahlatici-cilt-bakim-kremi-pm-HBC000022CTLQ",
+      "store": "Hepsiburada",
+      "category": "Kozmetik",
+      "subCategory": "Vücut Bakımı"
     },
     {
       "id": "hb-HBC000046IAVK",
@@ -11047,13 +11395,25 @@
       "subCategory": "Makyaj"
     },
     {
-      "id": "hb-HB00000IU1LR",
-      "title": "Philips OneBlade QP220/51 Yedek Bıçak, 2'li Paket, Tüm OneBlade Gövdeleriyle Uyumlu",
-      "originalPrice": 919.0,
-      "discountedPrice": 819.0,
-      "discountRate": 11,
-      "imageUrl": "https://productimages.hepsiburada.net/s/777/550/110003068657124.jpg",
-      "productUrl": "https://www.hepsiburada.com/philips-oneblade-qp220-51-yedek-bicak-2-li-paket-tum-oneblade-govdeleriyle-uyumlu-pm-HB00000IU1LR",
+      "id": "hb-HBC00003ONAIV",
+      "title": "Derma Onarıcı Bakım Merhemi 50 G 3 Adet Cilt Bakım Kremi 3.5 G",
+      "originalPrice": 422.0,
+      "discountedPrice": 349.9,
+      "discountRate": 17,
+      "imageUrl": "https://productimages.hepsiburada.net/s/777/550/110000832834395.jpg",
+      "productUrl": "https://www.hepsiburada.com/derma-onarici-bakim-merhemi-50-g-3-adet-cilt-bakim-kremi-3-5-g-pm-HBC00003ONAIV",
+      "store": "Hepsiburada",
+      "category": "Kozmetik",
+      "subCategory": "Vücut Bakımı"
+    },
+    {
+      "id": "hb-HB00000TXJEB",
+      "title": "Powertec TR-758 Profesyonel Sakal Ense Tıraş Makinesi (0.1mm - Sıfıra En Yakın)",
+      "originalPrice": 1570.8,
+      "discountedPrice": 1467.0,
+      "discountRate": 7,
+      "imageUrl": "https://productimages.hepsiburada.net/s/777/550/110001975699988.jpg",
+      "productUrl": "https://www.hepsiburada.com/powertec-tr-758-profesyonel-sakal-ense-tiras-makinesi-0-1mm-sifira-en-yakin-pm-HB00000TXJEB",
       "store": "Hepsiburada",
       "category": "Kozmetik",
       "subCategory": "Kişisel Bakım Cihazı"

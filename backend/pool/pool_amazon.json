@@ -670,7 +670,19 @@
       "productUrl": "https://www.amazon.com.tr/dp/B0BD5L1ZJQ",
       "store": "Amazon TR",
       "category": "Teknoloji",
-      "subCategory": "Mouse & Klavye"
+      "subCategory": "Veri Depolama"
+    },
+    {
+      "id": "amz-B0GNZW3MFK",
+      "title": "Samsung Galaxy Buds4 Pro Bluetooth Kulaklık, Siyah, Metal Gövde, 2 Yollu Hoparlör & Çift Amplifikatör, Geliştirilmiş ANC, ...",
+      "originalPrice": 10785.0,
+      "discountedPrice": 9599.0,
+      "discountRate": 11,
+      "imageUrl": "https://m.media-amazon.com/images/I/61pKUEr0cUL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0GNZW3MFK",
+      "store": "Amazon TR",
+      "category": "Teknoloji",
+      "subCategory": "Kulaklık"
     },
     {
       "id": "amz-B0DRDFQB84",
@@ -738,8 +750,8 @@
       "originalPrice": 6362.0,
       "discountedPrice": 5599.0,
       "discountRate": 12,
-      "imageUrl": "https://m.media-amazon.com/images/I/41Y+4ptFHHL._AC_UL500_.jpg",
-      "productUrl": "https://www.amazon.com.tr/dp/B0CFYB39R3",
+      "imageUrl": "https://m.media-amazon.com/images/I/51hHlj4OqZL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0BYWL962Q",
       "store": "Amazon TR",
       "category": "Teknoloji",
       "subCategory": "Veri Depolama"
@@ -1009,13 +1021,13 @@
       "subCategory": "Veri Depolama"
     },
     {
-      "id": "amz-B089HJ1BT9",
-      "title": "Samsung MU-PC2T0H T7 Harici Katı Hal Sürücüsü, 2TB USB 3.2 Gen 2, Mavi",
-      "originalPrice": 26920.0,
-      "discountedPrice": 22613.13,
-      "discountRate": 16,
-      "imageUrl": "https://m.media-amazon.com/images/I/61FPU6mryGL._AC_UL500_.jpg",
-      "productUrl": "https://www.amazon.com.tr/dp/B089HJ1BT9",
+      "id": "amz-B0FXY6CZ2Q",
+      "title": "512GB Dual USB-A/C Portable SSD, Up to 1050MB/s USB 3.2 Gen 2 SPSD/512GB",
+      "originalPrice": 6766.0,
+      "discountedPrice": 5819.0,
+      "discountRate": 14,
+      "imageUrl": "https://m.media-amazon.com/images/I/61REpmyOmoL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0FXY6CZ2Q",
       "store": "Amazon TR",
       "category": "Teknoloji",
       "subCategory": "Veri Depolama"
@@ -1066,7 +1078,7 @@
       "productUrl": "https://www.amazon.com.tr/dp/B08Y1QRTBM",
       "store": "Amazon TR",
       "category": "Teknoloji",
-      "subCategory": "Veri Depolama"
+      "subCategory": "Oyuncu Ekipmanları"
     },
     {
       "id": "amz-B0DFHG6YZ7",
@@ -1242,11 +1254,11 @@
       "originalPrice": 11235.0,
       "discountedPrice": 9999.0,
       "discountRate": 11,
-      "imageUrl": "https://m.media-amazon.com/images/I/51TMwFIBWYL._AC_UL500_.jpg",
-      "productUrl": "https://www.amazon.com.tr/dp/B0GGBJNFGL",
+      "imageUrl": "https://m.media-amazon.com/images/I/71ohoFWDWYL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0B6XZLNHQ",
       "store": "Amazon TR",
       "category": "Teknoloji",
-      "subCategory": "Akıllı Saat"
+      "subCategory": "Oyuncu Ekipmanları"
     },
     {
       "id": "amz-B07Z3VQFK3",
@@ -1285,13 +1297,25 @@
       "subCategory": "Akıllı Saat"
     },
     {
-      "id": "amz-B0F38GK1QZ",
-      "title": "Garmin Vivoactive 6 Siyah Akıllı Saat",
-      "originalPrice": 20785.41,
-      "discountedPrice": 19779.0,
-      "discountRate": 5,
-      "imageUrl": "https://m.media-amazon.com/images/I/611jnYHa1OL._AC_UL500_.jpg",
-      "productUrl": "https://www.amazon.com.tr/dp/B0F38GK1QZ",
+      "id": "amz-B0D6VYZWNF",
+      "title": "Claw's Nexus Air Kablosuz 10000 Dpi Pixart PMW3325 Sensör Makro Yazılımlı & Değiştirilebilir Kapaklı RGB Kablosuz Gaming M...",
+      "originalPrice": 764.1,
+      "discountedPrice": 687.69,
+      "discountRate": 10,
+      "imageUrl": "https://m.media-amazon.com/images/I/51-0Fx7ACXL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0D6VYZWNF",
+      "store": "Amazon TR",
+      "category": "Teknoloji",
+      "subCategory": "Oyuncu Ekipmanları"
+    },
+    {
+      "id": "amz-B0DFHFM1X9",
+      "title": "Xiaomi Redmi Watch 5 Active akıllı saat, 2,0 inç LCD ekran, 18 gün pil, 140+ spor modu, kalp atış hızı ve SPO₂ izleme, 5 A...",
+      "originalPrice": 2667.0,
+      "discountedPrice": 2240.0,
+      "discountRate": 16,
+      "imageUrl": "https://m.media-amazon.com/images/I/61su9fqRFUL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0DFHFM1X9",
       "store": "Amazon TR",
       "category": "Teknoloji",
       "subCategory": "Akıllı Saat"
@@ -1715,6 +1739,30 @@
       "store": "Amazon TR",
       "category": "Teknoloji",
       "subCategory": "Hoparlör & Ses"
+    },
+    {
+      "id": "amz-B0C5XNRVWM",
+      "title": "Razer Cobra - Chroma RGB'ye sahip hafif kablolu oyun faresi (tüy hafifliğinde 57g, 3-Nesil optik fare anahtarları, gövde a...",
+      "originalPrice": 1391.0,
+      "discountedPrice": 1196.05,
+      "discountRate": 14,
+      "imageUrl": "https://m.media-amazon.com/images/I/61ucyZALiBL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0C5XNRVWM",
+      "store": "Amazon TR",
+      "category": "Teknoloji",
+      "subCategory": "Oyuncu Ekipmanları"
+    },
+    {
+      "id": "amz-B07W4DH8JW",
+      "title": "Logitech G G102 Kablolu Oyuncu Mouse, LIGHTSYNC RGB Aydınlatma, 8.000 DPI, 6 Programlanabilir Tuş, Siyah",
+      "originalPrice": 834.0,
+      "discountedPrice": 734.0,
+      "discountRate": 12,
+      "imageUrl": "https://m.media-amazon.com/images/I/61UxfXTUyvL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B07W4DH8JW",
+      "store": "Amazon TR",
+      "category": "Teknoloji",
+      "subCategory": "Oyuncu Ekipmanları"
     },
     {
       "id": "amz-B0BCFSP6B7",
@@ -2197,16 +2245,16 @@
       "subCategory": "Oyuncu Ekipmanları"
     },
     {
-      "id": "amz-B0DZXK2KWH",
-      "title": "Coverzone WebCam 4K Konferans Kamera Gizlilik Bandı Dahili Mikrofon Chat Görüntülü Sohbet Yayın Kamerası HD Video Web Kame...",
-      "originalPrice": 1403.0,
-      "discountedPrice": 1332.85,
-      "discountRate": 5,
-      "imageUrl": "https://m.media-amazon.com/images/I/517huYusLyL._AC_UL500_.jpg",
-      "productUrl": "https://www.amazon.com.tr/dp/B0DZXK2KWH",
+      "id": "amz-B0D6VZGJD6",
+      "title": "Claw's Crossfire Air Kablosuz 10000 Dpi Pixart PMW3325 Sensör Makro Yazılımlı Chromatic RGB Kablosuz Gaming Mouse - Siyah",
+      "originalPrice": 719.1,
+      "discountedPrice": 599.0,
+      "discountRate": 17,
+      "imageUrl": "https://m.media-amazon.com/images/I/61nPcP9qfbL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0D6VZGJD6",
       "store": "Amazon TR",
       "category": "Teknoloji",
-      "subCategory": "Webcam & Mikrofon"
+      "subCategory": "Oyuncu Ekipmanları"
     },
     {
       "id": "amz-B0F88FR34B",
@@ -2905,6 +2953,18 @@
       "store": "Amazon TR",
       "category": "Moda",
       "subCategory": "Erkek Üst Giyim"
+    },
+    {
+      "id": "amz-B0CPM5GV28",
+      "title": "ONLY ONLLILJA LIFE BEACH DRESS ACC Elbise Kadın",
+      "originalPrice": 716.0,
+      "discountedPrice": 629.84,
+      "discountRate": 12,
+      "imageUrl": "https://m.media-amazon.com/images/I/51BRKJIT11L._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0CPM5GV28",
+      "store": "Amazon TR",
+      "category": "Moda",
+      "subCategory": "Kadın Giyim"
     },
     {
       "id": "amz-B0CJWMC5WF",
@@ -3624,7 +3684,19 @@
       "productUrl": "https://www.amazon.com.tr/dp/B0DQNV9PY2",
       "store": "Amazon TR",
       "category": "Moda",
-      "subCategory": "Dış Giyim"
+      "subCategory": "Kadın Giyim"
+    },
+    {
+      "id": "amz-B0F2G2N52S",
+      "title": "adidas TERREX EASTRAIL 3 CLIMA Spor AyakkabıErkek",
+      "originalPrice": 4297.0,
+      "discountedPrice": 3867.65,
+      "discountRate": 10,
+      "imageUrl": "https://m.media-amazon.com/images/I/61LReeXTRnL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0F2G2N52S",
+      "store": "Amazon TR",
+      "category": "Moda",
+      "subCategory": "Spor Ayakkabı"
     },
     {
       "id": "amz-B0HCCP9RRF",
@@ -4119,13 +4191,13 @@
       "subCategory": "Spor Ayakkabı"
     },
     {
-      "id": "amz-B07FQ1CK6R",
-      "title": "Camper Runner Four Erkek Bağcıklı Ayakkabı K100226-035",
-      "originalPrice": 5976.25,
-      "discountedPrice": 4749.5,
-      "discountRate": 21,
-      "imageUrl": "https://m.media-amazon.com/images/I/71vWbU2Vh4L._AC_UL500_.jpg",
-      "productUrl": "https://www.amazon.com.tr/dp/B07FQ1CK6R",
+      "id": "amz-B07S7TNPCV",
+      "title": "adidas STRUTTER AyakkabıErkek",
+      "originalPrice": 3564.0,
+      "discountedPrice": 3029.76,
+      "discountRate": 15,
+      "imageUrl": "https://m.media-amazon.com/images/I/61Ylu13qhYL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B07S7TNPCV",
       "store": "Amazon TR",
       "category": "Moda",
       "subCategory": "Spor Ayakkabı"
@@ -4455,13 +4527,37 @@
       "subCategory": "Spor Ayakkabı"
     },
     {
-      "id": "amz-B0DQWFMVYR",
-      "title": "Camper Erkek Runner K101052-002",
+      "id": "amz-B0D311SMBQ",
+      "title": "PUMA PUMA PHASE Backpack Klasik sırt çantaları Unisex Yetişkin",
+      "originalPrice": 1076.0,
+      "discountedPrice": 946.81,
+      "discountRate": 12,
+      "imageUrl": "https://m.media-amazon.com/images/I/61l0Md0BDfL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0D311SMBQ",
+      "store": "Amazon TR",
+      "category": "Moda",
+      "subCategory": "Çanta & Sırt Çantası"
+    },
+    {
+      "id": "amz-B0BZXHRYWY",
+      "title": "Under Armour UA Charged Commit TR4 Koşu AyakkabısıErkek",
+      "originalPrice": 2547.0,
+      "discountedPrice": 2165.0,
+      "discountRate": 15,
+      "imageUrl": "https://m.media-amazon.com/images/I/61aiYhf+8ML._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0BZXHRYWY",
+      "store": "Amazon TR",
+      "category": "Moda",
+      "subCategory": "Spor Ayakkabı"
+    },
+    {
+      "id": "amz-B0DQWQSPZ4",
+      "title": "CAMPER Runner Four AyakkabıErkek",
       "originalPrice": 6299.3,
-      "discountedPrice": 4949.45,
-      "discountRate": 21,
-      "imageUrl": "https://m.media-amazon.com/images/I/71AwGU5vvoL._AC_UL500_.jpg",
-      "productUrl": "https://www.amazon.com.tr/dp/B0DQWFMVYR",
+      "discountedPrice": 5399.4,
+      "discountRate": 14,
+      "imageUrl": "https://m.media-amazon.com/images/I/71-DVjBz+ML._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0DQWQSPZ4",
       "store": "Amazon TR",
       "category": "Moda",
       "subCategory": "Günlük Ayakkabı"
@@ -5451,6 +5547,18 @@
       "subCategory": "Alt Giyim & Aksesuar"
     },
     {
+      "id": "amz-B0DSJQXYJQ",
+      "title": "POLAROID UNISEX Yetişkin Güneş Gözlüğü PLD 6236/S/X",
+      "originalPrice": 3704.0,
+      "discountedPrice": 3333.33,
+      "discountRate": 10,
+      "imageUrl": "https://m.media-amazon.com/images/I/41CDVnLax7L._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0DSJQXYJQ",
+      "store": "Amazon TR",
+      "category": "Moda",
+      "subCategory": "Saat & Gözlük"
+    },
+    {
       "id": "amz-B0824GLX14",
       "title": "Levi's 29507 Jean Pantolon Erkek",
       "originalPrice": 3714.0,
@@ -5952,6 +6060,42 @@
       "discountRate": 10,
       "imageUrl": "https://m.media-amazon.com/images/I/51jk-RiwfPL._AC_UL500_.jpg",
       "productUrl": "https://www.amazon.com.tr/dp/B0DLLB8CHD",
+      "store": "Amazon TR",
+      "category": "Ev & Yaşam",
+      "subCategory": "Kahve Keyfi"
+    },
+    {
+      "id": "amz-B00R04CAWA",
+      "title": "Philips Filtre Kahve Makinesi, 1,2 Lt Kapasite, Otomatik Kapanma, Cam Demlikli, Siyah ve Metal, HD7462/20",
+      "originalPrice": 3596.0,
+      "discountedPrice": 2949.0,
+      "discountRate": 18,
+      "imageUrl": "https://m.media-amazon.com/images/I/61vOJDZOC5L._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B00R04CAWA",
+      "store": "Amazon TR",
+      "category": "Ev & Yaşam",
+      "subCategory": "Kahve Keyfi"
+    },
+    {
+      "id": "amz-B0HGFPN3WG",
+      "title": "Sinbo SCM-9042 Otomatik Filtre Kahve Makinesi, 14 Fincan 1.8L Cam Hazne, Taşma Önleyici, Zaman Ayarlı, Yıkanabilir Hazne",
+      "originalPrice": 1999.0,
+      "discountedPrice": 1699.0,
+      "discountRate": 15,
+      "imageUrl": "https://m.media-amazon.com/images/I/718LqeOC+GL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0HGFPN3WG",
+      "store": "Amazon TR",
+      "category": "Ev & Yaşam",
+      "subCategory": "Kahve Keyfi"
+    },
+    {
+      "id": "amz-B0D4Z23DY9",
+      "title": "Karaca Coffee Art 2In1 Espresso Ve Filtre Kahve Makinesi",
+      "originalPrice": 9960.0,
+      "discountedPrice": 8366.25,
+      "discountRate": 16,
+      "imageUrl": "https://m.media-amazon.com/images/I/61eHOd8UOKL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0D4Z23DY9",
       "store": "Amazon TR",
       "category": "Ev & Yaşam",
       "subCategory": "Kahve Keyfi"
@@ -6617,13 +6761,61 @@
       "subCategory": "Pişirme & Tencere"
     },
     {
-      "id": "amz-B00DQU71BW",
-      "title": "KORKMAZ A1650 Perla Jr. 6 Parça Tencere Seti",
-      "originalPrice": 3257.0,
-      "discountedPrice": 2899.0,
-      "discountRate": 11,
-      "imageUrl": "https://m.media-amazon.com/images/I/51zWBBoEKBL._AC_UL500_.jpg",
-      "productUrl": "https://www.amazon.com.tr/dp/B00DQU71BW",
+      "id": "amz-B09BLBD2M2",
+      "title": "Sinbo SHB-3186 El Blender Seti, Siyah",
+      "originalPrice": 1821.0,
+      "discountedPrice": 1511.1,
+      "discountRate": 17,
+      "imageUrl": "https://m.media-amazon.com/images/I/61ZjNDnZ9sL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B09BLBD2M2",
+      "store": "Amazon TR",
+      "category": "Ev & Yaşam",
+      "subCategory": "Küçük Ev Aletleri"
+    },
+    {
+      "id": "amz-B09WVWSGMX",
+      "title": "Tefal Ingenio SimpleCook 1X Büyük Tava Tencere Seti - 12 Parça",
+      "originalPrice": 6950.0,
+      "discountedPrice": 5837.71,
+      "discountRate": 16,
+      "imageUrl": "https://m.media-amazon.com/images/I/51UF0Cnd-sL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B09WVWSGMX",
+      "store": "Amazon TR",
+      "category": "Ev & Yaşam",
+      "subCategory": "Pişirme & Tencere"
+    },
+    {
+      "id": "amz-B09TRCWFKT",
+      "title": "Karaca Sakura Powersteel 8 Parça 316 Çelik Tencere Seti",
+      "originalPrice": 5914.0,
+      "discountedPrice": 5026.82,
+      "discountRate": 15,
+      "imageUrl": "https://m.media-amazon.com/images/I/51I2d7j963L._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B09TRCWFKT",
+      "store": "Amazon TR",
+      "category": "Ev & Yaşam",
+      "subCategory": "Pişirme & Tencere"
+    },
+    {
+      "id": "amz-B08GMDWC49",
+      "title": "Zwilling Thermo Matara, 7 Saat Sıcak 12 Saat Soğuk Tutar, Paslanmaz Çelik, Beyaz-Gri, 450 ml",
+      "originalPrice": 1223.0,
+      "discountedPrice": 1027.65,
+      "discountRate": 16,
+      "imageUrl": "https://m.media-amazon.com/images/I/31Q7t74px4L._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B08GMDWC49",
+      "store": "Amazon TR",
+      "category": "Ev & Yaşam",
+      "subCategory": "Termos & Matara"
+    },
+    {
+      "id": "amz-B00J7GVM9G",
+      "title": "Zwilling Passion 18/10 Paslanmaz Çelik, Paslanmaz Çelik 5 li Tencere Seti | Ergonomik kulplar, dökme kenarı, iç skala",
+      "originalPrice": 15536.0,
+      "discountedPrice": 13361.15,
+      "discountRate": 14,
+      "imageUrl": "https://m.media-amazon.com/images/I/51xPne6TOmL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B00J7GVM9G",
       "store": "Amazon TR",
       "category": "Ev & Yaşam",
       "subCategory": "Pişirme & Tencere"
@@ -6809,13 +7001,13 @@
       "subCategory": "Pişirme & Tencere"
     },
     {
-      "id": "amz-B0FZVN87KD",
-      "title": "STANLEY The Transit FlipTop Mug20oz Termos 0.60 Litre - Siyah 2.0 | Paslanmaz Çelik",
-      "originalPrice": 1845.0,
-      "discountedPrice": 1531.73,
-      "discountRate": 17,
-      "imageUrl": "https://m.media-amazon.com/images/I/61yA1jc5aoL._AC_UL500_.jpg",
-      "productUrl": "https://www.amazon.com.tr/dp/B0FZVN87KD",
+      "id": "amz-B07MXQ1ZTM",
+      "title": "Jumbo Metalix 4'Lu Tencere Seti Parlak",
+      "originalPrice": 14185.0,
+      "discountedPrice": 12199.0,
+      "discountRate": 14,
+      "imageUrl": "https://m.media-amazon.com/images/I/71r+pYhNUgL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B07MXQ1ZTM",
       "store": "Amazon TR",
       "category": "Ev & Yaşam",
       "subCategory": "Termos & Matara"
@@ -7106,7 +7298,7 @@
       "productUrl": "https://www.amazon.com.tr/dp/B0G15M9XT9",
       "store": "Amazon TR",
       "category": "Ev & Yaşam",
-      "subCategory": "Termos & Matara"
+      "subCategory": "Pişirme & Tencere"
     },
     {
       "id": "amz-B0CNTRF9QJ",
@@ -7346,16 +7538,16 @@
       "productUrl": "https://www.amazon.com.tr/dp/B089ZSG474",
       "store": "Amazon TR",
       "category": "Ev & Yaşam",
-      "subCategory": "Sofra & Mutfak"
+      "subCategory": "Ütü & Süpürge"
     },
     {
-      "id": "amz-B0HLS6FG6F",
-      "title": "Kütahya Home Serena Pembe 6 Kişilik 12 Parça Porselen Türk Kahvesi Fincan Takımı, Krem, Özel Kutulu Kahve Seti",
-      "originalPrice": 1299.0,
-      "discountedPrice": 949.0,
-      "discountRate": 27,
-      "imageUrl": "https://m.media-amazon.com/images/I/51663OvQmGL._AC_UL500_.jpg",
-      "productUrl": "https://www.amazon.com.tr/dp/B0HLS6FG6F",
+      "id": "amz-B089ZSG474",
+      "title": "Karaca Saturn 6 Kişilik Kahve Fincanı | 6 uyumlu tabak, parlak altın detaylı, kavisli tabanlar ve elde yıkama bakımı ile b...",
+      "originalPrice": 1860.0,
+      "discountedPrice": 1562.0,
+      "discountRate": 16,
+      "imageUrl": "https://m.media-amazon.com/images/I/61GSvTb4o1L._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B089ZSG474",
       "store": "Amazon TR",
       "category": "Ev & Yaşam",
       "subCategory": "Sofra & Mutfak"
@@ -7438,11 +7630,11 @@
       "originalPrice": 1399.0,
       "discountedPrice": 999.0,
       "discountRate": 29,
-      "imageUrl": "https://m.media-amazon.com/images/I/51dM6sEmXRL._AC_UL500_.jpg",
-      "productUrl": "https://www.amazon.com.tr/dp/B0HKJC4G7N",
+      "imageUrl": "https://m.media-amazon.com/images/I/71IHW2Hvd+L._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0FZVHKQNC",
       "store": "Amazon TR",
       "category": "Ev & Yaşam",
-      "subCategory": "Sofra & Mutfak"
+      "subCategory": "Termos & Matara"
     },
     {
       "id": "amz-B0H9SJ9SLP",
@@ -7563,6 +7755,66 @@
       "store": "Amazon TR",
       "category": "Ev & Yaşam",
       "subCategory": "Sofra & Mutfak"
+    },
+    {
+      "id": "amz-B0D9LW9JVS",
+      "title": "Alexa Çift Kişilik Lastikli Çarşaf Nevresim Takımı",
+      "originalPrice": 899.9,
+      "discountedPrice": 782.52,
+      "discountRate": 13,
+      "imageUrl": "https://m.media-amazon.com/images/I/61dpTRaoNfL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0D9LW9JVS",
+      "store": "Amazon TR",
+      "category": "Ev & Yaşam",
+      "subCategory": "Ev Tekstili"
+    },
+    {
+      "id": "amz-B07PBN67YJ",
+      "title": "STANLEY Classic Legendary 2QT Vakumlu Termos 1.9 Litre - Yeşil (Hammertone Green) | Paslanmaz Çelik",
+      "originalPrice": 2690.0,
+      "discountedPrice": 2394.24,
+      "discountRate": 11,
+      "imageUrl": "https://m.media-amazon.com/images/I/51pdOIxZfBL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B07PBN67YJ",
+      "store": "Amazon TR",
+      "category": "Ev & Yaşam",
+      "subCategory": "Termos & Matara"
+    },
+    {
+      "id": "amz-B0H9SJ9SLP",
+      "title": "Heda Porselen 12 Parça 6 Kişilik Kahve Fincan Takımı | 100 ml Porselen Türk Kahvesi Fincan Seti | Şık Kahve Sunum Takımı",
+      "originalPrice": 819.0,
+      "discountedPrice": 729.0,
+      "discountRate": 11,
+      "imageUrl": "https://m.media-amazon.com/images/I/71fSCm-ifCL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0H9SJ9SLP",
+      "store": "Amazon TR",
+      "category": "Ev & Yaşam",
+      "subCategory": "Sofra & Mutfak"
+    },
+    {
+      "id": "amz-B0HM1H3GSG",
+      "title": "Tek Kişilik Nevresim Takımı 160x220cm Lastikli Çarşaflı 100x200",
+      "originalPrice": 647.0,
+      "discountedPrice": 549.84,
+      "discountRate": 15,
+      "imageUrl": "https://m.media-amazon.com/images/I/71kSIl9pC3L._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0HM1H3GSG",
+      "store": "Amazon TR",
+      "category": "Ev & Yaşam",
+      "subCategory": "Ev Tekstili"
+    },
+    {
+      "id": "amz-B0FLK6X3L8",
+      "title": "Çift Kişilik Çizgili Saten Nevresim Takımı%100 Pamuk 200x220 - Yumuşak Dokulu Lüks Nevresim Takımı - 4 Parça - Nevresim 20...",
+      "originalPrice": 2100.0,
+      "discountedPrice": 1695.5,
+      "discountRate": 19,
+      "imageUrl": "https://m.media-amazon.com/images/I/41dIy2Y6rDL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0FLK6X3L8",
+      "store": "Amazon TR",
+      "category": "Ev & Yaşam",
+      "subCategory": "Ev Tekstili"
     },
     {
       "id": "amz-B0HBNPQ4JL",
@@ -8045,13 +8297,25 @@
       "subCategory": "Ev Tekstili"
     },
     {
-      "id": "amz-B07JMKCCXR",
-      "title": "Devecioğlu MM123 Blackboard Ütü Masası",
-      "originalPrice": 3029.0,
-      "discountedPrice": 2877.0,
-      "discountRate": 5,
-      "imageUrl": "https://m.media-amazon.com/images/I/51YSGvlC34L._AC_UL500_.jpg",
-      "productUrl": "https://www.amazon.com.tr/dp/B07JMKCCXR",
+      "id": "amz-B082HPWBWX",
+      "title": "Karaca Globe 6 Kişilik Kahve Fincanı, 90 ml, Small",
+      "originalPrice": 1723.0,
+      "discountedPrice": 1516.0,
+      "discountRate": 12,
+      "imageUrl": "https://m.media-amazon.com/images/I/81Is5oDpPWL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B082HPWBWX",
+      "store": "Amazon TR",
+      "category": "Ev & Yaşam",
+      "subCategory": "Sofra & Mutfak"
+    },
+    {
+      "id": "amz-B0GZHBJWNY",
+      "title": "Philips PerfectCare 8000 Serisi Buhar Kazanlı Ütü, 215 g Buhar Darbesi, OptimalTEMP, SteamGlide Elite Taban, 1,4 L Tank, P...",
+      "originalPrice": 23689.0,
+      "discountedPrice": 19899.0,
+      "discountRate": 16,
+      "imageUrl": "https://m.media-amazon.com/images/I/51pWrt34aBL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0GZHBJWNY",
       "store": "Amazon TR",
       "category": "Ev & Yaşam",
       "subCategory": "Ütü & Süpürge"
@@ -8415,6 +8679,18 @@
       "store": "Amazon TR",
       "category": "Ev & Yaşam",
       "subCategory": "Ütü & Süpürge"
+    },
+    {
+      "id": "amz-B0GWRCBRXC",
+      "title": "Busstier USB Şarjlı LED Masa Lambası Kalemlikli Dokunmatik 3 Kademeli Işık Ayarı 360 Derece Dönebilen Göz Koruma Masa Lamb...",
+      "originalPrice": 422.0,
+      "discountedPrice": 358.9,
+      "discountRate": 15,
+      "imageUrl": "https://m.media-amazon.com/images/I/419afASgi0L._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0GWRCBRXC",
+      "store": "Amazon TR",
+      "category": "Ev & Yaşam",
+      "subCategory": "Aydınlatma & Kamp"
     },
     {
       "id": "amz-B07SQ2FZTK",
@@ -8875,13 +9151,13 @@
       "subCategory": "Parfüm"
     },
     {
-      "id": "amz-B0BSV61X77",
-      "title": "L'Oreal Paris Revitalift Clinical %12 Saf C Vitamini Aydınlatıcı Serum",
-      "originalPrice": 519.0,
-      "discountedPrice": 455.68,
-      "discountRate": 12,
-      "imageUrl": "https://m.media-amazon.com/images/I/61NuJhKRHzL._AC_UL500_.jpg",
-      "productUrl": "https://www.amazon.com.tr/dp/B0BSV61X77",
+      "id": "amz-B07XG1PLJF",
+      "title": "EAU THERMALE AVENE Cicalfate Crème 40 ml 220709",
+      "originalPrice": 456.9,
+      "discountedPrice": 393.0,
+      "discountRate": 14,
+      "imageUrl": "https://m.media-amazon.com/images/I/61vLovnQ4KL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B07XG1PLJF",
       "store": "Amazon TR",
       "category": "Kozmetik",
       "subCategory": "Cilt Serumu"
@@ -9415,28 +9691,28 @@
       "subCategory": "Cilt Serumu"
     },
     {
-      "id": "amz-B00Q4XCNH0",
-      "title": "NIVEA Soft Nemlendirici Bakım Kremi 300 ml, 48 Saat Nemlendirme, Jojba Yağı,E Vitamini, Yüz,El,Vücut İçin,Paraben İçermez",
-      "originalPrice": 143.98,
-      "discountedPrice": 94.0,
-      "discountRate": 35,
-      "imageUrl": "https://m.media-amazon.com/images/I/61IVpv-M7cL._AC_UL500_.jpg",
-      "productUrl": "https://www.amazon.com.tr/dp/B00Q4XCNH0",
+      "id": "amz-B08QNWMT5P",
+      "title": "Slazenger Active Sport Erkek Gold Parfüm",
+      "originalPrice": 504.1,
+      "discountedPrice": 444.36,
+      "discountRate": 12,
+      "imageUrl": "https://m.media-amazon.com/images/I/61vCnDoeZfL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B08QNWMT5P",
       "store": "Amazon TR",
       "category": "Kozmetik",
-      "subCategory": "Yüz Bakımı"
+      "subCategory": "Parfüm"
     },
     {
-      "id": "amz-B081V216Y9",
-      "title": "Bioderma Sébium Hydra Yoğun Nemlendirici Seramid İçeren Kurutucu Akne Tedavisi Yatıştırıcı Bakım Kremi 40 ml",
-      "originalPrice": 1136.0,
-      "discountedPrice": 1000.0,
-      "discountRate": 12,
-      "imageUrl": "https://m.media-amazon.com/images/I/51uEnzDC0WL._AC_UL500_.jpg",
-      "productUrl": "https://www.amazon.com.tr/dp/B081V216Y9",
+      "id": "amz-B0G1C8JQGL",
+      "title": "CeraVe Skin Renewing Cilt Yenileyici Aydınlatıcı C Vitamini Yüz Serumu 30 ml",
+      "originalPrice": 1250.0,
+      "discountedPrice": 1049.9,
+      "discountRate": 16,
+      "imageUrl": "https://m.media-amazon.com/images/I/71-XDl4BjVL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0G1C8JQGL",
       "store": "Amazon TR",
       "category": "Kozmetik",
-      "subCategory": "Yüz Bakımı"
+      "subCategory": "Cilt Serumu"
     },
     {
       "id": "amz-B0161ZC5GY",
@@ -9552,11 +9828,11 @@
       "originalPrice": 345.0,
       "discountedPrice": 300.0,
       "discountRate": 13,
-      "imageUrl": "https://m.media-amazon.com/images/I/51TT7RuUpEL._AC_UL500_.jpg",
-      "productUrl": "https://www.amazon.com.tr/dp/B0D2J14PJS",
+      "imageUrl": "https://m.media-amazon.com/images/I/51eFWwLACTL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B09KNBVCNT",
       "store": "Amazon TR",
       "category": "Kozmetik",
-      "subCategory": "Yüz Bakımı"
+      "subCategory": "Cilt Serumu"
     },
     {
       "id": "amz-B0888NSBM9",
@@ -9856,7 +10132,7 @@
       "productUrl": "https://www.amazon.com.tr/dp/B09XN22JBT",
       "store": "Amazon TR",
       "category": "Kozmetik",
-      "subCategory": "Güneş Bakımı"
+      "subCategory": "Cilt Serumu"
     },
     {
       "id": "amz-B09XVNZXXM",
@@ -10709,6 +10985,30 @@
       "store": "Amazon TR",
       "category": "Kozmetik",
       "subCategory": "Makyaj"
+    },
+    {
+      "id": "amz-B0FQTRXK2H",
+      "title": "Flormar Color Treasure Hacim Veren & Yüksek Pigmentli Renkli Maskara (002 Ruby) 8682536100359",
+      "originalPrice": 281.16,
+      "discountedPrice": 249.0,
+      "discountRate": 11,
+      "imageUrl": "https://m.media-amazon.com/images/I/51uW9zIfKnL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0FQTRXK2H",
+      "store": "Amazon TR",
+      "category": "Kozmetik",
+      "subCategory": "Makyaj"
+    },
+    {
+      "id": "amz-B0GQCD7M63",
+      "title": "Dove Şampuan Keratin Uzun Saç Terapisi 375 ml",
+      "originalPrice": 137.0,
+      "discountedPrice": 120.98,
+      "discountRate": 12,
+      "imageUrl": "https://m.media-amazon.com/images/I/51x45claocL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0GQCD7M63",
+      "store": "Amazon TR",
+      "category": "Kozmetik",
+      "subCategory": "Saç Bakımı"
     },
     {
       "id": "amz-B07CK7P85Z",

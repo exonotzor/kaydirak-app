@@ -94,16 +94,16 @@
       "productUrl": "https://www.idefix.com/hytech-hy-gk2-35-oyuncu-esnek-mikrofonlu-kirmizi-kulakici-kulaklik-p-504695",
       "store": "Idefix",
       "category": "Teknoloji",
-      "subCategory": "Kulaklık"
+      "subCategory": "Bilgisayar & Tablet"
     },
     {
-      "id": "idefix-5581819",
-      "title": "Razer Barracuda X Chroma Siyah Rgb RZ04-05220100-R3M1",
-      "originalPrice": 6096.0,
-      "discountedPrice": 4999.0,
-      "discountRate": 18,
-      "imageUrl": "https://image03.idefix.com/resize/600/600/product/5581819/razer-barracuda-x-chroma-frml-rz04-05220100-r3m1-675fce2818832.jpg",
-      "productUrl": "https://www.idefix.com/razer-barracuda-x-chroma-siyah-rgb-rz04-05220100-r3m1-p-5581819",
+      "id": "idefix-18212818",
+      "title": "Samsung Galaxy Tab A11+ 6Gb 128Gb Gri Tablet",
+      "originalPrice": 12278.0,
+      "discountedPrice": 10191.02,
+      "discountRate": 17,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/18212818/samsung-galaxy-tab-a11-6gb-128gb-gri-tablet-69562d308bfaa.jpg",
+      "productUrl": "https://www.idefix.com/samsung-galaxy-tab-a11-6gb-128gb-gri-tablet-p-18212818",
       "store": "Idefix",
       "category": "Teknoloji",
       "subCategory": "Kulaklık"
@@ -1534,7 +1534,43 @@
       "productUrl": "https://www.idefix.com/jbl-wave-buds-2-tws-siyah-kulak-ici-bluetooth-kulaklik-p-6505308",
       "store": "Idefix",
       "category": "Teknoloji",
-      "subCategory": "Hoparlör & Ses"
+      "subCategory": "Akıllı Saat"
+    },
+    {
+      "id": "idefix-7350395",
+      "title": "Huawei Watch Ultimate Yeşil Akıllı Saat",
+      "originalPrice": 54216.0,
+      "discountedPrice": 44999.0,
+      "discountRate": 17,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/7350395/huawei-watch-ultimate-yesil-akilli-saat-67d35e739095c.jpg",
+      "productUrl": "https://www.idefix.com/huawei-watch-ultimate-yesil-akilli-saat-p-7350395?vendorId=5147",
+      "store": "Idefix",
+      "category": "Teknoloji",
+      "subCategory": "Akıllı Saat"
+    },
+    {
+      "id": "idefix-25799723",
+      "title": "Hiksemi Hiker 8 GB 3200 MHz DDR4 NB Ram HSC408S32Z1",
+      "originalPrice": 3184.0,
+      "discountedPrice": 2770.44,
+      "discountRate": 13,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/25799723/hiksemi-hiker-8-gb-3200-mhz-ddr4-nb-ram-hsc408s32z1-6a0db6f39708d.png",
+      "productUrl": "https://www.idefix.com/hiksemi-hiker-8-gb-3200-mhz-ddr4-nb-ram-hsc408s32z1-p-25799723",
+      "store": "Idefix",
+      "category": "Teknoloji",
+      "subCategory": "Bilgisayar & Tablet"
+    },
+    {
+      "id": "idefix-29649500",
+      "title": "LG 27 LG 27U411B-B 5MS 144HZ VGA HDMI IPS",
+      "originalPrice": 5043.0,
+      "discountedPrice": 4740.42,
+      "discountRate": 6,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/29649500/27-lg-27u411b-b-5ms-144hz-vga-hdmi-ips-6a7f183d0d5c5.png",
+      "productUrl": "https://www.idefix.com/lg-27-lg-27u411b-b-5ms-144hz-vga-hdmi-ips-p-29649500",
+      "store": "Idefix",
+      "category": "Teknoloji",
+      "subCategory": "Bilgisayar & Tablet"
     },
     {
       "id": "idefix-7914901",
@@ -2086,7 +2122,7 @@
       "productUrl": "https://www.idefix.com/digipod-gaming-mousepad-oyuncu-mouse-pad-90x40-xxl-buyuk-oyuncu-mouse-pad-kaymaz-taban-4mm-kalinlik-p-13283757",
       "store": "Idefix",
       "category": "Teknoloji",
-      "subCategory": "Oyuncu Ekipmanları"
+      "subCategory": "Hoparlör & Ses"
     },
     {
       "id": "idefix-32246806",
@@ -2146,7 +2182,7 @@
       "productUrl": "https://www.idefix.com/mic-mini-2-2-tx-1-rx-charging-case-dji-turkiye-karacasulu-garantili-p-26133703",
       "store": "Idefix",
       "category": "Teknoloji",
-      "subCategory": "Webcam & Foto"
+      "subCategory": "Oyuncu Ekipmanları"
     },
     {
       "id": "idefix-26685690",
@@ -2605,13 +2641,37 @@
       "subCategory": "Konsol & Elektronik"
     },
     {
-      "id": "idefix-23392555",
-      "title": "Tapo C260 Ev Güvenlik Kamerası",
-      "originalPrice": 4202.0,
-      "discountedPrice": 3488.0,
-      "discountRate": 17,
-      "imageUrl": "https://image03.idefix.com/resize/600/600/product/23392555/tapo-c260-ev-guvenlik-kamerasi-69d8d653dc1d6.jpg",
-      "productUrl": "https://www.idefix.com/tapo-c260-ev-guvenlik-kamerasi-p-23392555",
+      "id": "idefix-18304932",
+      "title": "PXN VD6 Bundle PC Uyumlu Direksiyon Seti",
+      "originalPrice": 27443.0,
+      "discountedPrice": 24699.0,
+      "discountRate": 10,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/18304932/pxn-vd6-bundle-pc-uyumlu-direksiyon-seti-69576d433514a.jpg",
+      "productUrl": "https://www.idefix.com/pxn-vd6-bundle-pc-uyumlu-direksiyon-seti-p-18304932",
+      "store": "Idefix",
+      "category": "Teknoloji",
+      "subCategory": "Konsol & Elektronik"
+    },
+    {
+      "id": "idefix-24227128",
+      "title": "PXN SF U 7+R Vites",
+      "originalPrice": 6063.0,
+      "discountedPrice": 5335.11,
+      "discountRate": 12,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/24227128/pxn-sf-u-7r-vites-69e8bf012ac38.jpg",
+      "productUrl": "https://www.idefix.com/pxn-sf-u-7r-vites-p-24227128",
+      "store": "Idefix",
+      "category": "Teknoloji",
+      "subCategory": "Konsol & Elektronik"
+    },
+    {
+      "id": "idefix-584783",
+      "title": "TP-Link Tapo C500 Full HD 360 Derece Gece Görüşlü IP Wi-Fi Güvenlik Kamerası",
+      "originalPrice": 2118.0,
+      "discountedPrice": 1779.0,
+      "discountRate": 16,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/584783/tp-link-tapo-c500-dis-mekan-yataydikey-wi-fi-guvenlik-kamerasi-66e9beef7a831.png",
+      "productUrl": "https://www.idefix.com/tp-link-tapo-c500-full-hd-360-derece-gece-goruslu-ip-wi-fi-guvenlik-kamerasi-p-584783",
       "store": "Idefix",
       "category": "Teknoloji",
       "subCategory": "Webcam & Foto"
@@ -3679,12 +3739,12 @@
       "title": "Ekol Kadın Kendinden Desenli Transparan Ceket 4182 Siyah",
       "originalPrice": 4999.0,
       "discountedPrice": 3399.15,
-      "discountRate": 32,
-      "imageUrl": "https://image03.idefix.com/resize/600/600/product/9618685/ekol-kadin-kendinden-desenli-transparan-ceket-4182-siyah-6826d3c3678d7.jpg",
-      "productUrl": "https://www.idefix.com/ekol-kadin-kendinden-desenli-transparan-ceket-4182-siyah-p-9618685",
+      "discountRate": 15,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/27981787/kadin-ithal-nakis-islemeli-gipeli-maxi-elbise-bohem-yazlik-uzun-elbise-6a4cd43ac03f6.jpg",
+      "productUrl": "https://www.idefix.com/asprin-fashion-kadin-ithal-nakis-islemeli-gipeli-maxi-elbise-bohem-yazlik-uzun-elbise-p-27981787",
       "store": "Idefix",
       "category": "Moda",
-      "subCategory": "Dış Giyim"
+      "subCategory": "Kadın Giyim"
     },
     {
       "id": "idefix-5994614",
@@ -3732,7 +3792,7 @@
       "productUrl": "https://www.idefix.com/butik-istanbul-kadin-askili-yuvarlak-yakali-yanlardan-dugmeli-kisa-elbise-p-28663615",
       "store": "Idefix",
       "category": "Moda",
-      "subCategory": "Kadın Giyim"
+      "subCategory": "Dış Giyim"
     },
     {
       "id": "idefix-16456477",
@@ -3752,8 +3812,8 @@
       "originalPrice": 599.0,
       "discountedPrice": 509.15,
       "discountRate": 15,
-      "imageUrl": "https://image03.idefix.com/resize/600/600/product/11366575/vikings-line-kadin-oversize-ceket-685d65378513d.jpg",
-      "productUrl": "https://www.idefix.com/vikings-line-kadin-oversize-ceket-p-11366575",
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/19242840/nairobi-ceket-69799efbc3e7f.webp",
+      "productUrl": "https://www.idefix.com/volovita-nairobi-ceket-p-19242840",
       "store": "Idefix",
       "category": "Moda",
       "subCategory": "Dış Giyim"
@@ -3900,7 +3960,7 @@
       "productUrl": "https://www.idefix.com/sense-leopar-desen-ceket-ckt31787yn-siyah-ekru-kahve-leopar-p-17031135",
       "store": "Idefix",
       "category": "Moda",
-      "subCategory": "Dış Giyim"
+      "subCategory": "Kadın Giyim"
     },
     {
       "id": "idefix-30927835",
@@ -4140,7 +4200,7 @@
       "productUrl": "https://www.idefix.com/skechers-arch-fit-20-logolu-sneaker-erkek-ayakkabi-232806-gysl-gri-gumus-p-22662755",
       "store": "Idefix",
       "category": "Moda",
-      "subCategory": "Spor Ayakkabı"
+      "subCategory": "Dış Giyim"
     },
     {
       "id": "idefix-20652685",
@@ -4856,8 +4916,32 @@
       "originalPrice": 3209.99,
       "discountedPrice": 1669.19,
       "discountRate": 48,
-      "imageUrl": "https://image03.idefix.com/resize/600/600/product/2755426/orta-boy-4-teker-kumas-valiz-siyah-1081-68dbc8180e92e.jpg",
-      "productUrl": "https://www.idefix.com/louisiana-polo-orta-boy-4-teker-kumas-valiz-siyah-1081-p-2755426",
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/16881001/us-polo-assn-6752-omuz-askili-laptop-cantasi-evrak-cantasi-kahverengi-693af2bfdd74e.jpg",
+      "productUrl": "https://www.idefix.com/us-polo-assn-6752-omuz-askili-laptop-cantasi-evrak-cantasi-kahverengi-p-16881001",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Çanta & Sırt Çantası"
+    },
+    {
+      "id": "idefix-14004058",
+      "title": "Huf Erkek Günlük Ayakkabı M254010",
+      "originalPrice": 999.0,
+      "discountedPrice": 839.16,
+      "discountRate": 16,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/14004058/huf-erkek-gunluk-ayakkabi-m254010-68c17bac25261.jpg",
+      "productUrl": "https://www.idefix.com/huf-erkek-gunluk-ayakkabi-m254010-p-14004058",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Günlük Ayakkabı"
+    },
+    {
+      "id": "idefix-6808820",
+      "title": "Polo&Sky Elmas Model Siyah Renk Kabin Boy Valiz Bavul",
+      "originalPrice": 1204.0,
+      "discountedPrice": 999.0,
+      "discountRate": 17,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/6808820/polosky-elmas-model-siyah-renk-kabin-boy-valiz-bavul-67b65d0098109.jpg",
+      "productUrl": "https://www.idefix.com/polosky-elmas-model-siyah-renk-kabin-boy-valiz-bavul-p-6808820",
       "store": "Idefix",
       "category": "Moda",
       "subCategory": "Çanta & Sırt Çantası"
@@ -6518,7 +6602,7 @@
       "productUrl": "https://www.idefix.com/stanley-quencher-koyu-yesil-118-lt-pipetli-termos-bardak-p-3690850",
       "store": "Idefix",
       "category": "Ev & Yaşam",
-      "subCategory": "Termos & Matara"
+      "subCategory": "Sofra & Mutfak"
     },
     {
       "id": "idefix-3690852",
@@ -8643,6 +8727,246 @@
       "store": "Idefix",
       "category": "Ev & Yaşam",
       "subCategory": "Aydınlatma & Kamp"
+    },
+    {
+      "id": "idefix-13781019",
+      "title": "Tigrecook Instantchopper 1000 PRO – 2.3 L Cam ve Çelik Hazneli Et Kıyma & Sebze Rondo Doğrayıcı + Ekstra 1.2 L Hazne",
+      "originalPrice": 3499.0,
+      "discountedPrice": 3219.08,
+      "discountRate": 8,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/13781019/instantchopper-1000-pro-23-l-cam-ve-celik-hazneli-et-kiyma-sebze-rondo-dograyici-ekstra-12-l-hazne-68c017a98c1ed.png",
+      "productUrl": "https://www.idefix.com/tigrecook-instantchopper-1000-pro-23-l-cam-ve-celik-hazneli-et-kiyma-sebze-rondo-dograyici-ekstra-12-l-hazne-p-13781019",
+      "store": "Idefix",
+      "category": "Ev & Yaşam",
+      "subCategory": "Küçük Ev Aletleri"
+    },
+    {
+      "id": "idefix-465883",
+      "title": "TEFAL Actifry Karıştırma Aparatı 1 Lt-1,2 Lt Xa900302",
+      "originalPrice": 499.0,
+      "discountedPrice": 439.12,
+      "discountRate": 12,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/465883/tefal-actifry-karistirma-aparati-1-lt-12-lt-xa900302-66c7a2fa1d417.jpg",
+      "productUrl": "https://www.idefix.com/tefal-actifry-karistirma-aparati-1-lt-12-lt-xa900302-p-465883",
+      "store": "Idefix",
+      "category": "Ev & Yaşam",
+      "subCategory": "Pişirme & Tencere"
+    },
+    {
+      "id": "idefix-5126282",
+      "title": "Tefal Ultimate Power Pro FV9E5 3200 W Buharlı Ütü",
+      "originalPrice": 8587.0,
+      "discountedPrice": 7299.0,
+      "discountRate": 15,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/5126282/tefal-ultimate-power-pro-fv9e5-3200-w-buharli-utu-673c8602e1f18.jpg",
+      "productUrl": "https://www.idefix.com/tefal-ultimate-power-pro-fv9e5-3200-w-buharli-utu-p-5126282?vendorId=33",
+      "store": "Idefix",
+      "category": "Ev & Yaşam",
+      "subCategory": "Ütü & Süpürge"
+    },
+    {
+      "id": "idefix-6318935",
+      "title": "Osram Led 17W 4000K 2521lm E27 Duy Kırık Beyaz Işık Ampul",
+      "originalPrice": 739.0,
+      "discountedPrice": 628.15,
+      "discountRate": 15,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/6318935/osram-led-17w-4000k-2521lm-e27-duy-kirik-beyaz-isik-ampul-679b8c435519f.jpg",
+      "productUrl": "https://www.idefix.com/osram-led-17w-4000k-2521lm-e27-duy-kirik-beyaz-isik-ampul-p-6318935",
+      "store": "Idefix",
+      "category": "Ev & Yaşam",
+      "subCategory": "Aydınlatma & Kamp"
+    },
+    {
+      "id": "idefix-6071184",
+      "title": "Karaca Pro Artisan Dijital Ekran Zaman Ayarlı Döküm Hamur Yoğurma Makinesi Black 1600W 5L",
+      "originalPrice": 13635.0,
+      "discountedPrice": 11999.0,
+      "discountRate": 12,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/6071184/karaca-pro-artisan-dijital-ekran-zaman-ayarli-dokum-hamur-yogurma-makinesi-black-1600w-5l-6a466161de477.jpg",
+      "productUrl": "https://www.idefix.com/karaca-pro-artisan-dijital-ekran-zaman-ayarli-dokum-hamur-yogurma-makinesi-black-1600w-5l-p-6071184?vendorId=4608",
+      "store": "Idefix",
+      "category": "Ev & Yaşam",
+      "subCategory": "Küçük Ev Aletleri"
+    },
+    {
+      "id": "idefix-18709577",
+      "title": "Stanley The Aerolight Transit Mug 0.59 Lt Termos Yeşil ( Ömür Boyu Garanti )",
+      "originalPrice": 13194.0,
+      "discountedPrice": 11610.72,
+      "discountRate": 12,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/18709577/stanley-the-aerolight-transit-mug-059-lt-termos-yesil-omur-boyu-garanti-696a979f52a3b.jpg",
+      "productUrl": "https://www.idefix.com/stanley-the-aerolight-transit-mug-059-lt-termos-yesil-omur-boyu-garanti-p-18709577?vendorId=15126",
+      "store": "Idefix",
+      "category": "Ev & Yaşam",
+      "subCategory": "Termos & Matara"
+    },
+    {
+      "id": "idefix-10582651",
+      "title": "Güral Porselen Nesrin 24 Parça 6 Kişilik Bone Yemek Takımı Gold",
+      "originalPrice": 3522.0,
+      "discountedPrice": 3099.0,
+      "discountRate": 12,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/10582651/gural-porselen-nesrin-24-parca-6-kisilik-bone-yemek-takimi-gold-68402e9b16407.jpg",
+      "productUrl": "https://www.idefix.com/gural-porselen-nesrin-24-parca-6-kisilik-bone-yemek-takimi-gold-p-10582651",
+      "store": "Idefix",
+      "category": "Ev & Yaşam",
+      "subCategory": "Sofra & Mutfak"
+    },
+    {
+      "id": "idefix-7190826",
+      "title": "Homend Grilliant 1366H Çıkarılabilir Plakalı Tost ve Izgara Makinesi",
+      "originalPrice": 3428.99,
+      "discountedPrice": 3291.83,
+      "discountRate": 4,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/7190826/homend-grilliant-1366h-cikarilabilir-plakali-tost-ve-izgara-makinesi-6a9a7a7e1675b.webp",
+      "productUrl": "https://www.idefix.com/homend-grilliant-1366h-cikarilabilir-plakali-tost-ve-izgara-makinesi-p-7190826",
+      "store": "Idefix",
+      "category": "Ev & Yaşam",
+      "subCategory": "Pişirme & Tencere"
+    },
+    {
+      "id": "idefix-12395565",
+      "title": "Stanley The AeroLight Transit Termos Bardak 0.47 Lt - (16 OZ) Fog Metallic",
+      "originalPrice": 13448.4,
+      "discountedPrice": 11834.59,
+      "discountRate": 12,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/12395565/stanley-the-aerolight-transit-termos-bardak-047-lt-16-oz-fog-metallic-6887275ba2301.jpg",
+      "productUrl": "https://www.idefix.com/stanley-the-aerolight-transit-termos-bardak-047-lt-16-oz-fog-metallic-p-12395565",
+      "store": "Idefix",
+      "category": "Ev & Yaşam",
+      "subCategory": "Termos & Matara"
+    },
+    {
+      "id": "idefix-33299932",
+      "title": "Avize Pazarı Şeffaf Renkli Glop Cam 15 cm Çapında",
+      "originalPrice": 425.0,
+      "discountedPrice": 361.25,
+      "discountRate": 15,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/33299932/seffaf-renkli-glop-cam-15-cm-capinda-6adb01f5180db.jpg",
+      "productUrl": "https://www.idefix.com/avize-pazari-seffaf-renkli-glop-cam-15-cm-capinda-p-33299932",
+      "store": "Idefix",
+      "category": "Ev & Yaşam",
+      "subCategory": "Aydınlatma & Kamp"
+    },
+    {
+      "id": "idefix-5614332",
+      "title": "Güral Porselen Nesrin 24 Parça 6 Kişilik Yemek Takımı Dg 1891",
+      "originalPrice": 2149.99,
+      "discountedPrice": 2042.49,
+      "discountRate": 5,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/5614332/gural-porselen-nesrin-24-parca-6-kisilik-yemek-takimi-dg-1891-6762c1de1515d.jpg",
+      "productUrl": "https://www.idefix.com/gural-porselen-nesrin-24-parca-6-kisilik-yemek-takimi-dg-1891-p-5614332",
+      "store": "Idefix",
+      "category": "Ev & Yaşam",
+      "subCategory": "Sofra & Mutfak"
+    },
+    {
+      "id": "idefix-7886729",
+      "title": "Kumtel Vakum Makinesi HVSE-01",
+      "originalPrice": 1509.0,
+      "discountedPrice": 1297.74,
+      "discountRate": 14,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/7886729/kumtel-vakum-makinesi-hvse-01-699ae7011d3e5.jpg",
+      "productUrl": "https://www.idefix.com/kumtel-vakum-makinesi-hvse-01-p-7886729?vendorId=6040",
+      "store": "Idefix",
+      "category": "Ev & Yaşam",
+      "subCategory": "Küçük Ev Aletleri"
+    },
+    {
+      "id": "idefix-437568",
+      "title": "Bosch MUMS2VM40 900 W 3.8 lt Mutfak Makinesi",
+      "originalPrice": 12873.0,
+      "discountedPrice": 11070.72,
+      "discountRate": 14,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/437568/bosch-mums2vm40-900-w-38-lt-mutfak-makinesi-66c7e06f9ec54.jpg",
+      "productUrl": "https://www.idefix.com/bosch-mums2vm40-900-w-3-8-lt-mutfak-makinesi-p-437568",
+      "store": "Idefix",
+      "category": "Ev & Yaşam",
+      "subCategory": "Küçük Ev Aletleri"
+    },
+    {
+      "id": "idefix-3356513",
+      "title": "Katlanabilir Su Sebili Çeşmeli Körüklü Su Bidonu Çeşme Piknik Kamp Damacana Içecek Şişesi",
+      "originalPrice": 351.0,
+      "discountedPrice": 308.88,
+      "discountRate": 12,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/3356513/katlanabilir-su-sebili-cesmeli-koruklu-su-bidonu-cesme-piknik-kamp-damacana-icecek-sisesi-66bb36dfbc925.jpg",
+      "productUrl": "https://www.idefix.com/katlanabilir-su-sebili-cesmeli-koruklu-su-bidonu-cesme-piknik-kamp-damacana-icecek-sisesi-p-3356513",
+      "store": "Idefix",
+      "category": "Ev & Yaşam",
+      "subCategory": "Termos & Matara"
+    },
+    {
+      "id": "idefix-484802",
+      "title": "Awox Red Slice Ekmek Kızartma Makinesi",
+      "originalPrice": 1232.0,
+      "discountedPrice": 1108.8,
+      "discountRate": 10,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/484802/awox-red-slice-ekmek-kizartma-makinesi-685e8c317d9ee.jpg",
+      "productUrl": "https://www.idefix.com/awox-red-slice-ekmek-kizartma-makinesi-p-484802",
+      "store": "Idefix",
+      "category": "Ev & Yaşam",
+      "subCategory": "Pişirme & Tencere"
+    },
+    {
+      "id": "idefix-484364",
+      "title": "Philips Azur Dst7511/80 7500 Serisi Siyah 3200 W Buharlı Ütü",
+      "originalPrice": 3809.0,
+      "discountedPrice": 3618.55,
+      "discountRate": 5,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/484364/philips-azur-dst751180-7500-serisi-siyah-3200-w-buharli-utu-66be860c6d8cb.jpg",
+      "productUrl": "https://www.idefix.com/philips-azur-dst751180-7500-serisi-siyah-3200-w-buharli-utu-p-484364",
+      "store": "Idefix",
+      "category": "Ev & Yaşam",
+      "subCategory": "Ütü & Süpürge"
+    },
+    {
+      "id": "idefix-1124125",
+      "title": "Kütahya Porselen Çisil 24 Parça 6 Kişilik Yemek Takımı",
+      "originalPrice": 2047.0,
+      "discountedPrice": 1699.0,
+      "discountRate": 17,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/1124125/kutahya-porselen-cisil-beyaz-24-parca-yemek-takimi-6548a489eea35.jpg",
+      "productUrl": "https://www.idefix.com/kutahya-porselen-cisil-24-parca-6-kisilik-yemek-takimi-p-1124125",
+      "store": "Idefix",
+      "category": "Ev & Yaşam",
+      "subCategory": "Sofra & Mutfak"
+    },
+    {
+      "id": "idefix-23309848",
+      "title": "Güral Porselen Tenedos 24 Parça Yemek Takımı Sade",
+      "originalPrice": 2599.99,
+      "discountedPrice": 2374.99,
+      "discountRate": 9,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/23309848/gural-porselen-tenedos-24-parca-yemek-takimi-sade-69d7809a45bdc.jpg",
+      "productUrl": "https://www.idefix.com/gural-porselen-tenedos-24-parca-yemek-takimi-sade-p-23309848?vendorId=1375",
+      "store": "Idefix",
+      "category": "Ev & Yaşam",
+      "subCategory": "Sofra & Mutfak"
+    },
+    {
+      "id": "idefix-407593",
+      "title": "Philips Azur 8000 Serisi Dst8040/30 3000 W Buharlı Ütü",
+      "originalPrice": 6305.68,
+      "discountedPrice": 5658.4,
+      "discountRate": 10,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/407593/philips-azur-8000-serisi-dst804030-3000-w-buharli-utu-66be98259ce8d.jpg",
+      "productUrl": "https://www.idefix.com/philips-azur-8000-serisi-dst804030-3000-w-buharli-utu-p-407593",
+      "store": "Idefix",
+      "category": "Ev & Yaşam",
+      "subCategory": "Ütü & Süpürge"
+    },
+    {
+      "id": "idefix-7699114",
+      "title": "Moda Home Kendinden Desenli Kaymaz Süngerli Koltuk Örtüsü Açık Gri",
+      "originalPrice": 349.0,
+      "discountedPrice": 296.65,
+      "discountRate": 15,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/7699114/moda-home-kendinden-desenli-kaymaz-sungerli-koltuk-ortusu-acik-gri-67ea2f67f3fe7.jpg",
+      "productUrl": "https://www.idefix.com/moda-home-kendinden-desenli-kaymaz-sungerli-koltuk-ortusu-acik-gri-p-7699114",
+      "store": "Idefix",
+      "category": "Ev & Yaşam",
+      "subCategory": "Ev Tekstili"
     }
   ],
   "Kozmetik": [
@@ -9292,7 +9616,7 @@
       "productUrl": "https://www.idefix.com/eyup-sabri-tuncer-1lt-pet-limon-kolonyasi-p-1042147?vendorId=12380",
       "store": "Idefix",
       "category": "Kozmetik",
-      "subCategory": "Parfüm"
+      "subCategory": "Cilt Serumu"
     },
     {
       "id": "idefix-9774534",
@@ -9324,11 +9648,47 @@
       "originalPrice": 475.0,
       "discountedPrice": 451.25,
       "discountRate": 5,
-      "imageUrl": "https://image03.idefix.com/resize/600/600/product/3425059/dijital-dunyasi-homm-life-bb-krem-light-50-spf-40-ml-bb-66bac5fc72aa1.jpg",
-      "productUrl": "https://www.idefix.com/dijital-dunyasi-homm-life-bb-krem-light-50-spf-40-ml-bb-p-3425059",
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/28223757/saie-slip-tint-lightweight-tinted-moisturizer-45-6a58d0fb7c287.jpg",
+      "productUrl": "https://www.idefix.com/saie-slip-tint-lightweight-tinted-moisturizer-45-p-28223757",
       "store": "Idefix",
       "category": "Kozmetik",
       "subCategory": "Yüz Bakımı"
+    },
+    {
+      "id": "idefix-10420972",
+      "title": "Cc Krem - All In One Açıktan Ortaya 50ml 8690131764029",
+      "originalPrice": 599.0,
+      "discountedPrice": 569.05,
+      "discountRate": 5,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/10420972/cc-krem-all-in-one-aciktan-ortaya-50ml-8690131764029-6839672c0fb96.jpg",
+      "productUrl": "https://www.idefix.com/cc-krem-all-in-one-aciktan-ortaya-50ml-8690131764029-p-10420972",
+      "store": "Idefix",
+      "category": "Kozmetik",
+      "subCategory": "Yüz Bakımı"
+    },
+    {
+      "id": "idefix-6551895",
+      "title": "Dermfactor Bluelight Mineral Filtre Güneş Kremi SPF50 100ml",
+      "originalPrice": 693.0,
+      "discountedPrice": 568.39,
+      "discountRate": 18,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/6551895/dermfactor-bluelight-mineral-filtre-gunes-kremi-spf50-100ml-67ab414b85c2f.jpg",
+      "productUrl": "https://www.idefix.com/dermfactor-bluelight-mineral-filtre-gunes-kremi-spf50-100ml-p-6551895",
+      "store": "Idefix",
+      "category": "Kozmetik",
+      "subCategory": "Cilt Serumu"
+    },
+    {
+      "id": "idefix-6501574",
+      "title": "ma:nyo Galactomy Essence Cream 50Ml - Aydınlatıcı Maya Özlü Krem",
+      "originalPrice": 2021.0,
+      "discountedPrice": 1819.1,
+      "discountRate": 10,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/6501574/manyo-galactomy-essence-cream-50ml-aydinlatici-maya-ozlu-krem-67a60624bd2c1.jpg",
+      "productUrl": "https://www.idefix.com/manyo-galactomy-essence-cream-50ml-aydinlatici-maya-ozlu-krem-p-6501574",
+      "store": "Idefix",
+      "category": "Kozmetik",
+      "subCategory": "Cilt Serumu"
     },
     {
       "id": "idefix-5343844",
@@ -10432,7 +10792,19 @@
       "productUrl": "https://www.idefix.com/deborah-like-a-pro-maskara-p-12656702",
       "store": "Idefix",
       "category": "Kozmetik",
-      "subCategory": "Makyaj"
+      "subCategory": "Saç Bakımı"
+    },
+    {
+      "id": "idefix-8834580",
+      "title": "TTO Thermal Dökülme Karşıtı Şampuan 250 ml",
+      "originalPrice": 450.0,
+      "discountedPrice": 387.0,
+      "discountRate": 14,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/8834580/tto-thermal-dokulme-karsiti-sampuan-250-ml-6815445852703.jpg",
+      "productUrl": "https://www.idefix.com/tto-thermal-dokulme-karsiti-sampuan-250-ml-p-8834580",
+      "store": "Idefix",
+      "category": "Kozmetik",
+      "subCategory": "Saç Bakımı"
     },
     {
       "id": "idefix-18789263",
@@ -10804,7 +11176,67 @@
       "productUrl": "https://www.idefix.com/sinbo-shd7053-sac-kurutma-makinesi-1600-w-p-509412",
       "store": "Idefix",
       "category": "Kozmetik",
-      "subCategory": "Kişisel Bakım Cihazı"
+      "subCategory": "Makyaj"
+    },
+    {
+      "id": "idefix-11217965",
+      "title": "Avene Spf 50 Cleanance 40 Ml",
+      "originalPrice": 1314.95,
+      "discountedPrice": 1130.86,
+      "discountRate": 14,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/11217965/avene-spf-50-cleanance-40-ml-6859072dac2de.jpg",
+      "productUrl": "https://www.idefix.com/avene-spf-50-cleanance-40-ml-p-11217965",
+      "store": "Idefix",
+      "category": "Kozmetik",
+      "subCategory": "Güneş Bakımı"
+    },
+    {
+      "id": "idefix-2499134",
+      "title": "Kerastase Nutritive Bain Satin Riche Yoğun Nemlendirici Şampuan 250ml",
+      "originalPrice": 2450.0,
+      "discountedPrice": 1592.5,
+      "discountRate": 35,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/2499134/kerastase-nutritive-bain-satin-riche-yogun-nemlendirici-sampuan-250ml-66c0563a156e6.png",
+      "productUrl": "https://www.idefix.com/kerastase-nutritive-bain-satin-riche-yogun-nemlendirici-sampuan-250ml-p-2499134",
+      "store": "Idefix",
+      "category": "Kozmetik",
+      "subCategory": "Saç Bakımı"
+    },
+    {
+      "id": "idefix-1431961",
+      "title": "L'Oréal Paris Telescopic Maskara - Siyah",
+      "originalPrice": 500.0,
+      "discountedPrice": 430.0,
+      "discountRate": 14,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/1431961/loreal-paris-telescopic-maskara-siyah-67a2a8303b532.jpg",
+      "productUrl": "https://www.idefix.com/loreal-paris-telescopic-maskara-siyah-p-1431961",
+      "store": "Idefix",
+      "category": "Kozmetik",
+      "subCategory": "Makyaj"
+    },
+    {
+      "id": "idefix-2220934",
+      "title": "Golden Rose Flash Lash Colered Mascara No:01 Bright Mint - Renkli Maskara",
+      "originalPrice": 269.0,
+      "discountedPrice": 231.34,
+      "discountRate": 14,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/2220934/golden-rose-flash-lash-colered-mascara-no01-bright-mint-renkli-maskara-66c13cf30dbef.jpg",
+      "productUrl": "https://www.idefix.com/golden-rose-flash-lash-colered-mascara-no01-bright-mint-renkli-maskara-p-2220934",
+      "store": "Idefix",
+      "category": "Kozmetik",
+      "subCategory": "Makyaj"
+    },
+    {
+      "id": "idefix-11309011",
+      "title": "Head & Shoulders Clinical Strength Şampuan 400 ml",
+      "originalPrice": 1079.0,
+      "discountedPrice": 885.05,
+      "discountRate": 18,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/11309011/head-shoulders-clinical-strength-sampuan-400-ml-685bf5e04779b.png",
+      "productUrl": "https://www.idefix.com/head-shoulders-clinical-strength-sampuan-400-ml-p-11309011",
+      "store": "Idefix",
+      "category": "Kozmetik",
+      "subCategory": "Saç Bakımı"
     },
     {
       "id": "idefix-33899861",
@@ -11203,10 +11635,10 @@
       "subCategory": "Vücut Bakımı"
     },
     {
-      "id": "idefix-14589635",
-      "title": "Agarta Doğal Diş Macunu 100ML Naneli (4 Lü Set)",
-      "originalPrice": 391.0,
-      "discountedPrice": 336.26,
+      "id": "idefix-1078341",
+      "title": "Prozinc Plus Şampuan 300 Ml - 3 Al 2 Öde",
+      "originalPrice": 1494.25,
+      "discountedPrice": 1285.05,
       "discountRate": 14,
       "imageUrl": "https://image03.idefix.com/resize/600/600/product/14589635/agarta-dogal-dis-macunu-100ml-naneli-4-lu-set-68d521f138a7f.jpg",
       "productUrl": "https://www.idefix.com/agarta-dogal-dis-macunu-100ml-naneli-4-lu-set-p-14589635?vendorId=25451",
