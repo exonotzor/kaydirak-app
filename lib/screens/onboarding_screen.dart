@@ -20,7 +20,7 @@ class OnboardingSlide {
     return OnboardingSlide(
       id: id,
       imageUrl: json['imageUrl'] as String? ??
-          'https://raw.githubusercontent.com/exonotzor/kaydirak-app/main/assets/onboarding/slide${id}_v24.png',
+          'https://raw.githubusercontent.com/exonotzor/kaydirak-app/main/assets/onboarding/slide${id}_v25.png',
       assetFallback: 'assets/onboarding/slide${id.clamp(1, 5)}.png',
     );
   }
@@ -58,31 +58,31 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
       OnboardingSlide(
         id: 1,
         imageUrl:
-            'https://raw.githubusercontent.com/exonotzor/kaydirak-app/main/assets/onboarding/slide1_v24.png',
+            'https://raw.githubusercontent.com/exonotzor/kaydirak-app/main/assets/onboarding/slide1_v25.png',
         assetFallback: 'assets/onboarding/slide1.png',
       ),
       OnboardingSlide(
         id: 2,
         imageUrl:
-            'https://raw.githubusercontent.com/exonotzor/kaydirak-app/main/assets/onboarding/slide2_v24.png',
+            'https://raw.githubusercontent.com/exonotzor/kaydirak-app/main/assets/onboarding/slide2_v25.png',
         assetFallback: 'assets/onboarding/slide2.png',
       ),
       OnboardingSlide(
         id: 3,
         imageUrl:
-            'https://raw.githubusercontent.com/exonotzor/kaydirak-app/main/assets/onboarding/slide3_v24.png',
+            'https://raw.githubusercontent.com/exonotzor/kaydirak-app/main/assets/onboarding/slide3_v25.png',
         assetFallback: 'assets/onboarding/slide3.png',
       ),
       OnboardingSlide(
         id: 4,
         imageUrl:
-            'https://raw.githubusercontent.com/exonotzor/kaydirak-app/main/assets/onboarding/slide4_v24.png',
+            'https://raw.githubusercontent.com/exonotzor/kaydirak-app/main/assets/onboarding/slide4_v25.png',
         assetFallback: 'assets/onboarding/slide4.png',
       ),
       OnboardingSlide(
         id: 5,
         imageUrl:
-            'https://raw.githubusercontent.com/exonotzor/kaydirak-app/main/assets/onboarding/slide5_v24.png',
+            'https://raw.githubusercontent.com/exonotzor/kaydirak-app/main/assets/onboarding/slide5_v25.png',
         assetFallback: 'assets/onboarding/slide5.png',
       ),
     ];
