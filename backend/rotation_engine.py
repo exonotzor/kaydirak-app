@@ -90,10 +90,23 @@ for run_num, batch in enumerate(history, 1):
     for pid in batch:
         last_seen_run[pid] = run_num
 
-def select_diverse_10(candidates):
+def _tech_saturated_type(item):
+    tl = (item.get('title') or '').lower()
+    if any(k in tl for k in ('mouse', 'fare')) and 'pad' not in tl:
+        return 'mouse'
+    if any(k in tl for k in ('akıllı saat', 'bileklik', 'smartwatch', 'watch', 'mi band', 'fitbit')):
+        return 'watch'
+    if any(k in tl for k in ('hoparlör', 'speaker', 'soundbar')):
+        return 'speaker'
+    if any(k in tl for k in ('webcam', 'web kamera')):
+        return 'webcam'
+    return None
+
+def select_diverse_10(candidates, category=None):
     """
     Picks 10 items by round-robin sampling across subCategory buckets
     so that no single sub-category dominates the selection.
+    For Teknoloji, caps mouse/watch/speaker/webcam to ~5% each (max 1 per type, max 2 combined per 10 items).
     """
     buckets = defaultdict(list)
     for it in candidates:
@@ -103,7 +116,6 @@ def select_diverse_10(candidates):
     subcat_keys = list(buckets.keys())
     random.shuffle(subcat_keys)
     for k in subcat_keys:
-        # Prioritize never-shown items first, but randomize within same recency tier
         never = [x for x in buckets[k] if x['id'] not in last_seen_run]
         seen = [x for x in buckets[k] if x['id'] in last_seen_run]
         random.shuffle(never)
@@ -111,16 +123,45 @@ def select_diverse_10(candidates):
         buckets[k] = never + seen
 
     chosen = []
-    while len(chosen) < 10:
-        added_in_round = False
-        for k in subcat_keys:
-            if buckets[k]:
-                chosen.append(buckets[k].pop(0))
-                added_in_round = True
-                if len(chosen) == 10:
+    chosen_ids = set()
+    sat_counts = Counter()
+    sat_total = 0
+
+    def try_pick(enforce_caps):
+        nonlocal sat_total
+        while len(chosen) < 10:
+            added_in_round = False
+            for k in subcat_keys:
+                if not buckets[k]:
+                    continue
+                picked_idx = None
+                for idx, cand in enumerate(buckets[k]):
+                    if cand['id'] in chosen_ids:
+                        continue
+                    if enforce_caps and category == 'Teknoloji':
+                        st = _tech_saturated_type(cand)
+                        if st is not None and (sat_counts[st] >= 1 or sat_total >= 2):
+                            continue
+                    picked_idx = idx
                     break
-        if not added_in_round:
-            break
+                if picked_idx is not None:
+                    it = buckets[k].pop(picked_idx)
+                    chosen.append(it)
+                    chosen_ids.add(it['id'])
+                    if category == 'Teknoloji':
+                        st = _tech_saturated_type(it)
+                        if st is not None:
+                            sat_counts[st] += 1
+                            sat_total += 1
+                    added_in_round = True
+                    if len(chosen) == 10:
+                        break
+            if not added_in_round:
+                break
+
+    try_pick(enforce_caps=True)
+    if len(chosen) < 10:
+        try_pick(enforce_caps=False)
     return chosen
 
 # Select 10 items for each of the 12 bins
@@ -143,7 +184,7 @@ for store in STORES:
             in_cooldown.sort(key=lambda x: last_seen_run.get(x['id'], 0))
             eligible.extend(in_cooldown)
 
-        chosen = select_diverse_10(eligible)
+        chosen = select_diverse_10(eligible, category=cat)
         if len(chosen) < 10:
             raise ValueError(f"Insufficient items in {store} - {cat}: available {len(chosen)}/10")
 

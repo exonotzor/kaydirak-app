@@ -24,14 +24,22 @@ os.chdir(PROJECT_DIR)
 # 32 Sub-Categories (8 per Main Category)
 SUBCATEGORIES = {
     'Teknoloji': [
-        ('Kulaklık', ['bluetooth kulaklık', 'kafa üstü kulaklık', 'tws kulaklık']),
-        ('Mouse & Klavye', ['kablosuz mouse', 'mekanik klavye', 'bluetooth klavye']),
-        ('Veri Depolama', ['taşınabilir ssd', 'harici harddisk', 'usb bellek 128gb']),
-        ('Akıllı Saat', ['akıllı saat', 'akıllı bileklik']),
-        ('Hoparlör & Ses', ['bluetooth hoparlör', 'taşınabilir hoparlör', 'soundbar']),
-        ('Oyuncu Ekipmanları', ['oyuncu mouse', 'oyuncu kulaklığı', 'gamepad oyun kolu']),
-        ('Webcam & Mikrofon', ['webcam kamera', 'yaka mikrofonu', 'oyuncu mikrofonu']),
-        ('Ağ & Güç', ['wifi menzil genişletici', 'modem router', 'powerbank 20000'])
+        ('Projeksiyon & Ev Sineması', ['mini projeksiyon cihazı', 'android tv box', 'taşınabilir projeksiyon']),
+        ('Oyun & Konsol', ['el oyun konsolu', 'oyuncu gamepad', 'direksiyon seti', 'vr sanal gerçeklik gözlüğü']),
+        ('Akıllı Ev & Otomasyon', ['akıllı priz wifi', 'akıllı led şerit', 'akıllı ev güvenlik kamerası']),
+        ('Tablet & Çizim', ['android tablet', 'grafik çizim tableti', 'e-kitap okuyucu']),
+        ('Monitör & Ekran', ['oyuncu monitörü', 'taşınabilir monitör', 'monitör standı kolu']),
+        ('3D & Maker', ['3d yazıcı kalem', 'dijital mikroskop', 'lehim havya seti']),
+        ('Drone & Aksiyon', ['kameralı drone', 'aksiyon kamerası', 'telefon gimbal sabitleyici']),
+        ('Mekanik Klavye', ['mekanik klavye', 'kablosuz klavye', 'rgb büyük mouse pad']),
+        ('Kulaklık & Ses', ['anc bluetooth kulaklık', 'oyuncu kulaklığı', 'kulak içi tws kulaklık']),
+        ('Veri Depolama & SSD', ['taşınabilir ssd 1tb', 'nvme m2 ssd', 'micro sd kart 256gb']),
+        ('Enerji & Güç', ['powerbank 20000mah hızlı şarj', 'akım korumalı priz usb', 'gan hızlı şarj adaptörü']),
+        ('Ağ & Wi-Fi', ['wifi 6 router', 'mesh wifi sistemi', 'wifi menzil genişletici']),
+        ('Fotoğraf & Video', ['şipşak fotoğraf makinesi', 'ring light led halka ışık', 'kablosuz yaka mikrofonu']),
+        ('Oto Teknolojisi', ['araç içi kamera', 'şarjlı lastik şişirme pompası', 'fm transmitter bluetooth']),
+        ('Ofis & Etiket', ['mini termal etiket yazıcı', 'usb c çoklayıcı hub', 'soğutucu laptop standı']),
+        ('Mouse & Akıllı Saat & Ses', ['kablosuz mouse', 'akıllı saat', 'bluetooth hoparlör', 'usb webcam'])
     ],
     'Moda': [
         ('Erkek Üst Giyim', ['erkek tişört', 'erkek gömlek', 'erkek sweatshirt']),
@@ -247,10 +255,12 @@ def harvest_hepsiburada(per_subcat=32):
     headers = {'User-Agent': 'Hepsiburada/5.32.0 (Android 13; SM-S908B)'}
 
     for cat, subcats in SUBCATEGORIES.items():
+        target_for_cat = 18 if cat == 'Teknoloji' else per_subcat
         for subcat_name, queries in subcats:
+            subcat_cap = 12 if subcat_name == 'Mouse & Akıllı Saat & Ses' else target_for_cat
             subcat_count = 0
             for q in queries:
-                if subcat_count >= per_subcat:
+                if subcat_count >= subcat_cap:
                     break
                 url = f"https://www.hepsiburada.com/ara?q={std_requests.utils.quote(q)}&siralama=coksatan"
                 try:
@@ -264,7 +274,7 @@ def harvest_hepsiburada(per_subcat=32):
                             data = json.loads(sc)
                             prods = data.get('searchState', {}).get('searchProductArray', [])
                             for p in prods:
-                                if subcat_count >= per_subcat:
+                                if subcat_count >= subcat_cap:
                                     break
                                 pid = str(p.get('productId') or '').strip()
                                 title = clean_title(p.get('name') or '')

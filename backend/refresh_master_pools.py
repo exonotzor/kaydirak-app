@@ -27,14 +27,17 @@ from backend.build_bestseller_pools import (
 
 IDEFIX_SUBCATEGORIES = {
     'Teknoloji': [
-        ('Kulaklık', ['/gaming-kulaklik-c-230890672']),
-        ('Mouse & Klavye', ['/gaming-mouse-c-230861751', '/gaming-klavye-c-230835467']),
-        ('Bilgisayar & Tablet', ['/bilgisayar-ve-tablet-c-2302']),
-        ('Akıllı Saat', ['/akilli-saatler-smartwatch-c-230993929', '/giyilebilir-teknoloji-c-2309']),
-        ('Hoparlör & Ses', ['/tv-goruntu-ses-c-2314']),
-        ('Oyuncu Ekipmanları', ['/oyuncu-donanimlari-c-2308115310', '/pc-joystick-gamepad-aksesuarlari-c-230865728']),
-        ('Webcam & Foto', ['/foto-kamera-c-2307', '/yayinci-aksesuarlari-c-230898265']),
-        ('Konsol & Elektronik', ['/konsol-aksesuarlari-c-2308758120', '/teknoloji-c-23'])
+        ('Projeksiyon & Ev Sineması', ['/projeksiyon-cihazi-c-231433022', '/tv-goruntu-ses-c-2314']),
+        ('Oyun & Konsol', ['/oyun-konsollari-c-2308', '/konsol-aksesuarlari-c-2308758120', '/pc-joystick-gamepad-aksesuarlari-c-230865728']),
+        ('Bilgisayar & Tablet', ['/bilgisayar-ve-tablet-c-2302', '/tablet-c-230262739']),
+        ('Monitör & Ekran', ['/monitorler-c-230255517']),
+        ('Mekanik Klavye', ['/gaming-klavye-c-230835467', '/klavye-c-230239773']),
+        ('Kulaklık & Ses', ['/gaming-kulaklik-c-230890672', '/kulaklik-c-231444006']),
+        ('Veri Depolama & SSD', ['/veri-depolama-c-230291722', '/tasinabilir-diskler-c-230270068']),
+        ('Fotoğraf & Video', ['/foto-kamera-c-2307', '/aksiyon-kameralari-c-230764507']),
+        ('Ağ & Powerbank', ['/ag-modem-c-230213904', '/powerbank-c-230159283']),
+        ('Ofis & Elektronik', ['/yazicilar-c-230286380', '/teknoloji-c-23']),
+        ('Mouse & Akıllı Saat & Ses', ['/gaming-mouse-c-230861751', '/akilli-saatler-smartwatch-c-230993929'])
     ],
     'Moda': [
         ('Erkek Üst Giyim', ['/erkek-giyim-c-5507240150']),
@@ -98,10 +101,12 @@ def harvest_amazon_with_warmup(per_subcat=32):
         pass
 
     for cat, subcats in SUBCATEGORIES.items():
+        target_for_cat = 18 if cat == 'Teknoloji' else per_subcat
         for subcat_name, queries in subcats:
+            subcat_cap = 12 if subcat_name == 'Mouse & Akıllı Saat & Ses' else target_for_cat
             subcat_count = 0
             for q in queries:
-                if subcat_count >= per_subcat:
+                if subcat_count >= subcat_cap:
                     break
                 url = f"https://www.amazon.com.tr/s?k={std_requests.utils.quote(q)}&s=exact-aware-popularity-rank"
                 try:
@@ -122,7 +127,7 @@ def harvest_amazon_with_warmup(per_subcat=32):
                         time.sleep(0.4)
 
                     for card in cards:
-                        if subcat_count >= per_subcat:
+                        if subcat_count >= subcat_cap:
                             break
                         asin = (card.get('data-asin') or '').strip()
                         if len(asin) != 10 or not asin.startswith('B0') or asin in seen_asins:
@@ -190,13 +195,15 @@ def harvest_idefix_exact(per_subcat=32):
         'Accept-Language': 'tr-TR,tr;q=0.9',
     }
     for cat, subcats in IDEFIX_SUBCATEGORIES.items():
+        target_for_cat = 24 if cat == 'Teknoloji' else per_subcat
         for subcat_name, paths in subcats:
+            subcat_cap = 12 if subcat_name == 'Mouse & Akıllı Saat & Ses' else target_for_cat
             subcat_count = 0
             for p_url in paths:
-                if subcat_count >= per_subcat:
+                if subcat_count >= subcat_cap:
                     break
                 for page_no in (1, 2):
-                    if subcat_count >= per_subcat:
+                    if subcat_count >= subcat_cap:
                         break
                     sep = '&' if '?' in p_url else '?'
                     full_url = f"https://www.idefix.com{p_url}{sep}siralama=desc_score_best_selling&sayfa={page_no}"
@@ -216,7 +223,7 @@ def harvest_idefix_exact(per_subcat=32):
                             or []
                         )
                         for it in items:
-                            if subcat_count >= per_subcat:
+                            if subcat_count >= subcat_cap:
                                 break
                             variants = it.get('variants') or [it]
                             v = variants[0]
@@ -292,6 +299,27 @@ def merge_and_save_pool(fresh_pool, filename, store_label, target_per_cat=240):
                 combined.append(old_it)
                 seen_ids.add(old_it['id'])
                 seen_titles.add(old_it['title'].lower()[:45])
+
+        if cat == 'Teknoloji':
+            type_counts = {'mouse': 0, 'watch': 0, 'speaker': 0, 'webcam': 0}
+            filtered = []
+            for it in combined:
+                tl = it.get('title', '').lower()
+                t_key = None
+                if any(k in tl for k in ('mouse', 'fare')) and 'pad' not in tl:
+                    t_key = 'mouse'
+                elif any(k in tl for k in ('akıllı saat', 'bileklik', 'smartwatch', 'watch', 'mi band', 'fitbit')):
+                    t_key = 'watch'
+                elif any(k in tl for k in ('hoparlör', 'speaker', 'soundbar')):
+                    t_key = 'speaker'
+                elif any(k in tl for k in ('webcam', 'web kamera')):
+                    t_key = 'webcam'
+                if t_key is not None:
+                    if type_counts[t_key] >= 12:
+                        continue
+                    type_counts[t_key] += 1
+                filtered.append(it)
+            combined = filtered
 
         merged_pool[cat] = combined[: target_per_cat + 15]
 
