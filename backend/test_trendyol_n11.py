@@ -121,3 +121,5 @@ if __name__ == "__main__":
     ty_cnt = test_trendyol("kahve makinesi")
     n11_cnt = test_n11("kahve makinesi")
     print(f"\nSUMMARY -> Trendyol: {ty_cnt} products | n11: {n11_cnt} products")
+    assert ty_cnt >= 10, f"Trendyol blocked or failed: {ty_cnt}"
+    assert n11_cnt >= 10, f"n11 blocked or failed: {n11_cnt}"
