@@ -1,0 +1,26 @@
+name: Test Trendyol and N11 Isolated Probe
+
+on:
+  workflow_dispatch:
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install curl_cffi urllib3
+
+      - name: Run isolated Trendyol & N11 probe
+        run: |
+          python backend/test_trendyol_n11.py
