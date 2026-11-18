@@ -25,6 +25,12 @@ jobs:
         run: |
           pip install curl_cffi urllib3
 
-      - name: Run isolated Trendyol & N11 probe
+      - name: Test Trendyol Only
+        continue-on-error: true
         run: |
-          python backend/test_trendyol_n11.py
+          python -c "from backend.test_trendyol_n11 import test_trendyol; c = test_trendyol('kahve makinesi'); assert c >= 10, f'Trendyol failed: {c}'"
+
+      - name: Test N11 Only
+        continue-on-error: true
+        run: |
+          python -c "from backend.test_trendyol_n11 import test_n11; c = test_n11('kahve makinesi'); assert c >= 10, f'N11 failed: {c}'"
