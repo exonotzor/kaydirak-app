@@ -899,6 +899,39 @@
     "imageUrl": "https://image03.idefix.com/resize/600/600/product/11364703/vikings-line-cep-detayli-beyaz-palazzo-685e14d1464f0.jpg",
     "productUrl": "https://www.idefix.com/vikings-line-cep-detayli-beyaz-palazzo-p-11364703",
     "store": "Idefix",
+    "category": "Kozmetik"
+  },
+  {
+    "id": "amz-B0DHL76W5V",
+    "title": "JBL Wave Beam2, Kablosuz Kulakiçi Kulaklık, IE, Pembe",
+    "originalPrice": 3642.0,
+    "discountedPrice": 3059.0,
+    "discountRate": 16,
+    "imageUrl": "https://m.media-amazon.com/images/I/61--C+VfZ8L._AC_UL500_.jpg",
+    "productUrl": "https://www.amazon.com.tr/dp/B0DHL76W5V",
+    "store": "Amazon TR",
+    "category": "Teknoloji"
+  },
+  {
+    "id": "idefix-31896224",
+    "title": "Gauze Fabric Design Beyaz Saten Güneşlik Tül Perde Ve Fon İle Kullanılabilir",
+    "originalPrice": 692.99,
+    "discountedPrice": 397.09,
+    "discountRate": 43,
+    "imageUrl": "https://image03.idefix.com/resize/600/600/product/31896224/gauze-fabric-design-beyaz-saten-guneslik-tul-perde-ve-fon-ile-kullanilabilir-6ac348020cf19.jpg",
+    "productUrl": "https://www.idefix.com/gauze-fabric-design-beyaz-saten-guneslik-tul-perde-ve-fon-ile-kullanilabilir-p-31896224",
+    "store": "Idefix",
+    "category": "Ev & Yaşam"
+  },
+  {
+    "id": "amz-B0FX3F3V2M",
+    "title": "THE NORTH FACE Yumiori ters çevrilebilir erkek montu (1'li paket)",
+    "originalPrice": 10211.0,
+    "discountedPrice": 8883.25,
+    "discountRate": 13,
+    "imageUrl": "https://m.media-amazon.com/images/I/71lfPLltvSL._AC_UL500_.jpg",
+    "productUrl": "https://www.amazon.com.tr/dp/B0FX3F3V2M",
+    "store": "Amazon TR",
     "category": "Moda"
   },
   {

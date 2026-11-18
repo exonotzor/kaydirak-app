@@ -490,7 +490,7 @@
       "productUrl": "https://www.amazon.com.tr/dp/B07W6G822T",
       "store": "Amazon TR",
       "category": "Teknoloji",
-      "subCategory": "Mouse & Klavye"
+      "subCategory": "Kulaklık"
     },
     {
       "id": "amz-B07W6HCFYX",
@@ -838,7 +838,7 @@
       "productUrl": "https://www.amazon.com.tr/dp/B0HCZ1ZZM6",
       "store": "Amazon TR",
       "category": "Teknoloji",
-      "subCategory": "Veri Depolama"
+      "subCategory": "Akıllı Saat"
     },
     {
       "id": "amz-B0CFYB39R3",
@@ -1282,7 +1282,7 @@
       "productUrl": "https://www.amazon.com.tr/dp/B006W6JAWK",
       "store": "Amazon TR",
       "category": "Teknoloji",
-      "subCategory": "Webcam & Mikrofon"
+      "subCategory": "Oyuncu Ekipmanları"
     },
     {
       "id": "amz-B0DBHQMMGN",
@@ -1446,8 +1446,8 @@
       "originalPrice": 1413.0,
       "discountedPrice": 1272.05,
       "discountRate": 10,
-      "imageUrl": "https://m.media-amazon.com/images/I/71MGZ1SpXpL._AC_UL500_.jpg",
-      "productUrl": "https://www.amazon.com.tr/dp/B095CLQ1PT",
+      "imageUrl": "https://m.media-amazon.com/images/I/41PpSEwPAyL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0B9QBZ4P8",
       "store": "Amazon TR",
       "category": "Teknoloji",
       "subCategory": "Webcam & Mikrofon"
@@ -1851,6 +1851,30 @@
       "subCategory": "Erkek Üst Giyim"
     },
     {
+      "id": "amz-B0H4DH28W7",
+      "title": "Velmore 3'lü Kutu Premium Erkek Tişört%100 Pamuk",
+      "originalPrice": 1279.0,
+      "discountedPrice": 1099.9,
+      "discountRate": 14,
+      "imageUrl": "https://m.media-amazon.com/images/I/61BXFzDEraL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0H4DH28W7",
+      "store": "Amazon TR",
+      "category": "Moda",
+      "subCategory": "Erkek Üst Giyim"
+    },
+    {
+      "id": "amz-B0H63GR3B5",
+      "title": "U.S. Polo Assn. Erkek Beyaz Tişört Basic 50322347-VR013",
+      "originalPrice": 1687.0,
+      "discountedPrice": 1399.95,
+      "discountRate": 17,
+      "imageUrl": "https://m.media-amazon.com/images/I/610-2MsYPFL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0H63GR3B5",
+      "store": "Amazon TR",
+      "category": "Moda",
+      "subCategory": "Erkek Üst Giyim"
+    },
+    {
       "id": "amz-B0DK427DY1",
       "title": "Calvin Klein Jeans Bisiklet Yaka Kısa Kol Klasik Fit T-Shirt Beyaz, LV04RC272GYAF",
       "originalPrice": 1082.0,
@@ -1944,7 +1968,7 @@
       "productUrl": "https://www.amazon.com.tr/dp/B0FFZMXT3J",
       "store": "Amazon TR",
       "category": "Moda",
-      "subCategory": "Erkek Üst Giyim"
+      "subCategory": "Kadın Giyim"
     },
     {
       "id": "amz-B0HFKNLK2Q",
@@ -2787,13 +2811,13 @@
       "subCategory": "Dış Giyim"
     },
     {
-      "id": "amz-B0CYTSBDRD",
-      "title": "adidas Run 70S 2.0 Ayakkabı Bayan Ayakkabı",
-      "originalPrice": 2408.0,
-      "discountedPrice": 1999.0,
-      "discountRate": 17,
-      "imageUrl": "https://m.media-amazon.com/images/I/41M-LaA3FkL._AC_UL500_.jpg",
-      "productUrl": "https://www.amazon.com.tr/dp/B0CYTSBDRD",
+      "id": "amz-B0C4PR85DB",
+      "title": "adidas Terrex Ax4 Shoes - Low (Non Football) Erkek",
+      "originalPrice": 6022.0,
+      "discountedPrice": 5299.0,
+      "discountRate": 12,
+      "imageUrl": "https://m.media-amazon.com/images/I/514X4-LVWxL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0C4PR85DB",
       "store": "Amazon TR",
       "category": "Moda",
       "subCategory": "Spor Ayakkabı"
@@ -3709,6 +3733,90 @@
       "store": "Amazon TR",
       "category": "Moda",
       "subCategory": "Çanta & Sırt Çantası"
+    },
+    {
+      "id": "amz-B09NBWLZMH",
+      "title": "HP Profesyonel Serisi 17.3 Inç Bilgisayar Sırt Çantası Siyah 500S6AA",
+      "originalPrice": 2540.0,
+      "discountedPrice": 2159.0,
+      "discountRate": 15,
+      "imageUrl": "https://m.media-amazon.com/images/I/71VG-SkYPiL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B09NBWLZMH",
+      "store": "Amazon TR",
+      "category": "Moda",
+      "subCategory": "Çanta & Sırt Çantası"
+    },
+    {
+      "id": "amz-B076CMF8Y7",
+      "title": "Samsonite CC8-19-005 15.6 inç Network 3 Dizüstü Bilgisayar Sırt Çantası, Siyah",
+      "originalPrice": 4999.0,
+      "discountedPrice": 4499.0,
+      "discountRate": 10,
+      "imageUrl": "https://m.media-amazon.com/images/I/81MC9uVZXpL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B076CMF8Y7",
+      "store": "Amazon TR",
+      "category": "Moda",
+      "subCategory": "Çanta & Sırt Çantası"
+    },
+    {
+      "id": "amz-B0GTX336M7",
+      "title": "THULE Enroute Sırt Çantası, 16'', Small, Black",
+      "originalPrice": 5999.0,
+      "discountedPrice": 5106.4,
+      "discountRate": 15,
+      "imageUrl": "https://m.media-amazon.com/images/I/81CD2OaIPqL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0GTX336M7",
+      "store": "Amazon TR",
+      "category": "Moda",
+      "subCategory": "Çanta & Sırt Çantası"
+    },
+    {
+      "id": "amz-B0HHTT5T22",
+      "title": "WillPolo Su Geçirmez Çapraz Askılı Göğüs Body Bag, Fonksiyonel Çok Bölmeli Sırt Çantası, (32x18x12 cm)",
+      "originalPrice": 879.0,
+      "discountedPrice": 747.15,
+      "discountRate": 15,
+      "imageUrl": "https://m.media-amazon.com/images/I/71i9hE-yWSL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0HHTT5T22",
+      "store": "Amazon TR",
+      "category": "Moda",
+      "subCategory": "Çanta & Sırt Çantası"
+    },
+    {
+      "id": "amz-B0BHST4VXZ",
+      "title": "tomtoc Flap Dizüstü Bilgisayar Sırt Çantası, Hafif, Suya Dayanıklı Kolej Okulu Günlük Sırt Çantası Kitap Çantası, 13-16 İn...",
+      "originalPrice": 3221.0,
+      "discountedPrice": 2899.0,
+      "discountRate": 10,
+      "imageUrl": "https://m.media-amazon.com/images/I/71YztStLcdL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0BHST4VXZ",
+      "store": "Amazon TR",
+      "category": "Moda",
+      "subCategory": "Çanta & Sırt Çantası"
+    },
+    {
+      "id": "amz-B0DHY544QL",
+      "title": "adidas Karışık ESSENTIALS 3 STRIPES BACKPACK TO School 2",
+      "originalPrice": 1736.0,
+      "discountedPrice": 1423.61,
+      "discountRate": 18,
+      "imageUrl": "https://m.media-amazon.com/images/I/719nozd9d0L._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0DHY544QL",
+      "store": "Amazon TR",
+      "category": "Moda",
+      "subCategory": "Çanta & Sırt Çantası"
+    },
+    {
+      "id": "amz-B016DEKFVK",
+      "title": "Ray-Ban RB2140 Orijinal Wayfarer Güneş Gözlüğü",
+      "originalPrice": 4803.0,
+      "discountedPrice": 4179.0,
+      "discountRate": 13,
+      "imageUrl": "https://m.media-amazon.com/images/I/41UG+uAS2wL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B016DEKFVK",
+      "store": "Amazon TR",
+      "category": "Moda",
+      "subCategory": "Saat & Gözlük"
     },
     {
       "id": "amz-B0DVH3Z3CR",
@@ -4733,6 +4841,102 @@
       "subCategory": "Kahve Keyfi"
     },
     {
+      "id": "amz-B0BSFY7FHG",
+      "title": "Vestel Retro Filtre Kahve Makinesi Düş Mavisi",
+      "originalPrice": 4999.0,
+      "discountedPrice": 4199.0,
+      "discountRate": 16,
+      "imageUrl": "https://m.media-amazon.com/images/I/51DVVjmJ8fL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0BSFY7FHG",
+      "store": "Amazon TR",
+      "category": "Ev & Yaşam",
+      "subCategory": "Kahve Keyfi"
+    },
+    {
+      "id": "amz-B0G1YXYBBX",
+      "title": "Arzum Felix Blenix El Blender Seti 900W Beyaz - FL195-0200",
+      "originalPrice": 1800.0,
+      "discountedPrice": 1529.9,
+      "discountRate": 15,
+      "imageUrl": "https://m.media-amazon.com/images/I/61GCzb4r19L._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0G1YXYBBX",
+      "store": "Amazon TR",
+      "category": "Ev & Yaşam",
+      "subCategory": "Küçük Ev Aletleri"
+    },
+    {
+      "id": "amz-B0000C6WVZ",
+      "title": "Kitchenaid 5KCM1209 Filtre Kahve Makinesi, 1.7 L, Almond Cream-EAC",
+      "originalPrice": 12047.0,
+      "discountedPrice": 9999.0,
+      "discountRate": 17,
+      "imageUrl": "https://m.media-amazon.com/images/I/51XdXK9bS0S._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0000C6WVZ",
+      "store": "Amazon TR",
+      "category": "Ev & Yaşam",
+      "subCategory": "Kahve Keyfi"
+    },
+    {
+      "id": "amz-B088R9G9MS",
+      "title": "Tefal Easyblend 1000 W Blender Seti Beyaz – El Blenderı, 0,7 L Hazne, Paslanmaz Çelik Uç",
+      "originalPrice": 3252.0,
+      "discountedPrice": 2699.0,
+      "discountRate": 17,
+      "imageUrl": "https://m.media-amazon.com/images/I/51iqFgX6oNL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B088R9G9MS",
+      "store": "Amazon TR",
+      "category": "Ev & Yaşam",
+      "subCategory": "Küçük Ev Aletleri"
+    },
+    {
+      "id": "amz-B0GF873TFH",
+      "title": "Dexart GrindBrew Öğütücülü Filtre Kahve Makinesi - KC102C",
+      "originalPrice": 14078.0,
+      "discountedPrice": 12248.05,
+      "discountRate": 13,
+      "imageUrl": "https://m.media-amazon.com/images/I/61pYSd-oTHL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0GF873TFH",
+      "store": "Amazon TR",
+      "category": "Ev & Yaşam",
+      "subCategory": "Kahve Keyfi"
+    },
+    {
+      "id": "amz-B0DVTR1M8J",
+      "title": "Dexart MD-5201T BrewMaster High Temperature Filtre Kahve Makinesi, Gri",
+      "originalPrice": 7864.0,
+      "discountedPrice": 6999.0,
+      "discountRate": 11,
+      "imageUrl": "https://m.media-amazon.com/images/I/71boj+ijraL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0DVTR1M8J",
+      "store": "Amazon TR",
+      "category": "Ev & Yaşam",
+      "subCategory": "Kahve Keyfi"
+    },
+    {
+      "id": "amz-B01F8TYB0C",
+      "title": "Ariete Vintage Filtre Kahve Makinesi Yeşil 1342/04-2 Lt Temperli Cam Sürahi, 12 Fincan Kapasite, 960 Watt, Amerikan Kahve ...",
+      "originalPrice": 8058.0,
+      "discountedPrice": 6849.0,
+      "discountRate": 15,
+      "imageUrl": "https://m.media-amazon.com/images/I/61Ig+dqv4-L._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B01F8TYB0C",
+      "store": "Amazon TR",
+      "category": "Ev & Yaşam",
+      "subCategory": "Kahve Keyfi"
+    },
+    {
+      "id": "amz-B0HC3LYH2N",
+      "title": "Trinity 900 W Paslanmaz Çelik Blender Seti, Doğrayıcı ve Çırpıcı, Siyah",
+      "originalPrice": 1904.0,
+      "discountedPrice": 1599.0,
+      "discountRate": 16,
+      "imageUrl": "https://m.media-amazon.com/images/I/61vTKrbLEdL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0HC3LYH2N",
+      "store": "Amazon TR",
+      "category": "Ev & Yaşam",
+      "subCategory": "Küçük Ev Aletleri"
+    },
+    {
       "id": "amz-B07B4T8QWN",
       "title": "Arzum AR1004 Blender Seti, 800ml ve 1.5L Hazne, 1000W, Beyaz",
       "originalPrice": 3190.25,
@@ -5402,7 +5606,7 @@
       "productUrl": "https://www.amazon.com.tr/dp/B0HM3646N4",
       "store": "Amazon TR",
       "category": "Ev & Yaşam",
-      "subCategory": "Pişirme & Tencere"
+      "subCategory": "Küçük Ev Aletleri"
     },
     {
       "id": "amz-B08GPPLQ3V",
@@ -5674,11 +5878,11 @@
       "originalPrice": 1452.0,
       "discountedPrice": 1249.0,
       "discountRate": 14,
-      "imageUrl": "https://m.media-amazon.com/images/I/61sen1YdGLL._AC_UL500_.jpg",
-      "productUrl": "https://www.amazon.com.tr/dp/B0HMLLG4SX",
+      "imageUrl": "https://m.media-amazon.com/images/I/51cO4R1ZlFL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0G2T2JXSH",
       "store": "Amazon TR",
       "category": "Ev & Yaşam",
-      "subCategory": "Termos & Matara"
+      "subCategory": "Küçük Ev Aletleri"
     },
     {
       "id": "amz-B0B5NCTBQS",
@@ -5746,8 +5950,8 @@
       "originalPrice": 1799.0,
       "discountedPrice": 1511.1,
       "discountRate": 16,
-      "imageUrl": "https://m.media-amazon.com/images/I/31nWiJJXpbL._AC_UL500_.jpg",
-      "productUrl": "https://www.amazon.com.tr/dp/B08GMD6TMC",
+      "imageUrl": "https://m.media-amazon.com/images/I/61WmR-xK0cL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0DYTLRK49",
       "store": "Amazon TR",
       "category": "Ev & Yaşam",
       "subCategory": "Termos & Matara"
@@ -6422,7 +6626,7 @@
       "productUrl": "https://www.amazon.com.tr/dp/B0CCB3SFPL",
       "store": "Amazon TR",
       "category": "Ev & Yaşam",
-      "subCategory": "Sofra & Mutfak"
+      "subCategory": "Ev Tekstili"
     },
     {
       "id": "amz-B0854KTLTJ",
@@ -6850,8 +7054,20 @@
       "originalPrice": 20064.0,
       "discountedPrice": 18058.0,
       "discountRate": 10,
-      "imageUrl": "https://m.media-amazon.com/images/I/61RNS7FFz8L._AC_UL500_.jpg",
-      "productUrl": "https://www.amazon.com.tr/dp/B074M9LB4X",
+      "imageUrl": "https://m.media-amazon.com/images/I/91Sv4P+KQPL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0FDLBN31H",
+      "store": "Amazon TR",
+      "category": "Ev & Yaşam",
+      "subCategory": "Ev Tekstili"
+    },
+    {
+      "id": "amz-B085Y63996",
+      "title": "Kärcher 28633100 EasyFinish buharlı ütü",
+      "originalPrice": 5469.25,
+      "discountedPrice": 4923.0,
+      "discountRate": 10,
+      "imageUrl": "https://m.media-amazon.com/images/I/511D5pIKvfL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B085Y63996",
       "store": "Amazon TR",
       "category": "Ev & Yaşam",
       "subCategory": "Ütü & Süpürge"
@@ -6866,7 +7082,7 @@
       "productUrl": "https://www.amazon.com.tr/dp/B0GR1Y8PKT",
       "store": "Amazon TR",
       "category": "Ev & Yaşam",
-      "subCategory": "Ütü & Süpürge"
+      "subCategory": "Aydınlatma & Kamp"
     },
     {
       "id": "amz-B0F24WGHVD",
@@ -7310,19 +7526,19 @@
       "productUrl": "https://www.amazon.com.tr/dp/B0H622D187",
       "store": "Amazon TR",
       "category": "Ev & Yaşam",
-      "subCategory": "Aydınlatma & Kamp"
+      "subCategory": "Ütü & Süpürge"
     },
     {
-      "id": "amz-B0G65YXF3H",
-      "title": "Boyundan Asmalı LED Okuma Lambası, 3 Renk Işık, 15 Mod, 1800 mAh Şarjlı, 270° Ayarlanabilir, Kademesiz Parlaklık, Kitap ve...",
-      "originalPrice": 699.0,
-      "discountedPrice": 663.99,
-      "discountRate": 5,
-      "imageUrl": "https://m.media-amazon.com/images/I/51vibwLzAEL._AC_UL500_.jpg",
-      "productUrl": "https://www.amazon.com.tr/dp/B0G65YXF3H",
+      "id": "amz-B0CBD8RN23",
+      "title": "thorqtech Dyson Uyumlu Dikey Süpürge Standı Siyah Renk V15 - V12 - V11 - V10 - V8 Modellere Uyumlu",
+      "originalPrice": 1229.0,
+      "discountedPrice": 1069.0,
+      "discountRate": 13,
+      "imageUrl": "https://m.media-amazon.com/images/I/51RjqP8nJTL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0CBD8RN23",
       "store": "Amazon TR",
       "category": "Ev & Yaşam",
-      "subCategory": "Aydınlatma & Kamp"
+      "subCategory": "Ütü & Süpürge"
     },
     {
       "id": "amz-B0GX1HKXYF",
@@ -7416,6 +7632,150 @@
       "discountRate": 12,
       "imageUrl": "https://m.media-amazon.com/images/I/51-gE8Kd9NL._AC_UL500_.jpg",
       "productUrl": "https://www.amazon.com.tr/dp/B0GX1B9YQP",
+      "store": "Amazon TR",
+      "category": "Ev & Yaşam",
+      "subCategory": "Aydınlatma & Kamp"
+    },
+    {
+      "id": "amz-B08YFH5VNQ",
+      "title": "Tefal FV6870 Smart Protect Plus 40 gr Sürekli ve 260 gr Şok Buharlı 2800 Watt Buharlı Ütü",
+      "originalPrice": 4192.0,
+      "discountedPrice": 3689.0,
+      "discountRate": 12,
+      "imageUrl": "https://m.media-amazon.com/images/I/61XAwMYCdjL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B08YFH5VNQ",
+      "store": "Amazon TR",
+      "category": "Ev & Yaşam",
+      "subCategory": "Ütü & Süpürge"
+    },
+    {
+      "id": "amz-B0BXJN67SN",
+      "title": "GüncelÇarşı Kıskaçlı Sıkıştırmalı Mandal lamba, 360° esnek okuma lambası, kitap lambası, 3 değiştirlebilir renk, kısılabil...",
+      "originalPrice": 569.0,
+      "discountedPrice": 423.11,
+      "discountRate": 26,
+      "imageUrl": "https://m.media-amazon.com/images/I/617GOnGfpRL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0BXJN67SN",
+      "store": "Amazon TR",
+      "category": "Ev & Yaşam",
+      "subCategory": "Aydınlatma & Kamp"
+    },
+    {
+      "id": "amz-B0FS1ZCXQB",
+      "title": "Siyah Dokunmatik Şarjlı Masa Lambası – 3 Renk Modu (6400K-3200K-1600K), 2W LED, 30-50 Lümen, 1200mAh Batarya, USB 5V DC",
+      "originalPrice": 370.0,
+      "discountedPrice": 341.0,
+      "discountRate": 8,
+      "imageUrl": "https://m.media-amazon.com/images/I/61gCVaVwd-L._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0FS1ZCXQB",
+      "store": "Amazon TR",
+      "category": "Ev & Yaşam",
+      "subCategory": "Aydınlatma & Kamp"
+    },
+    {
+      "id": "amz-B08SC3R51F",
+      "title": "coverzone Dekoratif Dokunmatik D1901 Şarjlı kademeli 58cm LED Masa Lambası,Çalışma masası lambası ışığı, Yatak odası başuc...",
+      "originalPrice": 563.0,
+      "discountedPrice": 534.85,
+      "discountRate": 5,
+      "imageUrl": "https://m.media-amazon.com/images/I/518evUcE3rL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B08SC3R51F",
+      "store": "Amazon TR",
+      "category": "Ev & Yaşam",
+      "subCategory": "Aydınlatma & Kamp"
+    },
+    {
+      "id": "amz-B0H622D187",
+      "title": "Neo Vista Dokunmatik Mantar Masa Lambası, Şarjlı, Dim Edilebilir, Dekoratif, Rosegold Bakır Renkli",
+      "originalPrice": 755.0,
+      "discountedPrice": 649.0,
+      "discountRate": 14,
+      "imageUrl": "https://m.media-amazon.com/images/I/71ig7gWDXQL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0H622D187",
+      "store": "Amazon TR",
+      "category": "Ev & Yaşam",
+      "subCategory": "Aydınlatma & Kamp"
+    },
+    {
+      "id": "amz-B0GX1HKXYF",
+      "title": "Shark PowerDetect Speed Clean & Empty - Auto Empty Sistemli Pet Başlıklı Şarjlı Dikey Süpürge – Ultramarine",
+      "originalPrice": 34883.0,
+      "discountedPrice": 29999.0,
+      "discountRate": 14,
+      "imageUrl": "https://m.media-amazon.com/images/I/71jaddEsRiL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0GX1HKXYF",
+      "store": "Amazon TR",
+      "category": "Ev & Yaşam",
+      "subCategory": "Ütü & Süpürge"
+    },
+    {
+      "id": "amz-B0HDFFHGMM",
+      "title": "ROBEVE Şarjlı Dokunmatik Metal Masa Lambası Bronz Red | 3 Renk Işık, Ayarlanabilir Parlaklık, Kablosuz LED Gece Lambası | ...",
+      "originalPrice": 366.0,
+      "discountedPrice": 300.0,
+      "discountRate": 18,
+      "imageUrl": "https://m.media-amazon.com/images/I/51MwpBBtH3L._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0HDFFHGMM",
+      "store": "Amazon TR",
+      "category": "Ev & Yaşam",
+      "subCategory": "Aydınlatma & Kamp"
+    },
+    {
+      "id": "amz-B01K1OAD3S",
+      "title": "Einhell Akülü El Süpürgesi TE-VC 18 Li-Solo 2347120 | PXC | 18 V | 42 mbar emiş gücü | 540 ml hazne | 3 adet nozul ve uzat...",
+      "originalPrice": 2381.0,
+      "discountedPrice": 2000.0,
+      "discountRate": 16,
+      "imageUrl": "https://m.media-amazon.com/images/I/61Ag1Ux+I4L._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B01K1OAD3S",
+      "store": "Amazon TR",
+      "category": "Ev & Yaşam",
+      "subCategory": "Ütü & Süpürge"
+    },
+    {
+      "id": "amz-B09CZ94FBJ",
+      "title": "Tefal GV9820 Pro Express Vision Buhar Kazanlı Ütü - 1830008265",
+      "originalPrice": 21308.0,
+      "discountedPrice": 17899.0,
+      "discountRate": 16,
+      "imageUrl": "https://m.media-amazon.com/images/I/61n+36WfmnL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B09CZ94FBJ",
+      "store": "Amazon TR",
+      "category": "Ev & Yaşam",
+      "subCategory": "Ütü & Süpürge"
+    },
+    {
+      "id": "amz-B0GHNT9G26",
+      "title": "TELVESSE Şarjlı Masa Lambası Işık Ayarlanabilir Ders Çalışma Okuma Işığı Beyaz Işık GY002",
+      "originalPrice": 335.0,
+      "discountedPrice": 298.0,
+      "discountRate": 11,
+      "imageUrl": "https://m.media-amazon.com/images/I/71CeKh2idUL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0GHNT9G26",
+      "store": "Amazon TR",
+      "category": "Ev & Yaşam",
+      "subCategory": "Aydınlatma & Kamp"
+    },
+    {
+      "id": "amz-B0GX1B9YQP",
+      "title": "Coverzone Taşınabilir Ticaret LED Masa Lambası, RGB Aydınlatma, Akıllı VA Ekran, Dokunmatik Ayar, Göz Koruma Özellikli, 12...",
+      "originalPrice": 1602.0,
+      "discountedPrice": 1410.15,
+      "discountRate": 12,
+      "imageUrl": "https://m.media-amazon.com/images/I/51-gE8Kd9NL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0GX1B9YQP",
+      "store": "Amazon TR",
+      "category": "Ev & Yaşam",
+      "subCategory": "Aydınlatma & Kamp"
+    },
+    {
+      "id": "amz-B0CWHJY5B1",
+      "title": "CATA Taşınabilir Şarjlı Masa Lambası Dimmerli Dekoratif Abajur Oslo Dokunmatik Sunum Lambası 3 Işık",
+      "originalPrice": 471.0,
+      "discountedPrice": 400.0,
+      "discountRate": 15,
+      "imageUrl": "https://m.media-amazon.com/images/I/61ooFNy8nKL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0CWHJY5B1",
       "store": "Amazon TR",
       "category": "Ev & Yaşam",
       "subCategory": "Aydınlatma & Kamp"
@@ -7708,19 +8068,19 @@
       "productUrl": "https://www.amazon.com.tr/dp/B0BMLXKCNP",
       "store": "Amazon TR",
       "category": "Kozmetik",
-      "subCategory": "Cilt Serumu"
+      "subCategory": "Parfüm"
     },
     {
-      "id": "amz-B09P1C4SF1",
-      "title": "The Purest Solutions, C Vitamini Aydınlatıcı ve Cilt tonu Eşitleyici Cilt Bakım Serumu 30 ml (%10 Ascorbic Acid & Ferulic ...",
-      "originalPrice": 279.0,
-      "discountedPrice": 249.9,
+      "id": "amz-B07K1PQL78",
+      "title": "Versace Eros Flame EDP Erkek Parfümü 200 ml",
+      "originalPrice": 7922.0,
+      "discountedPrice": 7130.0,
       "discountRate": 10,
-      "imageUrl": "https://m.media-amazon.com/images/I/71WNY0RoP+L._AC_UL500_.jpg",
-      "productUrl": "https://www.amazon.com.tr/dp/B09P1C4SF1",
+      "imageUrl": "https://m.media-amazon.com/images/I/613uAurw9kL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B07K1PQL78",
       "store": "Amazon TR",
       "category": "Kozmetik",
-      "subCategory": "Cilt Serumu"
+      "subCategory": "Parfüm"
     },
     {
       "id": "amz-B0CNKJTV1X",
@@ -7788,11 +8148,11 @@
       "originalPrice": 519.0,
       "discountedPrice": 455.68,
       "discountRate": 12,
-      "imageUrl": "https://m.media-amazon.com/images/I/61NuJhKRHzL._AC_UL500_.jpg",
-      "productUrl": "https://www.amazon.com.tr/dp/B0BSV61X77",
+      "imageUrl": "https://m.media-amazon.com/images/I/518jIst-1bS._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B07HNJ4J74",
       "store": "Amazon TR",
       "category": "Kozmetik",
-      "subCategory": "Cilt Serumu"
+      "subCategory": "Parfüm"
     },
     {
       "id": "amz-B0DGLCRZZ3",
@@ -8467,16 +8827,64 @@
       "subCategory": "Yüz Bakımı"
     },
     {
-      "id": "amz-B09SLF5ZH8",
-      "title": "LA ROCHE-POSAY Anthelios UVmune 400 Fluid İnvisible SPF50+ Güneş Kremi 50 ml",
-      "originalPrice": 959.0,
-      "discountedPrice": 786.53,
-      "discountRate": 18,
-      "imageUrl": "https://m.media-amazon.com/images/I/51IJVLbYJcL._AC_UL500_.jpg",
-      "productUrl": "https://www.amazon.com.tr/dp/B09SLF5ZH8",
+      "id": "amz-B0C1T4FKK3",
+      "title": "Bee'o C Vitaminli Aydınlatıcı Serum, 30 ml",
+      "originalPrice": 649.9,
+      "discountedPrice": 489.3,
+      "discountRate": 25,
+      "imageUrl": "https://m.media-amazon.com/images/I/71JeEodStGL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0C1T4FKK3",
       "store": "Amazon TR",
       "category": "Kozmetik",
-      "subCategory": "Güneş Bakımı"
+      "subCategory": "Cilt Serumu"
+    },
+    {
+      "id": "amz-B0CSQ37WPV",
+      "title": "Bioxcin Acnium Sebum Dengeleyici Yüz Yıkama Jeli 500 ml 1 Alana 1 Hediye – Salisilik Asit, Çay Ağacı ve Niasinamid İçeren ...",
+      "originalPrice": 622.0,
+      "discountedPrice": 529.0,
+      "discountRate": 15,
+      "imageUrl": "https://m.media-amazon.com/images/I/61M6GTO1iIL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0CSQ37WPV",
+      "store": "Amazon TR",
+      "category": "Kozmetik",
+      "subCategory": "Yüz Bakımı"
+    },
+    {
+      "id": "amz-B0C1HBZYXS",
+      "title": "Cliniclab Vitamin C%15 Serum 30 Ml",
+      "originalPrice": 554.0,
+      "discountedPrice": 499.0,
+      "discountRate": 10,
+      "imageUrl": "https://m.media-amazon.com/images/I/51KcoYTszzL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0C1HBZYXS",
+      "store": "Amazon TR",
+      "category": "Kozmetik",
+      "subCategory": "Cilt Serumu"
+    },
+    {
+      "id": "amz-B0H6K9BVDF",
+      "title": "Solémiel Bal ve Propolis Özlü C Vitamini Serumu 30 ML - Alpha Arbutin, Ferulik Asit ve Niacinamide İçeren Leke Karşıtı, Ay...",
+      "originalPrice": 660.0,
+      "discountedPrice": 594.39,
+      "discountRate": 10,
+      "imageUrl": "https://m.media-amazon.com/images/I/514yaxMvziL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0H6K9BVDF",
+      "store": "Amazon TR",
+      "category": "Kozmetik",
+      "subCategory": "Cilt Serumu"
+    },
+    {
+      "id": "amz-B07L7QMZP4",
+      "title": "Vaseline Nemlendirici Jel Original 100 ml",
+      "originalPrice": 218.0,
+      "discountedPrice": 179.0,
+      "discountRate": 18,
+      "imageUrl": "https://m.media-amazon.com/images/I/61xqiHXZyCL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B07L7QMZP4",
+      "store": "Amazon TR",
+      "category": "Kozmetik",
+      "subCategory": "Yüz Bakımı"
     },
     {
       "id": "amz-B0BDLGG5XZ",
@@ -8484,8 +8892,80 @@
       "originalPrice": 880.0,
       "discountedPrice": 755.65,
       "discountRate": 14,
-      "imageUrl": "https://m.media-amazon.com/images/I/51KDa2A5UfL._AC_UL500_.jpg",
-      "productUrl": "https://www.amazon.com.tr/dp/B0BDLGG5XZ",
+      "imageUrl": "https://m.media-amazon.com/images/I/61uSrWgIvgL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B07C5XPXDC",
+      "store": "Amazon TR",
+      "category": "Kozmetik",
+      "subCategory": "Yüz Bakımı"
+    },
+    {
+      "id": "amz-B0D2J14PJS",
+      "title": "Cream Co. Su Bazlı Moisturizer Nemlendirici Aydınlatıcı Yüz Kremi, Hyaluronik Asit, 50 ML, Tüm Cilt Tipleri",
+      "originalPrice": 292.0,
+      "discountedPrice": 254.07,
+      "discountRate": 13,
+      "imageUrl": "https://m.media-amazon.com/images/I/51TT7RuUpEL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0D2J14PJS",
+      "store": "Amazon TR",
+      "category": "Kozmetik",
+      "subCategory": "Yüz Bakımı"
+    },
+    {
+      "id": "amz-B08K5H5PH6",
+      "title": "The Purest Solutions, Yoğun Nemlendirme ve Dolgunlaştırıcı etkili, Yenileyici Cilt Bakım Serumu 30 ml (Hyaluronic Acid%2 +...",
+      "originalPrice": 244.97,
+      "discountedPrice": 199.9,
+      "discountRate": 18,
+      "imageUrl": "https://m.media-amazon.com/images/I/71HBy7h6vZL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B08K5H5PH6",
+      "store": "Amazon TR",
+      "category": "Kozmetik",
+      "subCategory": "Yüz Bakımı"
+    },
+    {
+      "id": "amz-B09P1C9TLL",
+      "title": "The Purest Solutions, 24 Saat Etkili Günlük Yoğun Nemlendirici Cilt Bakım Kremi 50 ml",
+      "originalPrice": 319.0,
+      "discountedPrice": 265.0,
+      "discountRate": 17,
+      "imageUrl": "https://m.media-amazon.com/images/I/71ptmsXNRFL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B09P1C9TLL",
+      "store": "Amazon TR",
+      "category": "Kozmetik",
+      "subCategory": "Yüz Bakımı"
+    },
+    {
+      "id": "amz-B00B9V3Q5A",
+      "title": "NIVEA Yoğun Nemlendirici Repair & Care Vücut Losyonu 400ml, 72 Saat Nemlendirime, Kaşıntılı ve Hassas Ciltlere Özel, Onarı...",
+      "originalPrice": 260.0,
+      "discountedPrice": 229.0,
+      "discountRate": 12,
+      "imageUrl": "https://m.media-amazon.com/images/I/51wTXUp7iQL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B00B9V3Q5A",
+      "store": "Amazon TR",
+      "category": "Kozmetik",
+      "subCategory": "Yüz Bakımı"
+    },
+    {
+      "id": "amz-B0CJJVSP15",
+      "title": "Agarta C Vitamini Serum Aydınlatıcı Koyu Leke Karşıtı (%3,5 Vitamin C, Niacinamide, Zinc PCA)",
+      "originalPrice": 340.0,
+      "discountedPrice": 299.0,
+      "discountRate": 12,
+      "imageUrl": "https://m.media-amazon.com/images/I/61ZKKVsmBeL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0CJJVSP15",
+      "store": "Amazon TR",
+      "category": "Kozmetik",
+      "subCategory": "Cilt Serumu"
+    },
+    {
+      "id": "amz-B0B34W1GGB",
+      "title": "Dove Beauty Cream Bar Pink Nemlendirici Krem 90 g",
+      "originalPrice": 59.0,
+      "discountedPrice": 52.9,
+      "discountRate": 10,
+      "imageUrl": "https://m.media-amazon.com/images/I/61BQAznu4uL._AC_UL500_.jpg",
+      "productUrl": "https://www.amazon.com.tr/dp/B0B34W1GGB",
       "store": "Amazon TR",
       "category": "Kozmetik",
       "subCategory": "Yüz Bakımı"

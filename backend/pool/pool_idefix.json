@@ -2226,8 +2226,8 @@
       "originalPrice": 935.0,
       "discountedPrice": 767.04,
       "discountRate": 18,
-      "imageUrl": "https://image03.idefix.com/resize/600/600/product/32140305/bluetooth-53-kablosuz-kulak-ici-kulaklik-gurultu-engelleyici-uzun-pil-omurlu-6ac74766457f9.jpg",
-      "productUrl": "https://www.idefix.com/thekam-bluetooth-53-kablosuz-kulak-ici-kulaklik-gurultu-engelleyici-uzun-pil-omurlu-p-32140305",
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/13322022/razer-blackshark-v3-x-hyperspeed-kablosuz-siyah-kulaklik-rz04-05420100-r3m1-6924322575d99.png",
+      "productUrl": "https://www.idefix.com/razer-blackshark-v3-x-hyperspeed-kablosuz-siyah-kulaklik-rz04-05420100-r3m1-p-13322022",
       "store": "Idefix",
       "category": "Teknoloji",
       "subCategory": "Kulaklık"
@@ -2243,6 +2243,42 @@
       "store": "Idefix",
       "category": "Teknoloji",
       "subCategory": "Kulaklık"
+    },
+    {
+      "id": "idefix-31519515",
+      "title": "Skygo Kablosuz Mouse 2.4 Ghz 1600 Dpi Kırmızı HDX3407R",
+      "originalPrice": 1560.0,
+      "discountedPrice": 1295.03,
+      "discountRate": 17,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/31519515/kablosuz-mouse-24-ghz-1600-dpi-kirmizi-hdx3407r-6ab62d4aa7841.jpg",
+      "productUrl": "https://www.idefix.com/skygo-kablosuz-mouse-24-ghz-1600-dpi-kirmizi-hdx3407r-p-31519515",
+      "store": "Idefix",
+      "category": "Teknoloji",
+      "subCategory": "Mouse & Klavye"
+    },
+    {
+      "id": "idefix-9172422",
+      "title": "Apple iPad 11. Nesil Wi-Fi 128 Gb 11\" Md4A4Tu/A Mavi Tablet (Apple Türkiye Garantili)",
+      "originalPrice": 31254.0,
+      "discountedPrice": 28129.03,
+      "discountRate": 10,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/9172422/apple-ipad-11-nesil-wi-fi-128-gb-11-md4a4tua-mavi-tablet-68343d461694c.jpg",
+      "productUrl": "https://www.idefix.com/apple-ipad-11-nesil-wi-fi-128-gb-11-md4a4tua-mavi-tablet-apple-turkiye-garantili-p-9172422",
+      "store": "Idefix",
+      "category": "Teknoloji",
+      "subCategory": "Bilgisayar & Tablet"
+    },
+    {
+      "id": "idefix-18212818",
+      "title": "Samsung Galaxy Tab A11+ 6Gb 128Gb Gri Tablet",
+      "originalPrice": 11749.0,
+      "discountedPrice": 9751.5,
+      "discountRate": 17,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/18212818/samsung-galaxy-tab-a11-6gb-128gb-gri-tablet-69562d308bfaa.jpg",
+      "productUrl": "https://www.idefix.com/samsung-galaxy-tab-a11-6gb-128gb-gri-tablet-p-18212818",
+      "store": "Idefix",
+      "category": "Teknoloji",
+      "subCategory": "Bilgisayar & Tablet"
     },
     {
       "id": "idefix-6927503",
@@ -2878,7 +2914,67 @@
       "productUrl": "https://www.idefix.com/forwhat-buro-ev-ofis-mobil-telefonu-icin-4000mah-4-buton-sogutucu-fanli-tutucu-gamepad-p-29826667",
       "store": "Idefix",
       "category": "Teknoloji",
-      "subCategory": "Oyuncu Ekipmanları"
+      "subCategory": "Konsol & Elektronik"
+    },
+    {
+      "id": "idefix-16457856",
+      "title": "Insta360 Mini 2-in-1 Tripod 2.0",
+      "originalPrice": 3528.0,
+      "discountedPrice": 3175.0,
+      "discountRate": 10,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/16457856/insta360-mini-2-in-1-tripod-20-691ade2c411b3.png",
+      "productUrl": "https://www.idefix.com/insta360-mini-2-in-1-tripod-20-p-16457856",
+      "store": "Idefix",
+      "category": "Teknoloji",
+      "subCategory": "Webcam & Foto"
+    },
+    {
+      "id": "idefix-18304928",
+      "title": "PXN V10 Pro PC-XBOX One/Series-PS4 Uyumlu Direksiyon Seti",
+      "originalPrice": 15256.0,
+      "discountedPrice": 12968.01,
+      "discountRate": 15,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/18304928/pxn-v10-pro-pc-xbox-oneseries-ps4-uyumlu-direksiyon-seti-69576d3dcbcfd.jpg",
+      "productUrl": "https://www.idefix.com/pxn-v10-pro-pc-xbox-oneseries-ps4-uyumlu-direksiyon-seti-p-18304928",
+      "store": "Idefix",
+      "category": "Teknoloji",
+      "subCategory": "Konsol & Elektronik"
+    },
+    {
+      "id": "idefix-18304931",
+      "title": "PXN VD4 Bundle PC Uyumlu Direksiyon Seti",
+      "originalPrice": 25352.0,
+      "discountedPrice": 20789.01,
+      "discountRate": 18,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/18304931/pxn-vd4-bundle-pc-uyumlu-direksiyon-seti-69576d4245f08.jpg",
+      "productUrl": "https://www.idefix.com/pxn-vd4-bundle-pc-uyumlu-direksiyon-seti-p-18304931",
+      "store": "Idefix",
+      "category": "Teknoloji",
+      "subCategory": "Konsol & Elektronik"
+    },
+    {
+      "id": "idefix-18304932",
+      "title": "PXN VD6 Bundle PC Uyumlu Direksiyon Seti",
+      "originalPrice": 26135.0,
+      "discountedPrice": 23521.41,
+      "discountRate": 10,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/18304932/pxn-vd6-bundle-pc-uyumlu-direksiyon-seti-69576d433514a.jpg",
+      "productUrl": "https://www.idefix.com/pxn-vd6-bundle-pc-uyumlu-direksiyon-seti-p-18304932",
+      "store": "Idefix",
+      "category": "Teknoloji",
+      "subCategory": "Konsol & Elektronik"
+    },
+    {
+      "id": "idefix-20847546",
+      "title": "Pxn CB1 Simülasyon Oyunlar İçin Çok İşlevli Kontrol Düğme Kutusu",
+      "originalPrice": 5510.0,
+      "discountedPrice": 4848.8,
+      "discountRate": 12,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/20847546/cb1-simulasyon-oyunlar-icin-cok-islevli-kontrol-dugme-kutusu-69f6f11305d96.jpg",
+      "productUrl": "https://www.idefix.com/pxn-cb1-simulasyon-oyunlar-icin-cok-islevli-kontrol-dugme-kutusu-p-20847546",
+      "store": "Idefix",
+      "category": "Teknoloji",
+      "subCategory": "Konsol & Elektronik"
     }
   ],
   "Moda": [
@@ -4104,7 +4200,7 @@
       "productUrl": "https://www.idefix.com/adidas-handball-spezial-w-kadin-sneaker-if6490-p-3701231",
       "store": "Idefix",
       "category": "Moda",
-      "subCategory": "Spor Ayakkabı"
+      "subCategory": "Erkek Üst Giyim"
     },
     {
       "id": "idefix-4211357",
@@ -4116,7 +4212,7 @@
       "productUrl": "https://www.idefix.com/uspolo-assnviavai-4pr-siyah-comfort-casual-anatomik-spor-ayakkabisi-p-4211357",
       "store": "Idefix",
       "category": "Moda",
-      "subCategory": "Spor Ayakkabı"
+      "subCategory": "Erkek Üst Giyim"
     },
     {
       "id": "idefix-3278400",
@@ -4176,7 +4272,7 @@
       "productUrl": "https://www.idefix.com/tonny-black-unisex-kahve-rahat-kalip-termo-taban-bagcikli-spor-ayakkabi-p-32056423",
       "store": "Idefix",
       "category": "Moda",
-      "subCategory": "Spor Ayakkabı"
+      "subCategory": "Dış Giyim"
     },
     {
       "id": "idefix-12148767",
@@ -4188,7 +4284,7 @@
       "productUrl": "https://www.idefix.com/puma-milenio-tech-sneaker-unisex-spor-ayakkabi-40262301-p-12148767",
       "store": "Idefix",
       "category": "Moda",
-      "subCategory": "Spor Ayakkabı"
+      "subCategory": "Kadın Giyim"
     },
     {
       "id": "idefix-21863982",
@@ -4249,6 +4345,366 @@
       "store": "Idefix",
       "category": "Moda",
       "subCategory": "Spor Ayakkabı"
+    },
+    {
+      "id": "idefix-28306612",
+      "title": "Butik İstanbul Kadın Düşük Omuz Bağcık Detaylı Midi Boy Elbise",
+      "originalPrice": 702.39,
+      "discountedPrice": 597.03,
+      "discountRate": 15,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/28306612/kadin-dusuk-omuz-bagcik-detayli-midi-boy-elbise-6a59ddf28310a.jpg",
+      "productUrl": "https://www.idefix.com/butik-istanbul-kadin-dusuk-omuz-bagcik-detayli-midi-boy-elbise-p-28306612",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Kadın Giyim"
+    },
+    {
+      "id": "idefix-30928895",
+      "title": "Fahhar Büzgülü Balon Ceket Bej",
+      "originalPrice": 2529.89,
+      "discountedPrice": 1502.75,
+      "discountRate": 41,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/30928895/fahhar-buzgulu-balon-ceket-bej-6aa1727017d0d.jpg",
+      "productUrl": "https://www.idefix.com/fahhar-buzgulu-balon-ceket-bej-p-30928895",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Dış Giyim"
+    },
+    {
+      "id": "idefix-30784616",
+      "title": "LC Waikiki LCW Modest Kahverengi Kruvaze Yaka Bağlamalı Oversize Kadın Blazer Ceket",
+      "originalPrice": 3549.0,
+      "discountedPrice": 2909.98,
+      "discountRate": 18,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/30784616/lcw-modest-kahverengi-kruvaze-yaka-baglamali-oversize-kadin-blazer-ceket-6a9e811a6bbb8.jpg",
+      "productUrl": "https://www.idefix.com/lc-waikiki-lcw-modest-kahverengi-kruvaze-yaka-baglamali-oversize-kadin-blazer-ceket-p-30784616",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Dış Giyim"
+    },
+    {
+      "id": "idefix-30921814",
+      "title": "Caterpillar Intruder 013G100955 Kadın Krem Süet Outdoor Günlük Spor Ayakkabı",
+      "originalPrice": 6999.0,
+      "discountedPrice": 3324.52,
+      "discountRate": 53,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/30921814/caterpillar-intruder-013g100955-kadin-krem-suet-outdoor-gunluk-spor-ayakkabi-6aa1627963151.jpg",
+      "productUrl": "https://www.idefix.com/caterpillar-intruder-013g100955-kadin-krem-suet-outdoor-gunluk-spor-ayakkabi-p-30921814",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Spor Ayakkabı"
+    },
+    {
+      "id": "idefix-24343060",
+      "title": "Reebok Clean Lift 1.2 Kadın Siyah Sneaker",
+      "originalPrice": 2516.0,
+      "discountedPrice": 2188.99,
+      "discountRate": 13,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/24343060/reebok-clean-lift-12-kadin-siyah-sneaker-69f05f2680b04.jpg",
+      "productUrl": "https://www.idefix.com/reebok-clean-lift-12-kadin-siyah-sneaker-p-24343060",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Spor Ayakkabı"
+    },
+    {
+      "id": "idefix-4189276",
+      "title": "Puma 30966803 Shuffle Erkek Günlük Spor Ayakkabı",
+      "originalPrice": 1999.0,
+      "discountedPrice": 1759.12,
+      "discountRate": 12,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/4189276/puma-30966803-shuffle-erkek-gunluk-spor-ayakkabi-66ffbd7581559.jpg",
+      "productUrl": "https://www.idefix.com/puma-30966803-shuffle-erkek-gunluk-spor-ayakkabi-p-4189276",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Spor Ayakkabı"
+    },
+    {
+      "id": "idefix-30928813",
+      "title": "Fahhar Pensli Orkide Ceket Yağ Yeşili",
+      "originalPrice": 2639.89,
+      "discountedPrice": 2352.14,
+      "discountRate": 11,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/30928813/fahhar-pensli-orkide-ceket-yag-yesili-6aa172567b9a1.jpg",
+      "productUrl": "https://www.idefix.com/fahhar-pensli-orkide-ceket-yag-yesili-p-30928813",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Dış Giyim"
+    },
+    {
+      "id": "idefix-30928859",
+      "title": "Fahhar Denim Kimono Ceket Koyu Mavi",
+      "originalPrice": 2309.89,
+      "discountedPrice": 1372.07,
+      "discountRate": 41,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/30928859/fahhar-denim-kimono-ceket-koyu-mavi-6aa17264748ee.jpg",
+      "productUrl": "https://www.idefix.com/fahhar-denim-kimono-ceket-koyu-mavi-p-30928859",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Dış Giyim"
+    },
+    {
+      "id": "idefix-29851619",
+      "title": "Ekol CEKET 1272",
+      "originalPrice": 6699.0,
+      "discountedPrice": 3994.15,
+      "discountRate": 40,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/29851619/ekol-ceket-1272-6a82f94e8c599.jpg",
+      "productUrl": "https://www.idefix.com/ekol-ceket-1272-p-29851619",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Dış Giyim"
+    },
+    {
+      "id": "idefix-33255641",
+      "title": "Marco Kids Akıllı Bağcıklı Hafif Rahat Yeşil Unisex Çocuk Spor Ayakkabı Sneaker Play F",
+      "originalPrice": 4800.0,
+      "discountedPrice": 2822.4,
+      "discountRate": 41,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/33255641/akilli-bagcikli-hafif-rahat-yesil-unisex-cocuk-spor-ayakkabi-sneaker-play-f-6ad9db05953cf.jpg",
+      "productUrl": "https://www.idefix.com/marco-kids-akilli-bagcikli-hafif-rahat-yesil-unisex-cocuk-spor-ayakkabi-sneaker-play-f-p-33255641",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Spor Ayakkabı"
+    },
+    {
+      "id": "idefix-2944631",
+      "title": "adidas gazelle sneaker erkek ayakkabı BB5478",
+      "originalPrice": 3299.5,
+      "discountedPrice": 3134.52,
+      "discountRate": 5,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/2944631/adidas-gazelle-sneaker-erkek-ayakkabi-bb5478-66bd99d914968.jpg",
+      "productUrl": "https://www.idefix.com/adidas-gazelle-sneaker-erkek-ayakkabi-bb5478-p-2944631",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Spor Ayakkabı"
+    },
+    {
+      "id": "idefix-4211357",
+      "title": "U.S.POLO ASSN.VIAVAI 4PR SİYAH COMFORT CASUAL ANATOMİK SPOR AYAKKABISI",
+      "originalPrice": 3599.99,
+      "discountedPrice": 3023.99,
+      "discountRate": 16,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/4211357/uspolo-assnviavai-4pr-siyah-comfort-casual-anatomik-spor-ayakkabisi-6703d3febcf45.jpg",
+      "productUrl": "https://www.idefix.com/uspolo-assnviavai-4pr-siyah-comfort-casual-anatomik-spor-ayakkabisi-p-4211357",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Spor Ayakkabı"
+    },
+    {
+      "id": "idefix-34161117",
+      "title": "Pera Günlük Erkek Çocuk Spor Ayakkabı",
+      "originalPrice": 1719.9,
+      "discountedPrice": 722.36,
+      "discountRate": 58,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/34161117/pera-gunluk-erkek-cocuk-spor-ayakkabi-6aea371b1db2f.jpg",
+      "productUrl": "https://www.idefix.com/pera-gunluk-erkek-cocuk-spor-ayakkabi-p-34161117",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Spor Ayakkabı"
+    },
+    {
+      "id": "idefix-4192225",
+      "title": "Skechers 180061 BBK Escape Plan-Endless Pursuit Kadın Spor Ayakkabı",
+      "originalPrice": 5369.75,
+      "discountedPrice": 4832.77,
+      "discountRate": 10,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/4192225/skechers-180061-bbk-escape-plan-endless-pursuit-kadin-spor-ayakkabi-66ffc8a88d795.jpg",
+      "productUrl": "https://www.idefix.com/skechers-180061-bbk-escape-plan-endless-pursuit-kadin-spor-ayakkabi-p-4192225",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Spor Ayakkabı"
+    },
+    {
+      "id": "idefix-31034601",
+      "title": "Salomon XT-6 GORE-TEX Unisex Sneaker Ayakkabı L49215100 Beyaz",
+      "originalPrice": 13499.91,
+      "discountedPrice": 11879.92,
+      "discountRate": 12,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/31034601/salomon-xt-6-gore-tex-unisex-sneaker-ayakkabi-l49215100-beyaz-6aa7aaa2e1f6e.jpg",
+      "productUrl": "https://www.idefix.com/salomon-xt-6-gore-tex-unisex-sneaker-ayakkabi-l49215100-beyaz-p-31034601",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Spor Ayakkabı"
+    },
+    {
+      "id": "idefix-31924969",
+      "title": "Ekol Kadın Metal Düğmeli Dikiş Detaylı Ceket Siyah",
+      "originalPrice": 6999.0,
+      "discountedPrice": 5565.26,
+      "discountRate": 20,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/31924969/ekol-kadin-metal-dugmeli-dikis-detayli-ceket-siyah-6ac37f34659b7.jpg",
+      "productUrl": "https://www.idefix.com/ekol-kadin-metal-dugmeli-dikis-detayli-ceket-siyah-p-31924969",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Dış Giyim"
+    },
+    {
+      "id": "idefix-4361547",
+      "title": "SAMBA W SPOR AYAKKABI-IG9030",
+      "originalPrice": 5199.0,
+      "discountedPrice": 4559.43,
+      "discountRate": 12,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/4361547/samba-w-spor-ayakkabi-ig9030-6709104478b16.jpg",
+      "productUrl": "https://www.idefix.com/samba-w-spor-ayakkabi-ig9030-p-4361547",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Spor Ayakkabı"
+    },
+    {
+      "id": "idefix-12550735",
+      "title": "Skechers D'Lites-March Forward Kadın Beyaz Sneakers 13148 Wbk",
+      "originalPrice": 8599.0,
+      "discountedPrice": 6320.26,
+      "discountRate": 27,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/12550735/skechers-dlites-march-forward-kadin-beyaz-sneakers-13148-wbk-688bc9960ff59.jpg",
+      "productUrl": "https://www.idefix.com/skechers-dlites-march-forward-kadin-beyaz-sneakers-13148-wbk-p-12550735",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Spor Ayakkabı"
+    },
+    {
+      "id": "idefix-28305878",
+      "title": "Butik İstanbul Kadın Askılı Bisiklet Yaka çift Renkli Yırtmaçlı Uzun Viskon Elbise",
+      "originalPrice": 1235.99,
+      "discountedPrice": 1050.59,
+      "discountRate": 15,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/28305878/kadin-askili-bisiklet-yaka-cift-renkli-yirtmacli-uzun-viskon-elbise-6a59dcffeb0f2.jpg",
+      "productUrl": "https://www.idefix.com/butik-istanbul-kadin-askili-bisiklet-yaka-cift-renkli-yirtmacli-uzun-viskon-elbise-p-28305878",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Kadın Giyim"
+    },
+    {
+      "id": "idefix-30928034",
+      "title": "Fahhar Kruvaze Oversize Blazer Camel",
+      "originalPrice": 3849.89,
+      "discountedPrice": 2286.83,
+      "discountRate": 41,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/30928034/fahhar-kruvaze-oversize-blazer-camel-6aa17188ea090.jpg",
+      "productUrl": "https://www.idefix.com/fahhar-kruvaze-oversize-blazer-camel-p-30928034",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Dış Giyim"
+    },
+    {
+      "id": "idefix-19412959",
+      "title": "adidas RESPONSE 2 W",
+      "originalPrice": 5099.0,
+      "discountedPrice": 4262.76,
+      "discountRate": 16,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/19412959/response-2-w-697a16fde904d.jpg",
+      "productUrl": "https://www.idefix.com/adidas-response-2-w-p-19412959",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Spor Ayakkabı"
+    },
+    {
+      "id": "idefix-21863982",
+      "title": "Nike Air Force 1 AF1 GS Leather Unisex Sneaker Swoosh Hakiki Deri Günlük Spor Ayakkabı Krem Gri",
+      "originalPrice": 4299.0,
+      "discountedPrice": 3224.25,
+      "discountRate": 25,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/21863982/nike-air-force-1-af1-gs-leather-unisex-sneaker-swoosh-hakiki-deri-gunluk-spor-ayakkabi-krem-gri-6a44058a58354.jpg",
+      "productUrl": "https://www.idefix.com/nike-air-force-1-af1-gs-leather-unisex-sneaker-swoosh-hakiki-deri-gunluk-spor-ayakkabi-krem-gri-p-21863982",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Spor Ayakkabı"
+    },
+    {
+      "id": "idefix-30184773",
+      "title": "Yaya By Hotiç Erkek Kahverengi Deri Bağcıklı Kalın Tabanlı Sneaker",
+      "originalPrice": 5999.0,
+      "discountedPrice": 3239.46,
+      "discountRate": 46,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/30184773/erkek-kahverengi-deri-bagcikli-kalin-tabanli-sneaker-6a8d919a711ad.jpg",
+      "productUrl": "https://www.idefix.com/yaya-by-hotic-erkek-kahverengi-deri-bagcikli-kalin-tabanli-sneaker-p-30184773",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Spor Ayakkabı"
+    },
+    {
+      "id": "idefix-3278400",
+      "title": "Adidas Gazelle | ERKEK | BB5476-001",
+      "originalPrice": 4619.3,
+      "discountedPrice": 3861.74,
+      "discountRate": 16,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/3278400/adidas-gazelle-erkek-bb5476-001-66bba94766374.jpg",
+      "productUrl": "https://www.idefix.com/adidas-gazelle-erkek-bb5476-001-p-3278400",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Spor Ayakkabı"
+    },
+    {
+      "id": "idefix-28661779",
+      "title": "Kinetix ELENOR TX W 5PR Gri Kadın Sneaker",
+      "originalPrice": 2299.99,
+      "discountedPrice": 1931.99,
+      "discountRate": 16,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/28661779/kinetix-elenor-tx-w-5pr-gri-kadin-sneaker-6a675dd3cab36.jpg",
+      "productUrl": "https://www.idefix.com/kinetix-elenor-tx-w-5pr-gri-kadin-sneaker-p-28661779",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Spor Ayakkabı"
+    },
+    {
+      "id": "idefix-13513807",
+      "title": "Vans Erkek Sneaker ( Günlük) VN0009QC6BT1 Vans Knu Skool Black/True White",
+      "originalPrice": 3994.15,
+      "discountedPrice": 3514.85,
+      "discountRate": 12,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/13513807/erkek-sneaker-gunluk-vn0009qc6bt1-vans-knu-skool-blacktrue-white-68b99e2e066be.jpg",
+      "productUrl": "https://www.idefix.com/vans-erkek-sneaker-gunluk-vn0009qc6bt1-vans-knu-skool-blacktrue-white-p-13513807",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Spor Ayakkabı"
+    },
+    {
+      "id": "idefix-34159720",
+      "title": "Forta Cırtlı Kaymaz Taban Kız Çocuk Spor Bot Ayakkabı",
+      "originalPrice": 2029.9,
+      "discountedPrice": 852.56,
+      "discountRate": 58,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/34159720/forta-cirtli-kaymaz-taban-kiz-cocuk-spor-bot-ayakkabi-6aea368354387.jpg",
+      "productUrl": "https://www.idefix.com/forta-cirtli-kaymaz-taban-kiz-cocuk-spor-bot-ayakkabi-p-34159720",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Spor Ayakkabı"
+    },
+    {
+      "id": "idefix-28792327",
+      "title": "adidas Originals Summer Glow Knitted Firebird Kadın Ceket (KY2032)",
+      "originalPrice": 6090.0,
+      "discountedPrice": 5237.03,
+      "discountRate": 14,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/28792327/adidas-originals-summer-glow-knitted-firebird-kadin-ceket-ky2032-6a6af3f85a3aa.jpg",
+      "productUrl": "https://www.idefix.com/adidas-originals-summer-glow-knitted-firebird-kadin-ceket-ky2032-p-28792327",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Dış Giyim"
+    },
+    {
+      "id": "idefix-12148767",
+      "title": "Puma Milenio Tech Sneaker Unisex Spor Ayakkabı 40262301",
+      "originalPrice": 2999.0,
+      "discountedPrice": 2639.12,
+      "discountRate": 12,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/12148767/puma-milenio-tech-sneaker-unisex-spor-ayakkabi-40262301-687b1dec0c152.jpg",
+      "productUrl": "https://www.idefix.com/puma-milenio-tech-sneaker-unisex-spor-ayakkabi-40262301-p-12148767",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Spor Ayakkabı"
+    },
+    {
+      "id": "idefix-30666595",
+      "title": "Laykmayk Kadın Oversize Koyu Kahve Kısa Trençkot Ceket",
+      "originalPrice": 1799.99,
+      "discountedPrice": 1453.49,
+      "discountRate": 19,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/30666595/laykmayk-kadin-oversize-koyu-kahve-kisa-trenckot-ceket-6a996dc9f34f3.jpg",
+      "productUrl": "https://www.idefix.com/laykmayk-kadin-oversize-koyu-kahve-kisa-trenckot-ceket-p-30666595",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Dış Giyim"
     },
     {
       "id": "idefix-26148864",
@@ -5052,7 +5508,7 @@
       "productUrl": "https://www.idefix.com/casio-standart-ae-1200whd-1avdf-celik-kordon-erkek-kol-saati-p-1436918",
       "store": "Idefix",
       "category": "Moda",
-      "subCategory": "Saat & Gözlük"
+      "subCategory": "Günlük Ayakkabı"
     },
     {
       "id": "idefix-6408496",
@@ -5161,6 +5617,342 @@
       "store": "Idefix",
       "category": "Moda",
       "subCategory": "Saat & Gözlük"
+    },
+    {
+      "id": "idefix-1440148",
+      "title": "Seiko 5 S5-SSK003K Erkek Kol Saati",
+      "originalPrice": 35495.0,
+      "discountedPrice": 28750.95,
+      "discountRate": 19,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/1440148/seiko-ssk003k-5-sports-erkek-kol-saati-66c4b9d8cc39b.jpg",
+      "productUrl": "https://www.idefix.com/seiko-5-s5-ssk003k-erkek-kol-saati-p-1440148",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Saat & Gözlük"
+    },
+    {
+      "id": "idefix-3727591",
+      "title": "Citizen NH9131-14E Erkek Kol Saati",
+      "originalPrice": 13690.0,
+      "discountedPrice": 12731.7,
+      "discountRate": 7,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/3727591/citizen-nh9131-14e-erkek-kol-saati-66cdb6a6858ce.jpg",
+      "productUrl": "https://www.idefix.com/citizen-nh9131-14e-erkek-kol-saati-p-3727591",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Saat & Gözlük"
+    },
+    {
+      "id": "idefix-3618959",
+      "title": "Guess GUGW0658L1 Pırlantalı Kadın Kol Saati",
+      "originalPrice": 5416.95,
+      "discountedPrice": 3581.69,
+      "discountRate": 34,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/3618959/guess-gugw0658l1-pirlantali-kadin-kol-saati-66bebe15bb4b4.jpg",
+      "productUrl": "https://www.idefix.com/guess-gugw0658l1-pirlantali-kadin-kol-saati-p-3618959",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Saat & Gözlük"
+    },
+    {
+      "id": "idefix-1442245",
+      "title": "Seiko Srpg39k1 Erkek Kol Saati",
+      "originalPrice": 19572.0,
+      "discountedPrice": 16049.0,
+      "discountRate": 18,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/1442245/seiko-srpg39k1-erkek-kol-saati-66c4b84dc25a8.jpg",
+      "productUrl": "https://www.idefix.com/seiko-srpg39k1-erkek-kol-saati-p-1442245",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Saat & Gözlük"
+    },
+    {
+      "id": "idefix-2922036",
+      "title": "Vogue 0VO5435SI W6561355 HN Kadın Güneş Gözlüğü",
+      "originalPrice": 2727.0,
+      "discountedPrice": 1557.22,
+      "discountRate": 43,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/2922036/vogue-0vo5435si-w6561355-hn-kadin-gunes-gozlugu-66bdb06c0d3de.jpg",
+      "productUrl": "https://www.idefix.com/vogue-0vo5435si-w6561355-hn-kadin-gunes-gozlugu-p-2922036",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Saat & Gözlük"
+    },
+    {
+      "id": "idefix-4024504",
+      "title": "Armani Exchange AX5721 Kadın Kol Saati",
+      "originalPrice": 6618.3,
+      "discountedPrice": 4260.86,
+      "discountRate": 36,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/4024504/armani-exchange-ax5721-kadin-kol-saati-66f3a609bd073.jpg",
+      "productUrl": "https://www.idefix.com/armani-exchange-ax5721-kadin-kol-saati-p-4024504",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Saat & Gözlük"
+    },
+    {
+      "id": "idefix-2733898",
+      "title": "VOGUE ENJEKSİYON KADIN GÜNEŞ GÖZLÜĞÜ 0VO5230S W44/1154 HN",
+      "originalPrice": 3399.0,
+      "discountedPrice": 3054.4,
+      "discountRate": 10,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/2733898/vogue-enjeksiyon-kadin-gunes-gozlugu-0vo5230s-w441154-hn-66beca385fd22.jpg",
+      "productUrl": "https://www.idefix.com/vogue-enjeksiyon-kadin-gunes-gozlugu-0vo5230s-w441154-hn-p-2733898",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Saat & Gözlük"
+    },
+    {
+      "id": "idefix-3424144",
+      "title": "Scooter Deri Su Geçirmez Tactical Kahve Erkek Postal P3100NKA",
+      "originalPrice": 3592.0,
+      "discountedPrice": 3160.96,
+      "discountRate": 12,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/3424144/scooter-deri-su-gecirmez-tactical-kahve-erkek-postal-p3100nka-66bac73d42962.jpg",
+      "productUrl": "https://www.idefix.com/scooter-deri-su-gecirmez-tactical-kahve-erkek-postal-p3100nka-p-3424144",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Günlük Ayakkabı"
+    },
+    {
+      "id": "idefix-2733907",
+      "title": "VOGUE ENJEKSİYON KADIN GÜNEŞ GÖZLÜĞÜ 0VO5496SI 30401454 HC",
+      "originalPrice": 1599.0,
+      "discountedPrice": 1426.0,
+      "discountRate": 11,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/2733907/vogue-enjeksiyon-kadin-gunes-gozlugu-0vo5496si-30401454-hc-66beca31168ef.jpg",
+      "productUrl": "https://www.idefix.com/vogue-enjeksiyon-kadin-gunes-gozlugu-0vo5496si-30401454-hc-p-2733907",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Saat & Gözlük"
+    },
+    {
+      "id": "idefix-15792056",
+      "title": "Citizen Tsuyosa NK0024-54X Altın-Yeşil Erkek Kol Saati",
+      "originalPrice": 22092.0,
+      "discountedPrice": 18999.0,
+      "discountRate": 14,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/15792056/citizen-nk0024-54x-erkek-kol-saati-69084fb3f0a01.jpg",
+      "productUrl": "https://www.idefix.com/citizen-tsuyosa-nk0024-54x-altin-yesil-erkek-kol-saati-p-15792056",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Saat & Gözlük"
+    },
+    {
+      "id": "idefix-30770489",
+      "title": "adidas WL PNT D Siyah Kadın Jeans KQ6469",
+      "originalPrice": 5999.2,
+      "discountedPrice": 5279.3,
+      "discountRate": 12,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/30770489/adidas-wl-pnt-d-siyah-kadin-jeans-kq6469-6ab497512fd85.jpg",
+      "productUrl": "https://www.idefix.com/adidas-wl-pnt-d-siyah-kadin-jeans-kq6469-p-30770489",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Alt Giyim & Aksesuar"
+    },
+    {
+      "id": "idefix-3616841",
+      "title": "Osse OS3578-02 51 Unisex Güneş Gözlüğü",
+      "originalPrice": 2900.0,
+      "discountedPrice": 2099.02,
+      "discountRate": 28,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/3616841/osse-os3578-02-51-unisex-gunes-gozlugu-66be74fd10325.jpg",
+      "productUrl": "https://www.idefix.com/osse-os3578-02-51-unisex-gunes-gozlugu-p-3616841",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Saat & Gözlük"
+    },
+    {
+      "id": "idefix-2433448",
+      "title": "Skechers 51591 M Escape Plan Memory Foam Lacivert Erkek Ayakkabı",
+      "originalPrice": 5525.84,
+      "discountedPrice": 4973.26,
+      "discountRate": 10,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/2433448/skechers-51591-m-escape-plan-memory-foam-lacivert-erkek-ayakkabi-66c0879304aff.jpg",
+      "productUrl": "https://www.idefix.com/skechers-51591-m-escape-plan-memory-foam-lacivert-erkek-ayakkabi-p-2433448",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Günlük Ayakkabı"
+    },
+    {
+      "id": "idefix-1437434",
+      "title": "Casio Kadın Retro Kol Saati LA670WA-1DF",
+      "originalPrice": 1706.0,
+      "discountedPrice": 1450.0,
+      "discountRate": 15,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/1437434/casio-kadin-retro-kol-saati-la670wa-1df-66c4bbaeafc97.jpg",
+      "productUrl": "https://www.idefix.com/casio-kadin-retro-kol-saati-la670wa-1df-p-1437434",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Saat & Gözlük"
+    },
+    {
+      "id": "idefix-3616742",
+      "title": "Osse Os3396-01 Kadın Güneş Gözlüğü",
+      "originalPrice": 2664.0,
+      "discountedPrice": 1938.06,
+      "discountRate": 27,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/3616742/osse-os3396-01-kadin-gunes-gozlugu-66be750cbeace.jpg",
+      "productUrl": "https://www.idefix.com/osse-os3396-01-kadin-gunes-gozlugu-p-3616742",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Saat & Gözlük"
+    },
+    {
+      "id": "idefix-32518592",
+      "title": "Beeke Maria Kadın Siyah Süper Yüksek Bel Comfort Likralı Mom Kot Pantalon Jeans (TAM KALIPTIR)",
+      "originalPrice": 1399.8,
+      "discountedPrice": 832.88,
+      "discountRate": 41,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/32518592/maria-kadin-siyah-super-yuksek-bel-comfort-likrali-mom-kot-pantalon-jeans-tam-kaliptir-6ad07fc5837c9.jpg",
+      "productUrl": "https://www.idefix.com/beeke-maria-kadin-siyah-super-yuksek-bel-comfort-likrali-mom-kot-pantalon-jeans-tam-kaliptir-p-32518592",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Alt Giyim & Aksesuar"
+    },
+    {
+      "id": "idefix-15934129",
+      "title": "Mavi Jake Black Puslu Gece Mavisi Jean Pantolon 0042227245",
+      "originalPrice": 2299.99,
+      "discountedPrice": 1857.24,
+      "discountRate": 19,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/15934129/jake-black-puslu-gece-mavisi-jean-pantolon-0042227245-690c118474750.jpg",
+      "productUrl": "https://www.idefix.com/mavi-jake-black-puslu-gece-mavisi-jean-pantolon-0042227245-p-15934129",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Alt Giyim & Aksesuar"
+    },
+    {
+      "id": "idefix-9065200",
+      "title": "Kargo Cepli Jean Pantolon Buz Mavi",
+      "originalPrice": 1144.92,
+      "discountedPrice": 973.18,
+      "discountRate": 15,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/9065200/kargo-cepli-jean-pantolon-buz-mavi-68312943476ef.jpg",
+      "productUrl": "https://www.idefix.com/kargo-cepli-jean-pantolon-buz-mavi-p-9065200",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Alt Giyim & Aksesuar"
+    },
+    {
+      "id": "idefix-9063899",
+      "title": "Kadın Yüksek Bel Skater Fit Jean Pantolon Buz Mavisi",
+      "originalPrice": 1253.19,
+      "discountedPrice": 1065.21,
+      "discountRate": 15,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/9063899/kadin-yuksek-bel-skater-fit-jean-pantolon-buz-mavisi-6831211cb48f5.jpg",
+      "productUrl": "https://www.idefix.com/kadin-yuksek-bel-skater-fit-jean-pantolon-buz-mavisi-p-9063899",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Alt Giyim & Aksesuar"
+    },
+    {
+      "id": "idefix-19296076",
+      "title": "Polo&Sky Spring Model Vişne Renk Kabin Boy Valiz Bavul",
+      "originalPrice": 1148.0,
+      "discountedPrice": 999.0,
+      "discountRate": 13,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/19296076/polosky-spring-model-visne-renk-kabin-boy-valiz-bavul-697ab939f1a72.jpg",
+      "productUrl": "https://www.idefix.com/polosky-spring-model-visne-renk-kabin-boy-valiz-bavul-p-19296076",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Çanta & Sırt Çantası"
+    },
+    {
+      "id": "idefix-18430684",
+      "title": "Polo&Sky Spring Model Sarı Renk Kabin Boy Valiz Bavul",
+      "originalPrice": 1122.0,
+      "discountedPrice": 999.0,
+      "discountRate": 11,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/18430684/spring-model-sari-renk-kabin-boy-valiz-bavul-695c95b0266f2.jpg",
+      "productUrl": "https://www.idefix.com/polosky-spring-model-sari-renk-kabin-boy-valiz-bavul-p-18430684",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Çanta & Sırt Çantası"
+    },
+    {
+      "id": "idefix-26699139",
+      "title": "MAVİ KADIN STAR Dark Smoke Denim 101077-82224",
+      "originalPrice": 1499.99,
+      "discountedPrice": 1211.24,
+      "discountRate": 19,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/26699139/mavi-kadin-star-dark-smoke-denim-101077-82224-6a300f7b91c8e.jpg",
+      "productUrl": "https://www.idefix.com/mavi-kadin-star-dark-smoke-denim-101077-82224-p-26699139",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Alt Giyim & Aksesuar"
+    },
+    {
+      "id": "idefix-3340787",
+      "title": "Polaroid Pld 2060/s N9puc Polarize Erkek Güneş Gözlüğü",
+      "originalPrice": 2992.5,
+      "discountedPrice": 1451.36,
+      "discountRate": 52,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/3340787/polaroid-pld-2060s-n9puc-polarize-erkek-gunes-gozlugu-66bb463e90820.jpg",
+      "productUrl": "https://www.idefix.com/polaroid-pld-2060s-n9puc-polarize-erkek-gunes-gozlugu-p-3340787",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Saat & Gözlük"
+    },
+    {
+      "id": "idefix-21054056",
+      "title": "Vogue VO4349S 51528H 54 Kadın Güneş Gözlüğü",
+      "originalPrice": 5167.8,
+      "discountedPrice": 3323.93,
+      "discountRate": 36,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/21054056/vogue-vo4349s-51528h-54-kadin-gunes-gozlugu-69a80867808e9.jpg",
+      "productUrl": "https://www.idefix.com/vogue-vo4349s-51528h-54-kadin-gunes-gozlugu-p-21054056",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Saat & Gözlük"
+    },
+    {
+      "id": "idefix-18068866",
+      "title": "Never More Çapraz Fermuarlı Kesik Paça Düğmeli Jean Lacivert",
+      "originalPrice": 1271.88,
+      "discountedPrice": 925.29,
+      "discountRate": 27,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/18068866/capraz-fermuarli-kesik-paca-dugmeli-jean-lacivert-694b8ebf28dac.jpg",
+      "productUrl": "https://www.idefix.com/never-more-capraz-fermuarli-kesik-paca-dugmeli-jean-lacivert-p-18068866",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Alt Giyim & Aksesuar"
+    },
+    {
+      "id": "idefix-32399696",
+      "title": "Only Gıanna Straıght Balon Fit Kadın Jean Pantolon 15347094",
+      "originalPrice": 2399.99,
+      "discountedPrice": 2279.99,
+      "discountRate": 5,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/32399696/only-gianna-straight-balon-fit-kadin-jean-pantolon-15347094-6ace168876b03.jpg",
+      "productUrl": "https://www.idefix.com/only-gianna-straight-balon-fit-kadin-jean-pantolon-15347094-p-32399696",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Alt Giyim & Aksesuar"
+    },
+    {
+      "id": "idefix-3416868",
+      "title": "Casio MTP-VD03D-1AUDF Kol Saati",
+      "originalPrice": 2696.0,
+      "discountedPrice": 2399.0,
+      "discountRate": 11,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/3416868/casio-mtp-vd03d-1audf-kol-saati-66bacf89e65af.jpg",
+      "productUrl": "https://www.idefix.com/casio-mtp-vd03d-1audf-kol-saati-p-3416868",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Saat & Gözlük"
+    },
+    {
+      "id": "idefix-24391900",
+      "title": "i8 Denim Skinny Flare Jean",
+      "originalPrice": 1499.99,
+      "discountedPrice": 1424.99,
+      "discountRate": 5,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/24391900/skinny-flare-jean-69f130758e3f6.jpg",
+      "productUrl": "https://www.idefix.com/i8-denim-skinny-flare-jean-p-24391900",
+      "store": "Idefix",
+      "category": "Moda",
+      "subCategory": "Alt Giyim & Aksesuar"
     },
     {
       "id": "idefix-1439882",
@@ -6206,7 +6998,7 @@
       "productUrl": "https://www.idefix.com/fressi-fr-hm1413-panetta-hiz-ayarli-yesil-el-mikseri-p-23231548",
       "store": "Idefix",
       "category": "Ev & Yaşam",
-      "subCategory": "Küçük Ev Aletleri"
+      "subCategory": "Termos & Matara"
     },
     {
       "id": "idefix-4554936",
@@ -8078,7 +8870,7 @@
       "productUrl": "https://www.idefix.com/end-tuz-lambasi-parfum-ampul-e14-duy-10watt-10lu-paket-sari-isik-p-7900571",
       "store": "Idefix",
       "category": "Ev & Yaşam",
-      "subCategory": "Aydınlatma & Kamp"
+      "subCategory": "Ütü & Süpürge"
     },
     {
       "id": "idefix-429277",
@@ -8175,6 +8967,30 @@
       "store": "Idefix",
       "category": "Ev & Yaşam",
       "subCategory": "Aydınlatma & Kamp"
+    },
+    {
+      "id": "idefix-764172",
+      "title": "Philips Azur 8000 Serisi Buharlı Ütü Dst8021/30",
+      "originalPrice": 5849.0,
+      "discountedPrice": 5556.55,
+      "discountRate": 5,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/764172/philips-azur-8000-serisi-buharli-utu-dst802130-66c6b41eaee5e.jpg",
+      "productUrl": "https://www.idefix.com/philips-azur-8000-serisi-buharli-utu-dst8021-30-p-764172",
+      "store": "Idefix",
+      "category": "Ev & Yaşam",
+      "subCategory": "Ütü & Süpürge"
+    },
+    {
+      "id": "idefix-33966592",
+      "title": "Güral Porselen Tolstoy 84 Parça Yemek Takımı - 5108",
+      "originalPrice": 10898.0,
+      "discountedPrice": 9699.03,
+      "discountRate": 11,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/33966592/gural-porselen-tolstoy-84-parca-yemek-takimi-5108-6ae494fbadb36.jpg",
+      "productUrl": "https://www.idefix.com/gural-porselen-tolstoy-84-parca-yemek-takimi-5108-p-33966592",
+      "store": "Idefix",
+      "category": "Ev & Yaşam",
+      "subCategory": "Sofra & Mutfak"
     },
     {
       "id": "idefix-31952877",
@@ -10807,6 +11623,18 @@
       "subCategory": "Makyaj"
     },
     {
+      "id": "idefix-17476187",
+      "title": "Bioblas Zınc Menthol Saç Dökülmesi Ve Kepeğe Karşı Etkili Şampuan",
+      "originalPrice": 237.0,
+      "discountedPrice": 203.7,
+      "discountRate": 14,
+      "imageUrl": "https://image03.idefix.com/resize/600/600/product/17476187/zinc-menthol-sac-dokulmesi-ve-kepege-karsi-etkili-sampuan-6946a748193ba.jpg",
+      "productUrl": "https://www.idefix.com/bioblas-zinc-menthol-sac-dokulmesi-ve-kepege-karsi-etkili-sampuan-p-17476187",
+      "store": "Idefix",
+      "category": "Kozmetik",
+      "subCategory": "Saç Bakımı"
+    },
+    {
       "id": "idefix-34191861",
       "title": "L'Oréal Paris Telescopic Carbon Black Maskara, Siyah, 8 ml",
       "originalPrice": 2990.0,
@@ -11368,7 +12196,7 @@
       "productUrl": "https://www.idefix.com/oral-b-io3-siyah-sarjlielektrikli-dis-fircasi-1-firca-basligi-uzun-omurlu-pil-p-31926448",
       "store": "Idefix",
       "category": "Kozmetik",
-      "subCategory": "Kişisel Bakım Cihazı"
+      "subCategory": "Vücut Bakımı"
     },
     {
       "id": "idefix-23733320",
