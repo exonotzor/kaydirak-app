@@ -2,6 +2,10 @@ name: Test Trendyol and N11 Isolated Probe
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - 'backend/test_trendyol_n11.py'
+      - '.github/workflows/test_ty_n11.yml'
 
 jobs:
   probe:
