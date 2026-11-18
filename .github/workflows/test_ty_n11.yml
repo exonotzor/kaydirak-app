@@ -19,7 +19,8 @@ jobs:
           python-version: '3.11'
       - run: pip install curl_cffi urllib3
       - name: Test Trendyol
-        run: python -c "from backend.test_trendyol_n11 import test_trendyol; c = test_trendyol('kahve makinesi'); assert c >= 10, f'Trendyol failed: {c}'"
+        run: |
+          python -c "from backend.test_trendyol_n11 import test_trendyol; c = test_trendyol('kahve makinesi'); assert c >= 10"
 
   test-n11:
     runs-on: ubuntu-latest
@@ -32,4 +33,5 @@ jobs:
           python-version: '3.11'
       - run: pip install curl_cffi urllib3
       - name: Test N11
-        run: python -c "from backend.test_trendyol_n11 import test_n11; c = test_n11('kahve makinesi'); assert c >= 10, f'N11 failed: {c}'"
+        run: |
+          python -c "from backend.test_trendyol_n11 import test_n11; c = test_n11('kahve makinesi'); assert c >= 10"
