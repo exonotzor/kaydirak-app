@@ -8,29 +8,28 @@ on:
       - '.github/workflows/test_ty_n11.yml'
 
 jobs:
-  probe:
+  test-trendyol:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 1
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+      - run: pip install curl_cffi urllib3
+      - name: Test Trendyol
+        run: python -c "from backend.test_trendyol_n11 import test_trendyol; c = test_trendyol('kahve makinesi'); assert c >= 10, f'Trendyol failed: {c}'"
 
-      - name: Install dependencies
-        run: |
-          pip install curl_cffi urllib3
-
-      - name: Test Trendyol Only
-        continue-on-error: true
-        run: |
-          python -c "from backend.test_trendyol_n11 import test_trendyol; c = test_trendyol('kahve makinesi'); assert c >= 10, f'Trendyol failed: {c}'"
-
-      - name: Test N11 Only
-        continue-on-error: true
-        run: |
-          python -c "from backend.test_trendyol_n11 import test_n11; c = test_n11('kahve makinesi'); assert c >= 10, f'N11 failed: {c}'"
+  test-n11:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install curl_cffi urllib3
+      - name: Test N11
+        run: python -c "from backend.test_trendyol_n11 import test_n11; c = test_n11('kahve makinesi'); assert c >= 10, f'N11 failed: {c}'"
