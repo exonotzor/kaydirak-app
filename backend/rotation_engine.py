@@ -90,16 +90,23 @@ for run_num, batch in enumerate(history, 1):
     for pid in batch:
         last_seen_run[pid] = run_num
 
-def _tech_saturated_type(item):
+def _saturated_type(item, category):
     tl = (item.get('title') or '').lower()
-    if any(k in tl for k in ('mouse', 'fare')) and 'pad' not in tl:
-        return 'mouse'
-    if any(k in tl for k in ('akıllı saat', 'bileklik', 'smartwatch', 'watch', 'mi band', 'fitbit')):
-        return 'watch'
-    if any(k in tl for k in ('hoparlör', 'speaker', 'soundbar')):
-        return 'speaker'
-    if any(k in tl for k in ('webcam', 'web kamera')):
-        return 'webcam'
+    if category == 'Teknoloji':
+        if any(k in tl for k in ('mouse', 'fare')) and 'pad' not in tl:
+            return 'mouse'
+        if any(k in tl for k in ('akıllı saat', 'bileklik', 'smartwatch', 'watch', 'mi band', 'fitbit')):
+            return 'watch'
+        if any(k in tl for k in ('hoparlör', 'speaker', 'soundbar')):
+            return 'speaker'
+        if any(k in tl for k in ('webcam', 'web kamera')):
+            return 'webcam'
+    elif category == 'Moda':
+        if any(k in tl for k in ('ayakkabı', 'sneaker', 'bot ', 'çizme', 'terlik', 'sandalet', 'koşu ayakkab')):
+            return 'shoe'
+    elif category == 'Ev & Yaşam':
+        if any(k in tl for k in ('kahve', 'termos', 'matara', 'fincan')):
+            return 'coffee'
     return None
 
 def select_diverse_10(candidates, category=None):
@@ -138,9 +145,9 @@ def select_diverse_10(candidates, category=None):
                 for idx, cand in enumerate(buckets[k]):
                     if cand['id'] in chosen_ids:
                         continue
-                    if enforce_caps and category == 'Teknoloji':
-                        st = _tech_saturated_type(cand)
-                        if st is not None and (sat_counts[st] >= 1 or sat_total >= 2):
+                    if enforce_caps:
+                        st = _saturated_type(cand, category)
+                        if st is not None and (sat_counts[st] >= 1 or (category == 'Teknoloji' and sat_total >= 2)):
                             continue
                     picked_idx = idx
                     break
@@ -148,8 +155,8 @@ def select_diverse_10(candidates, category=None):
                     it = buckets[k].pop(picked_idx)
                     chosen.append(it)
                     chosen_ids.add(it['id'])
-                    if category == 'Teknoloji':
-                        st = _tech_saturated_type(it)
+                    if category in ('Teknoloji', 'Moda', 'Ev & Yaşam'):
+                        st = _saturated_type(it, category)
                         if st is not None:
                             sat_counts[st] += 1
                             sat_total += 1

@@ -43,31 +43,39 @@ IDEFIX_SUBCATEGORIES = {
         ('Erkek Üst Giyim', ['/erkek-giyim-c-5507240150']),
         ('Kadın Giyim', ['/kadin-elbise-c-550916706', '/kadin-gomlek-ve-bluzlar-l-13257']),
         ('Dış Giyim', ['/kadin-ceket-c-5509692200', '/kadin-hirka-c-550910384', '/kadin-sweatshirt-c-550952755']),
-        ('Spor Ayakkabı', ['/sneaker-c-550342261']),
-        ('Günlük Ayakkabı', ['/gunluk-ayakkabi-c-550327518', '/bot-c-550371009']),
-        ('Çanta & Sırt Çantası', ['/cantalar-valizler-c-5511']),
+        ('Jean & Pantolon', ['/kadin-jean-c-550963769', '/kadin-pantolon-c-550976511']),
+        ('Çanta & Valiz', ['/cantalar-valizler-c-5511']),
         ('Saat & Gözlük', ['/saat-c-5501500910', '/gozlukler-c-5508']),
-        ('Alt Giyim & Aksesuar', ['/kadin-jean-c-550963769', '/kadin-pantolon-c-550976511'])
+        ('Takı & Aksesuar', ['/taki-ve-mucevher-c-5506', '/kemer-c-550463738']),
+        ('Ev Giyimi & Pijama', ['/pijama-c-550931120', '/ev-giyim-c-5509']),
+        ('Spor & Aktif Giyim', ['/spor-giyim-c-7704']),
+        ('Ayakkabı & Sneaker', ['/sneaker-c-550342261', '/gunluk-ayakkabi-c-550327518'])
     ],
     'Ev & Yaşam': [
-        ('Kahve Keyfi', ['/kahve-hazirlama-c-2311805100', '/tam-otomatik-kahve-makineleri-c-231189131']),
         ('Küçük Ev Aletleri', ['/gida-hazirlama-c-2311970490', '/icecek-hazirlama-c-2311382370']),
         ('Pişirme & Tencere', ['/gida-pisirme-c-2311348910', '/sofra-mutfak-c-2206']),
-        ('Termos & Matara', ['/termos-mataralar-c-770532183']),
-        ('Sofra & Mutfak', ['/yemek-takimlari-c-220624792', '/ev-gerecleri-c-2203']),
-        ('Ev Tekstili', ['/ev-tekstili-c-2204', '/ev-dekorasyon-c-2202']),
+        ('Sofra & Sunum', ['/yemek-takimlari-c-220624792', '/ev-gerecleri-c-2203']),
+        ('Ev Tekstili', ['/ev-tekstili-c-2204']),
         ('Ütü & Süpürge', ['/utuler-c-2311258000', '/dikey-supurge-c-231175430', '/robot-supurge-c-2311110060']),
-        ('Aydınlatma & Kamp', ['/aydinlatma-c-2201', '/kamp-sandalyesi-c-770573348', '/elektrikli-el-aletleri-c-5303500630'])
+        ('Aydınlatma & Dekor', ['/aydinlatma-c-2201', '/ev-dekorasyon-c-2202']),
+        ('Tamir & Hırdavat', ['/elektrikli-el-aletleri-c-5303500630', '/hirdavat-c-53']),
+        ('Kamp & Outdoor', ['/kamp-sandalyesi-c-770573348', '/kamp-malzemeleri-c-7705']),
+        ('Spor & Ev Fitness', ['/fitness-kondisyon-c-7701']),
+        ('Kutu Oyunu & Hobi', ['/kutu-oyunlari-c-660110680', '/puzzle-c-660140748']),
+        ('Kahve & Termos', ['/kahve-hazirlama-c-2311805100', '/termos-mataralar-c-770532183'])
     ],
     'Kozmetik': [
-        ('Parfüm', ['/parfum-ve-deodorant-c-4403992550', '/roll-on-ve-stick-c-440322972']),
-        ('Cilt Serumu', ['/kore-kozmetik-l-42012', '/cilt-bakim-c-4403999870']),
-        ('Yüz Bakımı', ['/bb-kremler-c-440367703', '/kapatici-c-440344466']),
+        ('Parfüm & Deodorant', ['/parfum-ve-deodorant-c-4403992550', '/roll-on-ve-stick-c-440322972']),
+        ('Cilt Serumu & Asit', ['/cilt-bakim-c-4403999870']),
+        ('Kore Kozmetik & Tonik', ['/kore-kozmetik-l-42012']),
+        ('Yüz Bakımı & Maske', ['/bb-kremler-c-440367703', '/kapatici-c-440344466']),
         ('Güneş Bakımı', ['/gunes-urunleri-c-4403980570']),
         ('Saç Bakımı', ['/sampuanlar-c-440243234', '/sac-maskeleri-bakim-krem-losyon-ve-spreyleri-c-440226781']),
-        ('Makyaj', ['/maskara-c-440319818', '/rujlar-c-440344872', '/fondoten-c-440312986']),
+        ('Makyaj & Göz', ['/maskara-c-440319818', '/fondoten-c-440312986']),
+        ('Dudak & Tırnak', ['/rujlar-c-440344872', '/oje-ve-tirnak-bakim-c-4403']),
         ('Kişisel Bakım Cihazı', ['/elektrikli-kisisel-bakim-aletleri-c-2316', '/sac-kurutma-makineleri-c-2316702316']),
-        ('Vücut Bakımı', ['/agiz-bakim-c-4402630750', '/kisisel-bakim-c-4402'])
+        ('Ağız & Diş Bakımı', ['/agiz-bakim-c-4402630750']),
+        ('Vücut & Aromaterapi', ['/kisisel-bakim-c-4402'])
     ]
 }
 
@@ -101,9 +109,14 @@ def harvest_amazon_with_warmup(per_subcat=32):
         pass
 
     for cat, subcats in SUBCATEGORIES.items():
-        target_for_cat = 18 if cat == 'Teknoloji' else per_subcat
+        target_for_cat = 18 if cat == 'Teknoloji' else (20 if cat in ('Ev & Yaşam', 'Moda', 'Kozmetik') else per_subcat)
         for subcat_name, queries in subcats:
-            subcat_cap = 12 if subcat_name == 'Mouse & Akıllı Saat & Ses' else target_for_cat
+            if subcat_name == 'Mouse & Akıllı Saat & Ses':
+                subcat_cap = 12
+            elif subcat_name in ('Ayakkabı & Sneaker', 'Kahve & Termos'):
+                subcat_cap = 22
+            else:
+                subcat_cap = target_for_cat
             subcat_count = 0
             for q in queries:
                 if subcat_count >= subcat_cap:
@@ -195,9 +208,14 @@ def harvest_idefix_exact(per_subcat=32):
         'Accept-Language': 'tr-TR,tr;q=0.9',
     }
     for cat, subcats in IDEFIX_SUBCATEGORIES.items():
-        target_for_cat = 24 if cat == 'Teknoloji' else per_subcat
+        target_for_cat = 24 if cat == 'Teknoloji' else 24
         for subcat_name, paths in subcats:
-            subcat_cap = 12 if subcat_name == 'Mouse & Akıllı Saat & Ses' else target_for_cat
+            if subcat_name == 'Mouse & Akıllı Saat & Ses':
+                subcat_cap = 12
+            elif subcat_name in ('Ayakkabı & Sneaker', 'Kahve & Termos'):
+                subcat_cap = 22
+            else:
+                subcat_cap = target_for_cat
             subcat_count = 0
             for p_url in paths:
                 if subcat_count >= subcat_cap:
@@ -318,6 +336,28 @@ def merge_and_save_pool(fresh_pool, filename, store_label, target_per_cat=240):
                     if type_counts[t_key] >= 12:
                         continue
                     type_counts[t_key] += 1
+                filtered.append(it)
+            combined = filtered
+        elif cat == 'Moda':
+            shoe_cnt = 0
+            filtered = []
+            for it in combined:
+                tl = it.get('title', '').lower()
+                if any(k in tl for k in ('ayakkabı', 'sneaker', 'bot ', 'çizme', 'terlik', 'sandalet', 'koşu ayakkab')):
+                    if shoe_cnt >= 24:
+                        continue
+                    shoe_cnt += 1
+                filtered.append(it)
+            combined = filtered
+        elif cat == 'Ev & Yaşam':
+            coffee_cnt = 0
+            filtered = []
+            for it in combined:
+                tl = it.get('title', '').lower()
+                if any(k in tl for k in ('kahve', 'termos', 'matara', 'fincan')):
+                    if coffee_cnt >= 24:
+                        continue
+                    coffee_cnt += 1
                 filtered.append(it)
             combined = filtered
 

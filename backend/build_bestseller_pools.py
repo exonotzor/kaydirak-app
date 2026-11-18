@@ -43,33 +43,47 @@ SUBCATEGORIES = {
     ],
     'Moda': [
         ('Erkek Üst Giyim', ['erkek tişört', 'erkek gömlek', 'erkek sweatshirt']),
-        ('Kadın Giyim', ['kadın elbise', 'kadın bluz', 'kadın gömlek']),
-        ('Dış Giyim', ['erkek ceket', 'kadın hırka', 'erkek polar']),
-        ('Spor Ayakkabı', ['erkek spor ayakkabı', 'kadın sneaker', 'koşu ayakkabısı']),
-        ('Günlük Ayakkabı', ['erkek günlük ayakkabı', 'kadın bot', 'erkek klasik ayakkabı']),
-        ('Çanta & Sırt Çantası', ['sırt çantası', 'kadın omuz çantası', 'laptop çantası']),
+        ('Kadın Giyim', ['kadın elbise', 'kadın bluz', 'kadın triko kazak']),
+        ('Dış Giyim', ['erkek ceket', 'kadın trençkot', 'erkek şişme mont']),
+        ('Jean & Pantolon', ['erkek jean pantolon', 'kadın mom jean', 'erkek eşofman altı']),
+        ('Çanta & Valiz', ['sırt çantası', 'kadın omuz çantası', 'kabin boy valiz']),
         ('Saat & Gözlük', ['güneş gözlüğü', 'erkek kol saati', 'kadın kol saati']),
-        ('Alt Giyim & Aksesuar', ['erkek jean pantolon', 'erkek eşofman altı', 'erkek deri cüzdan'])
+        ('Takı & Aksesuar', ['gümüş kolye kadın', 'erkek deri kemer', 'erkek deri cüzdan']),
+        ('Ev Giyimi & Pijama', ['kadın pijama takımı', 'erkek pijama takımı', 'polar sabahlık']),
+        ('Spor & Aktif Giyim', ['kadın spor tayt', 'erkek spor şort', 'eşofman takımı']),
+        ('Şapka & Atkı', ['beyzbol şapka', 'kaşmir atkı bere', 'deri eldiven']),
+        ('Seyahat Düzenleyici', ['makyaj çantası', 'seyahat düzenleyici set', 'kartlık cüzdan']),
+        ('Ayakkabı & Sneaker', ['erkek sneaker', 'kadın spor ayakkabı', 'deri bot'])
     ],
     'Ev & Yaşam': [
-        ('Kahve Keyfi', ['filtre kahve makinesi', 'türk kahvesi makinesi', 'moka pot']),
-        ('Küçük Ev Aletleri', ['blender seti', 'tost makinesi', 'su ısıtıcı kettle']),
-        ('Pişirme & Tencere', ['çelik tencere seti', 'granit tava', 'döküm tava']),
-        ('Termos & Matara', ['çelik termos', 'termos bardak', 'kamp termosu']),
-        ('Sofra & Mutfak', ['kahve fincan takımı', 'şef bıçağı seti', 'cam saklama kabı']),
-        ('Ev Tekstili', ['pamuk nevresim takımı', 'banyo havlu seti', 'yastık']),
-        ('Ütü & Süpürge', ['buharlı ütü', 'dikey süpürge', 'el süpürgesi']),
-        ('Aydınlatma & Kamp', ['masa lambası', 'kamp sandalyesi', 'takım çantası'])
+        ('Küçük Ev Aletleri', ['airfryer fritöz', 'blender seti', 'tost makinesi']),
+        ('Pişirme & Tencere', ['çelik tencere seti', 'döküm tava', 'fırın tepsisi borcam']),
+        ('Sofra & Sunum', ['yemek takımı 24 parça', 'şef bıçağı seti', 'bambu sunum tahtası']),
+        ('Ev Tekstili', ['pamuk nevresim takımı', 'banyo havlu seti', 'ortopedik visco yastık']),
+        ('Ütü & Süpürge', ['buharlı ütü', 'dikey şarjlı süpürge', 'robot süpürge']),
+        ('Aydınlatma & Dekor', ['şarjlı masa lambası', 'dekoratif duvar saati', 'kokulu mum difüzör']),
+        ('Düzenleyici & Depolama', ['dolap içi düzenleyici', 'vakumlu hurç seti', 'cam saklama kabı']),
+        ('Tamir & Hırdavat', ['şarjlı vidalama matkap', 'takım çantası seti', 'lazer metre']),
+        ('Kamp & Outdoor', ['kamp sandalyesi', 'kamp çadırı', 'şarjlı kamp feneri']),
+        ('Spor & Ev Fitness', ['pilates matı', 'ayarlanabilir dambıl seti', 'atlama ipi sayacı']),
+        ('Kutu Oyunu & Hobi', ['kutu oyunu aile', '1000 parça puzzle', 'ahşap satranç takımı']),
+        ('Banyo & Temizlik', ['tablet mop temizlik seti', 'banyo paspas takımı', 'çamaşır kurutmalık']),
+        ('Bitki & Balkon', ['seramik saksı seti', 'bahçe sulama tabancası', 'solar bahçe aydınlatma']),
+        ('Kahve & Termos', ['filtre kahve makinesi', 'çelik termos', 'türk kahvesi makinesi'])
     ],
     'Kozmetik': [
-        ('Parfüm', ['erkek parfüm edp', 'kadın parfüm edp', 'deodorant sprey']),
-        ('Cilt Serumu', ['c vitamini serum', 'hyaluronik asit serum', 'yüz serumu']),
-        ('Yüz Bakımı', ['yüz nemlendirici krem', 'yüz temizleme jeli', 'göz çevresi kremi']),
-        ('Güneş Bakımı', ['güneş kremi spf 50', 'yüz güneş kremi']),
+        ('Parfüm & Deodorant', ['erkek parfüm edp', 'kadın parfüm edp', 'vücut spreyi mist']),
+        ('Cilt Serumu & Asit', ['c vitamini serum', 'hyaluronik asit serum', 'niacinamide serum']),
+        ('Yüz Bakımı & Maske', ['yüz nemlendirici krem', 'kil maskesi yüz', 'kağıt yüz maskesi']),
+        ('Kore Kozmetik & Tonik', ['kore cilt bakım', 'glikolik asit tonik', 'yüz temizleme köpüğü']),
+        ('Güneş Bakımı', ['güneş kremi spf 50', 'leke karşıtı güneş kremi']),
         ('Saç Bakımı', ['keratin şampuan', 'saç bakım yağı', 'saç maskesi']),
-        ('Makyaj', ['maskara', 'likit mat ruj', 'fondöten']),
-        ('Kişisel Bakım Cihazı', ['tıraş makinesi', 'saç kurutma makinesi', 'şarjlı diş fırçası']),
-        ('Vücut Bakımı', ['vücut losyonu', 'el kremi', 'duş jeli'])
+        ('Makyaj & Göz', ['maskara', 'far paleti', 'eyeliner suya dayanıklı']),
+        ('Dudak & Tırnak', ['likit mat ruj', 'dudak nemlendirici balm', 'kalıcı oje seti']),
+        ('Kişisel Bakım Cihazı', ['tıraş makinesi', 'saç kurutma makinesi', 'saç düzleştirici']),
+        ('Ağız & Diş Bakımı', ['şarjlı diş fırçası', 'beyazlatıcı diş macunu', 'ağız duşu']),
+        ('Erkek Bakım & Sakal', ['sakal bakım yağı', 'tıraş sonrası losyon', 'saç şekillendirici wax']),
+        ('Vücut & Aromaterapi', ['vücut losyonu', 'vücut peeling scrub', 'masaj yağı aromaterapi'])
     ]
 }
 
@@ -255,9 +269,14 @@ def harvest_hepsiburada(per_subcat=32):
     headers = {'User-Agent': 'Hepsiburada/5.32.0 (Android 13; SM-S908B)'}
 
     for cat, subcats in SUBCATEGORIES.items():
-        target_for_cat = 18 if cat == 'Teknoloji' else per_subcat
+        target_for_cat = 18 if cat == 'Teknoloji' else (20 if cat in ('Ev & Yaşam', 'Moda', 'Kozmetik') else per_subcat)
         for subcat_name, queries in subcats:
-            subcat_cap = 12 if subcat_name == 'Mouse & Akıllı Saat & Ses' else target_for_cat
+            if subcat_name == 'Mouse & Akıllı Saat & Ses':
+                subcat_cap = 12
+            elif subcat_name in ('Ayakkabı & Sneaker', 'Kahve & Termos'):
+                subcat_cap = 22
+            else:
+                subcat_cap = target_for_cat
             subcat_count = 0
             for q in queries:
                 if subcat_count >= subcat_cap:
